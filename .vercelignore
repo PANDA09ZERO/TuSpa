@@ -1,0 +1,5 @@
+# Lo que no forma parte de la app web (no se sube a Vercel)
+video/
+docs/
+INTERFACE-REVIEW.md
+SECURITY-AUDIT.md
