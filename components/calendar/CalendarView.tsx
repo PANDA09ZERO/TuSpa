@@ -9,6 +9,7 @@ import AppointmentEditModal from "./AppointmentEditModal";
 import ConvertGuestModal from "./ConvertGuestModal";
 import type { Appointment } from "./types";
 import { citaClientName, citaDurationMinutes, citaServiceNames, estadoLabels, fullName, isGuestCita, statusBadges, statusColors, compareCitaSchedule } from "./cita-utils";
+import { brand } from "@/lib/brand";
 
 export type { Appointment };
 
@@ -107,7 +108,7 @@ export default function CalendarView({ appointments, onUpdated, focusDate }: Pro
           <div className="bg-white rounded-3xl shadow-bento w-full max-w-2xl max-h-[92vh] overflow-y-auto" onClick={(event) => event.stopPropagation()}>
             <div className="p-6 bg-gradient-to-r from-brand-green to-brand-green-dark text-white flex items-start justify-between gap-4">
               <div className="min-w-0">
-                <p className="text-white/70 text-sm">Agenda Essence</p>
+                <p className="text-white/70 text-sm">Agenda {brand.shortName}</p>
                 <h2 className="font-display text-xl font-bold mt-1 truncate">
                   {detailCita ? "Detalle de la cita" : `Citas del ${format(new Date(`${selectedDay}T12:00:00`), "EEEE d 'de' MMMM yyyy", { locale: es })}`}
                 </h2>

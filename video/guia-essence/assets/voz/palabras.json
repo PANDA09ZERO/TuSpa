@@ -1,0 +1,5168 @@
+{
+ "a1": [
+  {
+   "text": "Bienvenida",
+   "start": 0.091,
+   "end": 0.608
+  },
+  {
+   "text": "a",
+   "start": 0.618,
+   "end": 0.659
+  },
+  {
+   "text": "tuSpa",
+   "start": 0.669,
+   "end": 0.994
+  },
+  {
+   "text": "el",
+   "start": 1.217,
+   "end": 1.339
+  },
+  {
+   "text": "sistema",
+   "start": 1.349,
+   "end": 1.714
+  },
+  {
+   "text": "de",
+   "start": 1.724,
+   "end": 1.805
+  },
+  {
+   "text": "gestión",
+   "start": 1.815,
+   "end": 2.201
+  },
+  {
+   "text": "para",
+   "start": 2.211,
+   "end": 2.363
+  },
+  {
+   "text": "tu",
+   "start": 2.373,
+   "end": 2.455
+  },
+  {
+   "text": "spa",
+   "start": 2.465,
+   "end": 2.779
+  },
+  {
+   "text": "En",
+   "start": 3.48,
+   "end": 3.592
+  },
+  {
+   "text": "este",
+   "start": 3.602,
+   "end": 3.774
+  },
+  {
+   "text": "video",
+   "start": 3.784,
+   "end": 4.099
+  },
+  {
+   "text": "aprenderás",
+   "start": 4.109,
+   "end": 4.576
+  },
+  {
+   "text": "a",
+   "start": 4.586,
+   "end": 4.606
+  },
+  {
+   "text": "ingresar",
+   "start": 4.616,
+   "end": 4.982
+  },
+  {
+   "text": "a",
+   "start": 5.246,
+   "end": 5.296
+  },
+  {
+   "text": "usar",
+   "start": 5.306,
+   "end": 5.621
+  },
+  {
+   "text": "cada",
+   "start": 5.631,
+   "end": 5.834
+  },
+  {
+   "text": "módulo",
+   "start": 5.844,
+   "end": 6.22
+  },
+  {
+   "text": "a",
+   "start": 6.483,
+   "end": 6.565
+  },
+  {
+   "text": "llevarlo",
+   "start": 6.575,
+   "end": 6.899
+  },
+  {
+   "text": "en",
+   "start": 6.91,
+   "end": 6.96
+  },
+  {
+   "text": "tu",
+   "start": 6.97,
+   "end": 7.031
+  },
+  {
+   "text": "celular",
+   "start": 7.041,
+   "end": 7.427
+  },
+  {
+   "text": "y",
+   "start": 7.437,
+   "end": 7.488
+  },
+  {
+   "text": "qué",
+   "start": 7.498,
+   "end": 7.599
+  },
+  {
+   "text": "puede",
+   "start": 7.61,
+   "end": 7.802
+  },
+  {
+   "text": "hacer",
+   "start": 7.812,
+   "end": 8.056
+  },
+  {
+   "text": "cada",
+   "start": 8.066,
+   "end": 8.279
+  },
+  {
+   "text": "tipo",
+   "start": 8.289,
+   "end": 8.543
+  },
+  {
+   "text": "de",
+   "start": 8.553,
+   "end": 8.624
+  },
+  {
+   "text": "usuario",
+   "start": 8.634,
+   "end": 9.06
+  }
+ ],
+ "i1": [
+  {
+   "text": "Abre",
+   "start": 0.091,
+   "end": 0.293
+  },
+  {
+   "text": "la",
+   "start": 0.304,
+   "end": 0.375
+  },
+  {
+   "text": "dirección",
+   "start": 0.385,
+   "end": 0.801
+  },
+  {
+   "text": "del",
+   "start": 0.811,
+   "end": 0.912
+  },
+  {
+   "text": "sistema",
+   "start": 0.923,
+   "end": 1.339
+  },
+  {
+   "text": "en",
+   "start": 1.349,
+   "end": 1.43
+  },
+  {
+   "text": "tu",
+   "start": 1.44,
+   "end": 1.511
+  },
+  {
+   "text": "navegador",
+   "start": 1.521,
+   "end": 2.079
+  },
+  {
+   "text": "Escribe",
+   "start": 2.77,
+   "end": 3.084
+  },
+  {
+   "text": "el",
+   "start": 3.095,
+   "end": 3.155
+  },
+  {
+   "text": "email",
+   "start": 3.166,
+   "end": 3.44
+  },
+  {
+   "text": "y",
+   "start": 3.45,
+   "end": 3.49
+  },
+  {
+   "text": "la",
+   "start": 3.5,
+   "end": 3.592
+  },
+  {
+   "text": "contraseña",
+   "start": 3.602,
+   "end": 4.119
+  },
+  {
+   "text": "que",
+   "start": 4.129,
+   "end": 4.241
+  },
+  {
+   "text": "te",
+   "start": 4.251,
+   "end": 4.322
+  },
+  {
+   "text": "dio",
+   "start": 4.332,
+   "end": 4.474
+  },
+  {
+   "text": "el",
+   "start": 4.485,
+   "end": 4.545
+  },
+  {
+   "text": "Administrador",
+   "start": 4.556,
+   "end": 5.174
+  },
+  {
+   "text": "y",
+   "start": 5.428,
+   "end": 5.469
+  },
+  {
+   "text": "pulsa",
+   "start": 5.479,
+   "end": 5.814
+  },
+  {
+   "text": "Iniciar",
+   "start": 5.824,
+   "end": 6.209
+  },
+  {
+   "text": "sesión",
+   "start": 6.22,
+   "end": 6.585
+  }
+ ],
+ "i2": [
+  {
+   "text": "Si",
+   "start": 0.091,
+   "end": 0.212
+  },
+  {
+   "text": "algún",
+   "start": 0.223,
+   "end": 0.486
+  },
+  {
+   "text": "dato",
+   "start": 0.496,
+   "end": 0.699
+  },
+  {
+   "text": "está",
+   "start": 0.71,
+   "end": 0.892
+  },
+  {
+   "text": "mal",
+   "start": 0.902,
+   "end": 1.115
+  },
+  {
+   "text": "verás",
+   "start": 1.339,
+   "end": 1.602
+  },
+  {
+   "text": "el",
+   "start": 1.613,
+   "end": 1.694
+  },
+  {
+   "text": "aviso",
+   "start": 1.704,
+   "end": 2.049
+  },
+  {
+   "text": "Email",
+   "start": 2.262,
+   "end": 2.586
+  },
+  {
+   "text": "o",
+   "start": 2.597,
+   "end": 2.658
+  },
+  {
+   "text": "contraseña",
+   "start": 2.668,
+   "end": 3.165
+  },
+  {
+   "text": "incorrectos",
+   "start": 3.175,
+   "end": 3.824
+  },
+  {
+   "text": "Revísalo",
+   "start": 4.525,
+   "end": 5.053
+  },
+  {
+   "text": "e",
+   "start": 5.063,
+   "end": 5.144
+  },
+  {
+   "text": "inténtalo",
+   "start": 5.154,
+   "end": 5.661
+  },
+  {
+   "text": "otra",
+   "start": 5.672,
+   "end": 5.895
+  },
+  {
+   "text": "vez",
+   "start": 5.905,
+   "end": 6.24
+  }
+ ],
+ "i3": [
+  {
+   "text": "Para",
+   "start": 0.091,
+   "end": 0.212
+  },
+  {
+   "text": "salir",
+   "start": 0.223,
+   "end": 0.507
+  },
+  {
+   "text": "del",
+   "start": 0.517,
+   "end": 0.628
+  },
+  {
+   "text": "sistema",
+   "start": 0.638,
+   "end": 1.024
+  },
+  {
+   "text": "usa",
+   "start": 1.268,
+   "end": 1.511
+  },
+  {
+   "text": "el",
+   "start": 1.521,
+   "end": 1.602
+  },
+  {
+   "text": "ícono",
+   "start": 1.613,
+   "end": 1.856
+  },
+  {
+   "text": "de",
+   "start": 1.866,
+   "end": 1.947
+  },
+  {
+   "text": "cerrar",
+   "start": 1.957,
+   "end": 2.242
+  },
+  {
+   "text": "sesión",
+   "start": 2.252,
+   "end": 2.587
+  },
+  {
+   "text": "arriba",
+   "start": 2.85,
+   "end": 3.246
+  },
+  {
+   "text": "a",
+   "start": 3.256,
+   "end": 3.276
+  },
+  {
+   "text": "la",
+   "start": 3.287,
+   "end": 3.378
+  },
+  {
+   "text": "derecha",
+   "start": 3.388,
+   "end": 3.794
+  }
+ ],
+ "p1": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.172
+  },
+  {
+   "text": "la",
+   "start": 0.182,
+   "end": 0.243
+  },
+  {
+   "text": "computadora",
+   "start": 0.253,
+   "end": 0.831
+  },
+  {
+   "text": "el",
+   "start": 1.095,
+   "end": 1.207
+  },
+  {
+   "text": "menú",
+   "start": 1.217,
+   "end": 1.41
+  },
+  {
+   "text": "está",
+   "start": 1.42,
+   "end": 1.694
+  },
+  {
+   "text": "a",
+   "start": 1.704,
+   "end": 1.724
+  },
+  {
+   "text": "la",
+   "start": 1.734,
+   "end": 1.805
+  },
+  {
+   "text": "izquierda",
+   "start": 1.815,
+   "end": 2.191
+  },
+  {
+   "text": "arriba",
+   "start": 2.424,
+   "end": 2.749
+  },
+  {
+   "text": "tu",
+   "start": 2.759,
+   "end": 2.85
+  },
+  {
+   "text": "espacio",
+   "start": 2.86,
+   "end": 3.185
+  },
+  {
+   "text": "de",
+   "start": 3.195,
+   "end": 3.287
+  },
+  {
+   "text": "trabajo",
+   "start": 3.297,
+   "end": 3.723
+  },
+  {
+   "text": "y",
+   "start": 3.926,
+   "end": 4.017
+  },
+  {
+   "text": "abajo",
+   "start": 4.027,
+   "end": 4.352
+  },
+  {
+   "text": "la",
+   "start": 4.362,
+   "end": 4.443
+  },
+  {
+   "text": "administración",
+   "start": 4.453,
+   "end": 5.164
+  },
+  {
+   "text": "Ver",
+   "start": 5.854,
+   "end": 6.037
+  },
+  {
+   "text": "página",
+   "start": 6.047,
+   "end": 6.362
+  },
+  {
+   "text": "pública",
+   "start": 6.372,
+   "end": 6.727
+  },
+  {
+   "text": "te",
+   "start": 6.737,
+   "end": 6.838
+  },
+  {
+   "text": "muestra",
+   "start": 6.849,
+   "end": 7.183
+  },
+  {
+   "text": "lo",
+   "start": 7.194,
+   "end": 7.285
+  },
+  {
+   "text": "que",
+   "start": 7.295,
+   "end": 7.386
+  },
+  {
+   "text": "ven",
+   "start": 7.396,
+   "end": 7.559
+  },
+  {
+   "text": "tus",
+   "start": 7.569,
+   "end": 7.721
+  },
+  {
+   "text": "clientas",
+   "start": 7.731,
+   "end": 8.249
+  }
+ ],
+ "p2": [
+  {
+   "text": "Arriba",
+   "start": 0.091,
+   "end": 0.436
+  },
+  {
+   "text": "ves",
+   "start": 0.446,
+   "end": 0.649
+  },
+  {
+   "text": "tu",
+   "start": 0.659,
+   "end": 0.75
+  },
+  {
+   "text": "nombre",
+   "start": 0.76,
+   "end": 1.065
+  },
+  {
+   "text": "y",
+   "start": 1.075,
+   "end": 1.156
+  },
+  {
+   "text": "tu",
+   "start": 1.166,
+   "end": 1.268
+  },
+  {
+   "text": "rol",
+   "start": 1.278,
+   "end": 1.541
+  },
+  {
+   "text": "El",
+   "start": 2.232,
+   "end": 2.354
+  },
+  {
+   "text": "Resumen",
+   "start": 2.364,
+   "end": 2.719
+  },
+  {
+   "text": "te",
+   "start": 2.729,
+   "end": 2.8
+  },
+  {
+   "text": "dice",
+   "start": 2.81,
+   "end": 3.064
+  },
+  {
+   "text": "cómo",
+   "start": 3.074,
+   "end": 3.277
+  },
+  {
+   "text": "va",
+   "start": 3.287,
+   "end": 3.399
+  },
+  {
+   "text": "tu",
+   "start": 3.409,
+   "end": 3.521
+  },
+  {
+   "text": "día",
+   "start": 3.531,
+   "end": 3.734
+  },
+  {
+   "text": "las",
+   "start": 3.947,
+   "end": 4.079
+  },
+  {
+   "text": "citas",
+   "start": 4.089,
+   "end": 4.363
+  },
+  {
+   "text": "de",
+   "start": 4.373,
+   "end": 4.454
+  },
+  {
+   "text": "hoy",
+   "start": 4.464,
+   "end": 4.647
+  },
+  {
+   "text": "tus",
+   "start": 4.84,
+   "end": 4.992
+  },
+  {
+   "text": "clientes",
+   "start": 5.002,
+   "end": 5.438
+  },
+  {
+   "text": "los",
+   "start": 5.712,
+   "end": 5.783
+  },
+  {
+   "text": "servicios",
+   "start": 5.793,
+   "end": 6.209
+  },
+  {
+   "text": "activos",
+   "start": 6.22,
+   "end": 6.666
+  },
+  {
+   "text": "y",
+   "start": 6.676,
+   "end": 6.727
+  },
+  {
+   "text": "los",
+   "start": 6.737,
+   "end": 6.899
+  },
+  {
+   "text": "ingresos",
+   "start": 6.91,
+   "end": 7.285
+  },
+  {
+   "text": "del",
+   "start": 7.295,
+   "end": 7.407
+  },
+  {
+   "text": "mes",
+   "start": 7.417,
+   "end": 7.731
+  }
+ ],
+ "p3": [
+  {
+   "text": "Más",
+   "start": 0.091,
+   "end": 0.283
+  },
+  {
+   "text": "abajo",
+   "start": 0.293,
+   "end": 0.537
+  },
+  {
+   "text": "están",
+   "start": 0.547,
+   "end": 0.74
+  },
+  {
+   "text": "tus",
+   "start": 0.75,
+   "end": 0.882
+  },
+  {
+   "text": "próximas",
+   "start": 0.892,
+   "end": 1.268
+  },
+  {
+   "text": "citas",
+   "start": 1.278,
+   "end": 1.541
+  },
+  {
+   "text": "con",
+   "start": 1.552,
+   "end": 1.673
+  },
+  {
+   "text": "su",
+   "start": 1.684,
+   "end": 1.744
+  },
+  {
+   "text": "estado",
+   "start": 1.755,
+   "end": 2.079
+  },
+  {
+   "text": "y",
+   "start": 2.252,
+   "end": 2.313
+  },
+  {
+   "text": "los",
+   "start": 2.323,
+   "end": 2.475
+  },
+  {
+   "text": "accesos",
+   "start": 2.485,
+   "end": 2.86
+  },
+  {
+   "text": "directos",
+   "start": 2.871,
+   "end": 3.287
+  },
+  {
+   "text": "a",
+   "start": 3.297,
+   "end": 3.337
+  },
+  {
+   "text": "lo",
+   "start": 3.348,
+   "end": 3.439
+  },
+  {
+   "text": "que",
+   "start": 3.449,
+   "end": 3.54
+  },
+  {
+   "text": "más",
+   "start": 3.55,
+   "end": 3.753
+  },
+  {
+   "text": "usas",
+   "start": 3.763,
+   "end": 4.149
+  }
+ ],
+ "g1": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.192
+  },
+  {
+   "text": "la",
+   "start": 0.202,
+   "end": 0.233
+  },
+  {
+   "text": "Agenda",
+   "start": 0.243,
+   "end": 0.527
+  },
+  {
+   "text": "de",
+   "start": 0.537,
+   "end": 0.628
+  },
+  {
+   "text": "citas",
+   "start": 0.638,
+   "end": 0.973
+  },
+  {
+   "text": "ves",
+   "start": 0.983,
+   "end": 1.146
+  },
+  {
+   "text": "los",
+   "start": 1.156,
+   "end": 1.268
+  },
+  {
+   "text": "contadores",
+   "start": 1.278,
+   "end": 1.683
+  },
+  {
+   "text": "del",
+   "start": 1.694,
+   "end": 1.805
+  },
+  {
+   "text": "período",
+   "start": 1.815,
+   "end": 2.181
+  },
+  {
+   "text": "y",
+   "start": 2.191,
+   "end": 2.282
+  },
+  {
+   "text": "el",
+   "start": 2.292,
+   "end": 2.384
+  },
+  {
+   "text": "calendario",
+   "start": 2.394,
+   "end": 2.881
+  },
+  {
+   "text": "del",
+   "start": 2.891,
+   "end": 3.023
+  },
+  {
+   "text": "mes",
+   "start": 3.033,
+   "end": 3.337
+  },
+  {
+   "text": "El",
+   "start": 4.038,
+   "end": 4.19
+  },
+  {
+   "text": "día",
+   "start": 4.2,
+   "end": 4.393
+  },
+  {
+   "text": "de",
+   "start": 4.403,
+   "end": 4.515
+  },
+  {
+   "text": "hoy",
+   "start": 4.525,
+   "end": 4.718
+  },
+  {
+   "text": "aparece",
+   "start": 4.728,
+   "end": 5.114
+  },
+  {
+   "text": "remarcado",
+   "start": 5.124,
+   "end": 5.672
+  }
+ ],
+ "g2": [
+  {
+   "text": "Cada",
+   "start": 0.091,
+   "end": 0.293
+  },
+  {
+   "text": "punto",
+   "start": 0.304,
+   "end": 0.578
+  },
+  {
+   "text": "es",
+   "start": 0.588,
+   "end": 0.699
+  },
+  {
+   "text": "una",
+   "start": 0.71,
+   "end": 0.841
+  },
+  {
+   "text": "cita",
+   "start": 0.852,
+   "end": 1.136
+  },
+  {
+   "text": "y",
+   "start": 1.359,
+   "end": 1.399
+  },
+  {
+   "text": "su",
+   "start": 1.41,
+   "end": 1.521
+  },
+  {
+   "text": "color",
+   "start": 1.531,
+   "end": 1.795
+  },
+  {
+   "text": "indica",
+   "start": 1.805,
+   "end": 2.15
+  },
+  {
+   "text": "el",
+   "start": 2.16,
+   "end": 2.231
+  },
+  {
+   "text": "estado",
+   "start": 2.242,
+   "end": 2.566
+  },
+  {
+   "text": "verde",
+   "start": 2.759,
+   "end": 3.033
+  },
+  {
+   "text": "confirmada",
+   "start": 3.287,
+   "end": 3.794
+  },
+  {
+   "text": "amarillo",
+   "start": 3.997,
+   "end": 4.494
+  },
+  {
+   "text": "pendiente",
+   "start": 4.697,
+   "end": 5.184
+  },
+  {
+   "text": "azul",
+   "start": 5.417,
+   "end": 5.732
+  },
+  {
+   "text": "en",
+   "start": 5.965,
+   "end": 6.056
+  },
+  {
+   "text": "curso",
+   "start": 6.067,
+   "end": 6.452
+  },
+  {
+   "text": "Pasa",
+   "start": 7.143,
+   "end": 7.346
+  },
+  {
+   "text": "el",
+   "start": 7.356,
+   "end": 7.427
+  },
+  {
+   "text": "cursor",
+   "start": 7.437,
+   "end": 7.762
+  },
+  {
+   "text": "para",
+   "start": 7.772,
+   "end": 7.904
+  },
+  {
+   "text": "ver",
+   "start": 7.914,
+   "end": 8.076
+  },
+  {
+   "text": "la",
+   "start": 8.086,
+   "end": 8.218
+  },
+  {
+   "text": "hora",
+   "start": 8.229,
+   "end": 8.421
+  },
+  {
+   "text": "la",
+   "start": 8.645,
+   "end": 8.746
+  },
+  {
+   "text": "clienta",
+   "start": 8.756,
+   "end": 9.111
+  },
+  {
+   "text": "y",
+   "start": 9.121,
+   "end": 9.182
+  },
+  {
+   "text": "el",
+   "start": 9.192,
+   "end": 9.274
+  },
+  {
+   "text": "servicio",
+   "start": 9.284,
+   "end": 9.75
+  }
+ ],
+ "g3": [
+  {
+   "text": "Toca",
+   "start": 0.091,
+   "end": 0.304
+  },
+  {
+   "text": "un",
+   "start": 0.314,
+   "end": 0.405
+  },
+  {
+   "text": "día",
+   "start": 0.415,
+   "end": 0.598
+  },
+  {
+   "text": "para",
+   "start": 0.608,
+   "end": 0.75
+  },
+  {
+   "text": "ver",
+   "start": 0.76,
+   "end": 0.882
+  },
+  {
+   "text": "a",
+   "start": 0.892,
+   "end": 0.933
+  },
+  {
+   "text": "todas",
+   "start": 0.943,
+   "end": 1.197
+  },
+  {
+   "text": "las",
+   "start": 1.207,
+   "end": 1.339
+  },
+  {
+   "text": "clientas",
+   "start": 1.349,
+   "end": 1.673
+  },
+  {
+   "text": "agendadas",
+   "start": 1.684,
+   "end": 2.272
+  },
+  {
+   "text": "con",
+   "start": 2.485,
+   "end": 2.617
+  },
+  {
+   "text": "su",
+   "start": 2.627,
+   "end": 2.708
+  },
+  {
+   "text": "horario",
+   "start": 2.718,
+   "end": 3.023
+  },
+  {
+   "text": "sus",
+   "start": 3.266,
+   "end": 3.398
+  },
+  {
+   "text": "servicios",
+   "start": 3.408,
+   "end": 3.966
+  },
+  {
+   "text": "y",
+   "start": 3.977,
+   "end": 4.048
+  },
+  {
+   "text": "quién",
+   "start": 4.058,
+   "end": 4.179
+  },
+  {
+   "text": "las",
+   "start": 4.19,
+   "end": 4.322
+  },
+  {
+   "text": "atiende",
+   "start": 4.332,
+   "end": 4.697
+  }
+ ],
+ "g4": [
+  {
+   "text": "Al",
+   "start": 0.091,
+   "end": 0.222
+  },
+  {
+   "text": "elegir",
+   "start": 0.233,
+   "end": 0.537
+  },
+  {
+   "text": "una",
+   "start": 0.547,
+   "end": 0.689
+  },
+  {
+   "text": "cita",
+   "start": 0.699,
+   "end": 0.963
+  },
+  {
+   "text": "ves",
+   "start": 0.973,
+   "end": 1.196
+  },
+  {
+   "text": "todo",
+   "start": 1.207,
+   "end": 1.41
+  },
+  {
+   "text": "su",
+   "start": 1.42,
+   "end": 1.531
+  },
+  {
+   "text": "detalle",
+   "start": 1.541,
+   "end": 1.927
+  },
+  {
+   "text": "la",
+   "start": 2.191,
+   "end": 2.282
+  },
+  {
+   "text": "clienta",
+   "start": 2.292,
+   "end": 2.658
+  },
+  {
+   "text": "los",
+   "start": 2.901,
+   "end": 2.982
+  },
+  {
+   "text": "servicios",
+   "start": 2.992,
+   "end": 3.51
+  },
+  {
+   "text": "la",
+   "start": 3.733,
+   "end": 3.774
+  },
+  {
+   "text": "especialista",
+   "start": 3.784,
+   "end": 4.413
+  },
+  {
+   "text": "el",
+   "start": 4.595,
+   "end": 4.737
+  },
+  {
+   "text": "horario",
+   "start": 4.748,
+   "end": 5.164
+  },
+  {
+   "text": "y",
+   "start": 5.174,
+   "end": 5.235
+  },
+  {
+   "text": "las",
+   "start": 5.245,
+   "end": 5.397
+  },
+  {
+   "text": "observaciones",
+   "start": 5.407,
+   "end": 6.209
+  }
+ ],
+ "g5": [
+  {
+   "text": "Para",
+   "start": 0.091,
+   "end": 0.243
+  },
+  {
+   "text": "agendar",
+   "start": 0.253,
+   "end": 0.659
+  },
+  {
+   "text": "pulsa",
+   "start": 0.872,
+   "end": 1.156
+  },
+  {
+   "text": "Nueva",
+   "start": 1.166,
+   "end": 1.42
+  },
+  {
+   "text": "cita",
+   "start": 1.43,
+   "end": 1.785
+  },
+  {
+   "text": "Busca",
+   "start": 2.476,
+   "end": 2.76
+  },
+  {
+   "text": "a",
+   "start": 2.77,
+   "end": 2.79
+  },
+  {
+   "text": "la",
+   "start": 2.8,
+   "end": 2.892
+  },
+  {
+   "text": "clienta",
+   "start": 2.902,
+   "end": 3.206
+  },
+  {
+   "text": "por",
+   "start": 3.216,
+   "end": 3.338
+  },
+  {
+   "text": "su",
+   "start": 3.348,
+   "end": 3.44
+  },
+  {
+   "text": "nombre",
+   "start": 3.45,
+   "end": 3.703
+  },
+  {
+   "text": "o",
+   "start": 3.713,
+   "end": 3.754
+  },
+  {
+   "text": "su",
+   "start": 3.764,
+   "end": 3.876
+  },
+  {
+   "text": "teléfono",
+   "start": 3.886,
+   "end": 4.302
+  },
+  {
+   "text": "o",
+   "start": 4.515,
+   "end": 4.586
+  },
+  {
+   "text": "regístrala",
+   "start": 4.596,
+   "end": 5.276
+  },
+  {
+   "text": "ahí",
+   "start": 5.286,
+   "end": 5.438
+  },
+  {
+   "text": "mismo",
+   "start": 5.448,
+   "end": 5.804
+  },
+  {
+   "text": "Agrega",
+   "start": 6.504,
+   "end": 6.879
+  },
+  {
+   "text": "uno",
+   "start": 6.889,
+   "end": 7.173
+  },
+  {
+   "text": "o",
+   "start": 7.183,
+   "end": 7.265
+  },
+  {
+   "text": "varios",
+   "start": 7.275,
+   "end": 7.528
+  },
+  {
+   "text": "servicios",
+   "start": 7.539,
+   "end": 7.995
+  },
+  {
+   "text": "y",
+   "start": 8.229,
+   "end": 8.3
+  },
+  {
+   "text": "el",
+   "start": 8.31,
+   "end": 8.391
+  },
+  {
+   "text": "sistema",
+   "start": 8.401,
+   "end": 8.766
+  },
+  {
+   "text": "calcula",
+   "start": 8.776,
+   "end": 9.172
+  },
+  {
+   "text": "la",
+   "start": 9.182,
+   "end": 9.263
+  },
+  {
+   "text": "duración",
+   "start": 9.274,
+   "end": 9.71
+  },
+  {
+   "text": "y",
+   "start": 9.72,
+   "end": 9.75
+  },
+  {
+   "text": "el",
+   "start": 9.761,
+   "end": 9.842
+  },
+  {
+   "text": "total",
+   "start": 9.852,
+   "end": 10.177
+  }
+ ],
+ "g6": [
+  {
+   "text": "Elige",
+   "start": 0.091,
+   "end": 0.405
+  },
+  {
+   "text": "a",
+   "start": 0.415,
+   "end": 0.456
+  },
+  {
+   "text": "la",
+   "start": 0.466,
+   "end": 0.507
+  },
+  {
+   "text": "especialista",
+   "start": 0.517,
+   "end": 1.105
+  },
+  {
+   "text": "la",
+   "start": 1.308,
+   "end": 1.399
+  },
+  {
+   "text": "fecha",
+   "start": 1.41,
+   "end": 1.755
+  },
+  {
+   "text": "y",
+   "start": 1.765,
+   "end": 1.805
+  },
+  {
+   "text": "la",
+   "start": 1.815,
+   "end": 1.968
+  },
+  {
+   "text": "hora",
+   "start": 1.978,
+   "end": 2.16
+  },
+  {
+   "text": "siempre",
+   "start": 2.475,
+   "end": 2.789
+  },
+  {
+   "text": "en",
+   "start": 2.8,
+   "end": 2.881
+  },
+  {
+   "text": "horario",
+   "start": 2.891,
+   "end": 3.165
+  },
+  {
+   "text": "de",
+   "start": 3.175,
+   "end": 3.256
+  },
+  {
+   "text": "Perú",
+   "start": 3.266,
+   "end": 3.5
+  },
+  {
+   "text": "y",
+   "start": 3.733,
+   "end": 3.794
+  },
+  {
+   "text": "guarda",
+   "start": 3.804,
+   "end": 4.108
+  },
+  {
+   "text": "la",
+   "start": 4.119,
+   "end": 4.2
+  },
+  {
+   "text": "cita",
+   "start": 4.21,
+   "end": 4.545
+  }
+ ],
+ "g7": [
+  {
+   "text": "Con",
+   "start": 0.091,
+   "end": 0.202
+  },
+  {
+   "text": "Editar",
+   "start": 0.212,
+   "end": 0.527
+  },
+  {
+   "text": "cita",
+   "start": 0.537,
+   "end": 0.76
+  },
+  {
+   "text": "puedes",
+   "start": 0.77,
+   "end": 1.014
+  },
+  {
+   "text": "cambiar",
+   "start": 1.024,
+   "end": 1.298
+  },
+  {
+   "text": "la",
+   "start": 1.308,
+   "end": 1.379
+  },
+  {
+   "text": "clienta",
+   "start": 1.389,
+   "end": 1.724
+  },
+  {
+   "text": "los",
+   "start": 1.968,
+   "end": 2.049
+  },
+  {
+   "text": "servicios",
+   "start": 2.059,
+   "end": 2.556
+  },
+  {
+   "text": "la",
+   "start": 2.779,
+   "end": 2.83
+  },
+  {
+   "text": "especialista",
+   "start": 2.84,
+   "end": 3.459
+  },
+  {
+   "text": "la",
+   "start": 3.632,
+   "end": 3.723
+  },
+  {
+   "text": "fecha",
+   "start": 3.733,
+   "end": 4.139
+  },
+  {
+   "text": "o",
+   "start": 4.149,
+   "end": 4.22
+  },
+  {
+   "text": "la",
+   "start": 4.23,
+   "end": 4.382
+  },
+  {
+   "text": "hora",
+   "start": 4.393,
+   "end": 4.626
+  },
+  {
+   "text": "También",
+   "start": 5.327,
+   "end": 5.651
+  },
+  {
+   "text": "su",
+   "start": 5.662,
+   "end": 5.722
+  },
+  {
+   "text": "estado",
+   "start": 5.733,
+   "end": 6.057
+  },
+  {
+   "text": "confírmala",
+   "start": 6.26,
+   "end": 6.808
+  },
+  {
+   "text": "márcala",
+   "start": 7.052,
+   "end": 7.407
+  },
+  {
+   "text": "en",
+   "start": 7.417,
+   "end": 7.518
+  },
+  {
+   "text": "curso",
+   "start": 7.528,
+   "end": 7.904
+  },
+  {
+   "text": "o",
+   "start": 8.036,
+   "end": 8.107
+  },
+  {
+   "text": "cancélala",
+   "start": 8.117,
+   "end": 8.685
+  }
+ ],
+ "g8": [
+  {
+   "text": "Si",
+   "start": 0.091,
+   "end": 0.222
+  },
+  {
+   "text": "atendiste",
+   "start": 0.233,
+   "end": 0.659
+  },
+  {
+   "text": "a",
+   "start": 0.669,
+   "end": 0.72
+  },
+  {
+   "text": "una",
+   "start": 0.73,
+   "end": 0.872
+  },
+  {
+   "text": "invitada",
+   "start": 0.882,
+   "end": 1.288
+  },
+  {
+   "text": "regístrala",
+   "start": 1.552,
+   "end": 2.069
+  },
+  {
+   "text": "como",
+   "start": 2.079,
+   "end": 2.292
+  },
+  {
+   "text": "clienta",
+   "start": 2.302,
+   "end": 2.627
+  },
+  {
+   "text": "desde",
+   "start": 2.637,
+   "end": 2.86
+  },
+  {
+   "text": "su",
+   "start": 2.871,
+   "end": 2.982
+  },
+  {
+   "text": "misma",
+   "start": 2.992,
+   "end": 3.276
+  },
+  {
+   "text": "cita",
+   "start": 3.287,
+   "end": 3.621
+  }
+ ],
+ "g9": [
+  {
+   "text": "Filtra",
+   "start": 0.091,
+   "end": 0.415
+  },
+  {
+   "text": "tus",
+   "start": 0.425,
+   "end": 0.567
+  },
+  {
+   "text": "citas",
+   "start": 0.578,
+   "end": 0.862
+  },
+  {
+   "text": "por",
+   "start": 0.872,
+   "end": 1.014
+  },
+  {
+   "text": "día",
+   "start": 1.024,
+   "end": 1.237
+  },
+  {
+   "text": "y",
+   "start": 1.247,
+   "end": 1.288
+  },
+  {
+   "text": "por",
+   "start": 1.298,
+   "end": 1.42
+  },
+  {
+   "text": "estado",
+   "start": 1.43,
+   "end": 1.815
+  },
+  {
+   "text": "Y",
+   "start": 2.516,
+   "end": 2.587
+  },
+  {
+   "text": "desde",
+   "start": 2.597,
+   "end": 2.8
+  },
+  {
+   "text": "Citas",
+   "start": 2.81,
+   "end": 3.074
+  },
+  {
+   "text": "del",
+   "start": 3.084,
+   "end": 3.186
+  },
+  {
+   "text": "período",
+   "start": 3.196,
+   "end": 3.541
+  },
+  {
+   "text": "el",
+   "start": 3.805,
+   "end": 3.916
+  },
+  {
+   "text": "botón",
+   "start": 3.927,
+   "end": 4.19
+  },
+  {
+   "text": "Pagar",
+   "start": 4.2,
+   "end": 4.454
+  },
+  {
+   "text": "cita",
+   "start": 4.464,
+   "end": 4.748
+  },
+  {
+   "text": "te",
+   "start": 4.759,
+   "end": 4.85
+  },
+  {
+   "text": "lleva",
+   "start": 4.86,
+   "end": 5.073
+  },
+  {
+   "text": "directo",
+   "start": 5.083,
+   "end": 5.438
+  },
+  {
+   "text": "a",
+   "start": 5.448,
+   "end": 5.469
+  },
+  {
+   "text": "la",
+   "start": 5.479,
+   "end": 5.56
+  },
+  {
+   "text": "caja",
+   "start": 5.57,
+   "end": 5.915
+  }
+ ],
+ "c1": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.222
+  },
+  {
+   "text": "Clientes",
+   "start": 0.233,
+   "end": 0.598
+  },
+  {
+   "text": "buscas",
+   "start": 0.608,
+   "end": 0.882
+  },
+  {
+   "text": "a",
+   "start": 0.892,
+   "end": 0.923
+  },
+  {
+   "text": "cualquier",
+   "start": 0.933,
+   "end": 1.247
+  },
+  {
+   "text": "persona",
+   "start": 1.257,
+   "end": 1.592
+  },
+  {
+   "text": "por",
+   "start": 1.602,
+   "end": 1.734
+  },
+  {
+   "text": "su",
+   "start": 1.744,
+   "end": 1.836
+  },
+  {
+   "text": "nombre",
+   "start": 1.846,
+   "end": 2.1
+  },
+  {
+   "text": "su",
+   "start": 2.353,
+   "end": 2.485
+  },
+  {
+   "text": "teléfono",
+   "start": 2.495,
+   "end": 3.023
+  },
+  {
+   "text": "o",
+   "start": 3.033,
+   "end": 3.104
+  },
+  {
+   "text": "su",
+   "start": 3.114,
+   "end": 3.226
+  },
+  {
+   "text": "email",
+   "start": 3.236,
+   "end": 3.55
+  }
+ ],
+ "c2": [
+  {
+   "text": "Con",
+   "start": 0.091,
+   "end": 0.233
+  },
+  {
+   "text": "Nuevo",
+   "start": 0.243,
+   "end": 0.466
+  },
+  {
+   "text": "cliente",
+   "start": 0.476,
+   "end": 0.791
+  },
+  {
+   "text": "registras",
+   "start": 0.801,
+   "end": 1.267
+  },
+  {
+   "text": "sus",
+   "start": 1.278,
+   "end": 1.45
+  },
+  {
+   "text": "datos",
+   "start": 1.46,
+   "end": 1.724
+  },
+  {
+   "text": "de",
+   "start": 1.734,
+   "end": 1.805
+  },
+  {
+   "text": "contacto",
+   "start": 1.815,
+   "end": 2.252
+  }
+ ],
+ "c3": [
+  {
+   "text": "Con",
+   "start": 0.091,
+   "end": 0.212
+  },
+  {
+   "text": "el",
+   "start": 0.223,
+   "end": 0.294
+  },
+  {
+   "text": "lápiz",
+   "start": 0.304,
+   "end": 0.578
+  },
+  {
+   "text": "corriges",
+   "start": 0.588,
+   "end": 0.953
+  },
+  {
+   "text": "sus",
+   "start": 0.963,
+   "end": 1.115
+  },
+  {
+   "text": "datos",
+   "start": 1.125,
+   "end": 1.501
+  },
+  {
+   "text": "por",
+   "start": 1.633,
+   "end": 1.744
+  },
+  {
+   "text": "ejemplo",
+   "start": 1.755,
+   "end": 2.171
+  },
+  {
+   "text": "un",
+   "start": 2.404,
+   "end": 2.526
+  },
+  {
+   "text": "teléfono",
+   "start": 2.536,
+   "end": 2.942
+  },
+  {
+   "text": "nuevo",
+   "start": 2.952,
+   "end": 3.266
+  }
+ ],
+ "c4": [
+  {
+   "text": "El",
+   "start": 0.091,
+   "end": 0.192
+  },
+  {
+   "text": "Administrador",
+   "start": 0.202,
+   "end": 0.841
+  },
+  {
+   "text": "también",
+   "start": 0.852,
+   "end": 1.146
+  },
+  {
+   "text": "puede",
+   "start": 1.156,
+   "end": 1.379
+  },
+  {
+   "text": "eliminar",
+   "start": 1.389,
+   "end": 1.785
+  },
+  {
+   "text": "a",
+   "start": 1.795,
+   "end": 1.846
+  },
+  {
+   "text": "una",
+   "start": 1.856,
+   "end": 2.029
+  },
+  {
+   "text": "clienta",
+   "start": 2.039,
+   "end": 2.424
+  },
+  {
+   "text": "Si",
+   "start": 3.125,
+   "end": 3.267
+  },
+  {
+   "text": "ya",
+   "start": 3.277,
+   "end": 3.399
+  },
+  {
+   "text": "tiene",
+   "start": 3.409,
+   "end": 3.612
+  },
+  {
+   "text": "citas",
+   "start": 3.622,
+   "end": 3.937
+  },
+  {
+   "text": "o",
+   "start": 3.947,
+   "end": 3.987
+  },
+  {
+   "text": "pagos",
+   "start": 3.998,
+   "end": 4.373
+  },
+  {
+   "text": "el",
+   "start": 4.616,
+   "end": 4.728
+  },
+  {
+   "text": "sistema",
+   "start": 4.738,
+   "end": 5.073
+  },
+  {
+   "text": "la",
+   "start": 5.083,
+   "end": 5.164
+  },
+  {
+   "text": "protege",
+   "start": 5.175,
+   "end": 5.55
+  },
+  {
+   "text": "para",
+   "start": 5.56,
+   "end": 5.712
+  },
+  {
+   "text": "no",
+   "start": 5.722,
+   "end": 5.864
+  },
+  {
+   "text": "perder",
+   "start": 5.875,
+   "end": 6.159
+  },
+  {
+   "text": "su",
+   "start": 6.169,
+   "end": 6.24
+  },
+  {
+   "text": "historial",
+   "start": 6.25,
+   "end": 6.656
+  }
+ ],
+ "k1": [
+  {
+   "text": "El",
+   "start": 0.091,
+   "end": 0.202
+  },
+  {
+   "text": "catálogo",
+   "start": 0.212,
+   "end": 0.588
+  },
+  {
+   "text": "empieza",
+   "start": 0.598,
+   "end": 0.933
+  },
+  {
+   "text": "por",
+   "start": 0.943,
+   "end": 1.075
+  },
+  {
+   "text": "las",
+   "start": 1.085,
+   "end": 1.207
+  },
+  {
+   "text": "categorías",
+   "start": 1.217,
+   "end": 1.836
+  },
+  {
+   "text": "que",
+   "start": 2.069,
+   "end": 2.14
+  },
+  {
+   "text": "agrupan",
+   "start": 2.15,
+   "end": 2.526
+  },
+  {
+   "text": "tus",
+   "start": 2.536,
+   "end": 2.627
+  },
+  {
+   "text": "servicios",
+   "start": 2.637,
+   "end": 3.226
+  }
+ ],
+ "k2": [
+  {
+   "text": "Luego",
+   "start": 0.091,
+   "end": 0.385
+  },
+  {
+   "text": "vienen",
+   "start": 0.395,
+   "end": 0.628
+  },
+  {
+   "text": "los",
+   "start": 0.638,
+   "end": 0.74
+  },
+  {
+   "text": "servicios",
+   "start": 0.75,
+   "end": 1.257
+  },
+  {
+   "text": "con",
+   "start": 1.45,
+   "end": 1.582
+  },
+  {
+   "text": "su",
+   "start": 1.592,
+   "end": 1.684
+  },
+  {
+   "text": "precio",
+   "start": 1.694,
+   "end": 2.008
+  },
+  {
+   "text": "su",
+   "start": 2.252,
+   "end": 2.363
+  },
+  {
+   "text": "duración",
+   "start": 2.373,
+   "end": 2.83
+  },
+  {
+   "text": "y",
+   "start": 2.84,
+   "end": 2.891
+  },
+  {
+   "text": "una",
+   "start": 2.901,
+   "end": 3.063
+  },
+  {
+   "text": "imagen",
+   "start": 3.074,
+   "end": 3.449
+  },
+  {
+   "text": "de",
+   "start": 3.459,
+   "end": 3.51
+  },
+  {
+   "text": "referencia",
+   "start": 3.52,
+   "end": 4.058
+  },
+  {
+   "text": "Si",
+   "start": 4.759,
+   "end": 4.89
+  },
+  {
+   "text": "desactivas",
+   "start": 4.901,
+   "end": 5.448
+  },
+  {
+   "text": "uno",
+   "start": 5.459,
+   "end": 5.641
+  },
+  {
+   "text": "deja",
+   "start": 5.895,
+   "end": 6.138
+  },
+  {
+   "text": "de",
+   "start": 6.149,
+   "end": 6.22
+  },
+  {
+   "text": "ofrecerse",
+   "start": 6.23,
+   "end": 6.757
+  }
+ ],
+ "k3": [
+  {
+   "text": "Las",
+   "start": 0.091,
+   "end": 0.233
+  },
+  {
+   "text": "promociones",
+   "start": 0.243,
+   "end": 0.709
+  },
+  {
+   "text": "tienen",
+   "start": 0.72,
+   "end": 0.933
+  },
+  {
+   "text": "un",
+   "start": 0.943,
+   "end": 1.014
+  },
+  {
+   "text": "porcentaje",
+   "start": 1.024,
+   "end": 1.501
+  },
+  {
+   "text": "de",
+   "start": 1.511,
+   "end": 1.592
+  },
+  {
+   "text": "descuento",
+   "start": 1.602,
+   "end": 2.049
+  },
+  {
+   "text": "y",
+   "start": 2.059,
+   "end": 2.12
+  },
+  {
+   "text": "fechas",
+   "start": 2.13,
+   "end": 2.434
+  },
+  {
+   "text": "de",
+   "start": 2.445,
+   "end": 2.495
+  },
+  {
+   "text": "vigencia",
+   "start": 2.505,
+   "end": 2.891
+  },
+  {
+   "text": "y",
+   "start": 3.134,
+   "end": 3.175
+  },
+  {
+   "text": "se",
+   "start": 3.185,
+   "end": 3.276
+  },
+  {
+   "text": "aplican",
+   "start": 3.287,
+   "end": 3.652
+  },
+  {
+   "text": "al",
+   "start": 3.662,
+   "end": 3.743
+  },
+  {
+   "text": "cobrar",
+   "start": 3.753,
+   "end": 4.119
+  },
+  {
+   "text": "Solo",
+   "start": 4.819,
+   "end": 5.043
+  },
+  {
+   "text": "el",
+   "start": 5.053,
+   "end": 5.103
+  },
+  {
+   "text": "Administrador",
+   "start": 5.114,
+   "end": 5.783
+  },
+  {
+   "text": "puede",
+   "start": 5.793,
+   "end": 5.986
+  },
+  {
+   "text": "modificar",
+   "start": 5.996,
+   "end": 6.473
+  },
+  {
+   "text": "el",
+   "start": 6.483,
+   "end": 6.565
+  },
+  {
+   "text": "catálogo",
+   "start": 6.575,
+   "end": 7.102
+  }
+ ],
+ "k4": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.202
+  },
+  {
+   "text": "Equipo",
+   "start": 0.212,
+   "end": 0.557
+  },
+  {
+   "text": "todos",
+   "start": 0.831,
+   "end": 1.105
+  },
+  {
+   "text": "ven",
+   "start": 1.115,
+   "end": 1.298
+  },
+  {
+   "text": "quién",
+   "start": 1.308,
+   "end": 1.45
+  },
+  {
+   "text": "trabaja",
+   "start": 1.46,
+   "end": 1.805
+  },
+  {
+   "text": "en",
+   "start": 1.815,
+   "end": 1.886
+  },
+  {
+   "text": "el",
+   "start": 1.897,
+   "end": 1.998
+  },
+  {
+   "text": "spa",
+   "start": 2.008,
+   "end": 2.313
+  },
+  {
+   "text": "El",
+   "start": 3.013,
+   "end": 3.115
+  },
+  {
+   "text": "Administrador",
+   "start": 3.125,
+   "end": 3.734
+  },
+  {
+   "text": "crea",
+   "start": 3.744,
+   "end": 3.967
+  },
+  {
+   "text": "las",
+   "start": 3.977,
+   "end": 4.119
+  },
+  {
+   "text": "cuentas",
+   "start": 4.129,
+   "end": 4.495
+  },
+  {
+   "text": "asigna",
+   "start": 4.718,
+   "end": 5.053
+  },
+  {
+   "text": "el",
+   "start": 5.063,
+   "end": 5.144
+  },
+  {
+   "text": "rol",
+   "start": 5.154,
+   "end": 5.337
+  },
+  {
+   "text": "de",
+   "start": 5.347,
+   "end": 5.428
+  },
+  {
+   "text": "cada",
+   "start": 5.438,
+   "end": 5.651
+  },
+  {
+   "text": "persona",
+   "start": 5.662,
+   "end": 6.078
+  },
+  {
+   "text": "y",
+   "start": 6.088,
+   "end": 6.149
+  },
+  {
+   "text": "puede",
+   "start": 6.159,
+   "end": 6.362
+  },
+  {
+   "text": "cambiar",
+   "start": 6.372,
+   "end": 6.707
+  },
+  {
+   "text": "su",
+   "start": 6.717,
+   "end": 6.808
+  },
+  {
+   "text": "contraseña",
+   "start": 6.818,
+   "end": 7.366
+  }
+ ],
+ "j1": [
+  {
+   "text": "La",
+   "start": 0.091,
+   "end": 0.202
+  },
+  {
+   "text": "Caja",
+   "start": 0.212,
+   "end": 0.446
+  },
+  {
+   "text": "muestra",
+   "start": 0.456,
+   "end": 0.77
+  },
+  {
+   "text": "el",
+   "start": 0.78,
+   "end": 0.862
+  },
+  {
+   "text": "día",
+   "start": 0.872,
+   "end": 1.024
+  },
+  {
+   "text": "que",
+   "start": 1.034,
+   "end": 1.196
+  },
+  {
+   "text": "elijas",
+   "start": 1.207,
+   "end": 1.643
+  },
+  {
+   "text": "con",
+   "start": 1.856,
+   "end": 1.988
+  },
+  {
+   "text": "sus",
+   "start": 1.998,
+   "end": 2.14
+  },
+  {
+   "text": "ingresos",
+   "start": 2.15,
+   "end": 2.576
+  },
+  {
+   "text": "sus",
+   "start": 2.81,
+   "end": 2.962
+  },
+  {
+   "text": "egresos",
+   "start": 2.972,
+   "end": 3.418
+  },
+  {
+   "text": "y",
+   "start": 3.429,
+   "end": 3.459
+  },
+  {
+   "text": "el",
+   "start": 3.469,
+   "end": 3.54
+  },
+  {
+   "text": "balance",
+   "start": 3.55,
+   "end": 3.987
+  },
+  {
+   "text": "La",
+   "start": 4.677,
+   "end": 4.86
+  },
+  {
+   "text": "usan",
+   "start": 4.87,
+   "end": 5.114
+  },
+  {
+   "text": "el",
+   "start": 5.124,
+   "end": 5.215
+  },
+  {
+   "text": "Administrador",
+   "start": 5.225,
+   "end": 5.854
+  },
+  {
+   "text": "y",
+   "start": 5.864,
+   "end": 5.915
+  },
+  {
+   "text": "Recepción",
+   "start": 5.925,
+   "end": 6.443
+  }
+ ],
+ "j2": [
+  {
+   "text": "Para",
+   "start": 0.091,
+   "end": 0.243
+  },
+  {
+   "text": "cobrar",
+   "start": 0.253,
+   "end": 0.578
+  },
+  {
+   "text": "elige",
+   "start": 0.841,
+   "end": 1.166
+  },
+  {
+   "text": "la",
+   "start": 1.176,
+   "end": 1.268
+  },
+  {
+   "text": "cita",
+   "start": 1.278,
+   "end": 1.643
+  },
+  {
+   "text": "Verás",
+   "start": 2.334,
+   "end": 2.597
+  },
+  {
+   "text": "su",
+   "start": 2.608,
+   "end": 2.689
+  },
+  {
+   "text": "subtotal",
+   "start": 2.699,
+   "end": 3.196
+  },
+  {
+   "text": "y",
+   "start": 3.206,
+   "end": 3.237
+  },
+  {
+   "text": "el",
+   "start": 3.247,
+   "end": 3.328
+  },
+  {
+   "text": "servicio",
+   "start": 3.338,
+   "end": 3.825
+  }
+ ],
+ "j3": [
+  {
+   "text": "Si",
+   "start": 0.091,
+   "end": 0.233
+  },
+  {
+   "text": "llevó",
+   "start": 0.243,
+   "end": 0.486
+  },
+  {
+   "text": "algo",
+   "start": 0.496,
+   "end": 0.73
+  },
+  {
+   "text": "extra",
+   "start": 0.74,
+   "end": 1.034
+  },
+  {
+   "text": "agrégalo",
+   "start": 1.318,
+   "end": 1.734
+  },
+  {
+   "text": "en",
+   "start": 1.744,
+   "end": 1.805
+  },
+  {
+   "text": "Adicionales",
+   "start": 1.815,
+   "end": 2.455
+  },
+  {
+   "text": "con",
+   "start": 2.668,
+   "end": 2.8
+  },
+  {
+   "text": "su",
+   "start": 2.81,
+   "end": 2.901
+  },
+  {
+   "text": "concepto",
+   "start": 2.911,
+   "end": 3.358
+  },
+  {
+   "text": "y",
+   "start": 3.368,
+   "end": 3.419
+  },
+  {
+   "text": "su",
+   "start": 3.429,
+   "end": 3.55
+  },
+  {
+   "text": "monto",
+   "start": 3.561,
+   "end": 3.865
+  }
+ ],
+ "j4": [
+  {
+   "text": "Aplica",
+   "start": 0.091,
+   "end": 0.436
+  },
+  {
+   "text": "una",
+   "start": 0.446,
+   "end": 0.618
+  },
+  {
+   "text": "promoción",
+   "start": 0.628,
+   "end": 1.014
+  },
+  {
+   "text": "vigente",
+   "start": 1.024,
+   "end": 1.43
+  },
+  {
+   "text": "o",
+   "start": 1.44,
+   "end": 1.511
+  },
+  {
+   "text": "un",
+   "start": 1.521,
+   "end": 1.663
+  },
+  {
+   "text": "descuento",
+   "start": 1.673,
+   "end": 2.018
+  },
+  {
+   "text": "manual",
+   "start": 2.029,
+   "end": 2.313
+  },
+  {
+   "text": "en",
+   "start": 2.546,
+   "end": 2.637
+  },
+  {
+   "text": "soles",
+   "start": 2.647,
+   "end": 3.023
+  },
+  {
+   "text": "o",
+   "start": 3.033,
+   "end": 3.074
+  },
+  {
+   "text": "en",
+   "start": 3.084,
+   "end": 3.145
+  },
+  {
+   "text": "porcentaje",
+   "start": 3.155,
+   "end": 3.753
+  },
+  {
+   "text": "El",
+   "start": 4.454,
+   "end": 4.576
+  },
+  {
+   "text": "descuento",
+   "start": 4.586,
+   "end": 4.961
+  },
+  {
+   "text": "solo",
+   "start": 4.972,
+   "end": 5.195
+  },
+  {
+   "text": "afecta",
+   "start": 5.205,
+   "end": 5.519
+  },
+  {
+   "text": "el",
+   "start": 5.53,
+   "end": 5.611
+  },
+  {
+   "text": "precio",
+   "start": 5.621,
+   "end": 5.895
+  },
+  {
+   "text": "de",
+   "start": 5.905,
+   "end": 5.976
+  },
+  {
+   "text": "la",
+   "start": 5.986,
+   "end": 6.057
+  },
+  {
+   "text": "cita",
+   "start": 6.067,
+   "end": 6.392
+  },
+  {
+   "text": "Luego",
+   "start": 7.102,
+   "end": 7.376
+  },
+  {
+   "text": "elige",
+   "start": 7.386,
+   "end": 7.711
+  },
+  {
+   "text": "el",
+   "start": 7.721,
+   "end": 7.812
+  },
+  {
+   "text": "método",
+   "start": 7.823,
+   "end": 8.127
+  },
+  {
+   "text": "de",
+   "start": 8.137,
+   "end": 8.228
+  },
+  {
+   "text": "pago",
+   "start": 8.239,
+   "end": 8.523
+  },
+  {
+   "text": "efectivo",
+   "start": 8.746,
+   "end": 9.243
+  },
+  {
+   "text": "Yape",
+   "start": 9.476,
+   "end": 9.791
+  },
+  {
+   "text": "Plin",
+   "start": 10.004,
+   "end": 10.227
+  },
+  {
+   "text": "tarjeta",
+   "start": 10.44,
+   "end": 10.948
+  },
+  {
+   "text": "o",
+   "start": 10.958,
+   "end": 11.009
+  },
+  {
+   "text": "transferencia",
+   "start": 11.019,
+   "end": 11.698
+  }
+ ],
+ "j5": [
+  {
+   "text": "Al",
+   "start": 0.091,
+   "end": 0.222
+  },
+  {
+   "text": "registrar",
+   "start": 0.233,
+   "end": 0.649
+  },
+  {
+   "text": "el",
+   "start": 0.659,
+   "end": 0.75
+  },
+  {
+   "text": "pago",
+   "start": 0.76,
+   "end": 1.004
+  },
+  {
+   "text": "el",
+   "start": 1.268,
+   "end": 1.369
+  },
+  {
+   "text": "ingreso",
+   "start": 1.379,
+   "end": 1.714
+  },
+  {
+   "text": "entra",
+   "start": 1.724,
+   "end": 1.917
+  },
+  {
+   "text": "solo",
+   "start": 1.927,
+   "end": 2.15
+  },
+  {
+   "text": "a",
+   "start": 2.16,
+   "end": 2.181
+  },
+  {
+   "text": "la",
+   "start": 2.191,
+   "end": 2.272
+  },
+  {
+   "text": "caja",
+   "start": 2.282,
+   "end": 2.576
+  },
+  {
+   "text": "y",
+   "start": 2.789,
+   "end": 2.86
+  },
+  {
+   "text": "la",
+   "start": 2.871,
+   "end": 2.972
+  },
+  {
+   "text": "cita",
+   "start": 2.982,
+   "end": 3.246
+  },
+  {
+   "text": "queda",
+   "start": 3.256,
+   "end": 3.49
+  },
+  {
+   "text": "como",
+   "start": 3.5,
+   "end": 3.692
+  },
+  {
+   "text": "completada",
+   "start": 3.703,
+   "end": 4.25
+  }
+ ],
+ "j6": [
+  {
+   "text": "Los",
+   "start": 0.091,
+   "end": 0.253
+  },
+  {
+   "text": "gastos",
+   "start": 0.263,
+   "end": 0.547
+  },
+  {
+   "text": "del",
+   "start": 0.557,
+   "end": 0.679
+  },
+  {
+   "text": "día",
+   "start": 0.689,
+   "end": 0.892
+  },
+  {
+   "text": "se",
+   "start": 0.902,
+   "end": 1.004
+  },
+  {
+   "text": "anotan",
+   "start": 1.014,
+   "end": 1.339
+  },
+  {
+   "text": "en",
+   "start": 1.349,
+   "end": 1.44
+  },
+  {
+   "text": "Registrar",
+   "start": 1.45,
+   "end": 1.937
+  },
+  {
+   "text": "egreso",
+   "start": 1.947,
+   "end": 2.343
+  }
+ ],
+ "j7": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.192
+  },
+  {
+   "text": "Movimientos",
+   "start": 0.202,
+   "end": 0.709
+  },
+  {
+   "text": "del",
+   "start": 0.72,
+   "end": 0.841
+  },
+  {
+   "text": "día",
+   "start": 0.852,
+   "end": 1.044
+  },
+  {
+   "text": "ves",
+   "start": 1.054,
+   "end": 1.237
+  },
+  {
+   "text": "los",
+   "start": 1.247,
+   "end": 1.389
+  },
+  {
+   "text": "totales",
+   "start": 1.399,
+   "end": 1.805
+  },
+  {
+   "text": "por",
+   "start": 1.815,
+   "end": 1.937
+  },
+  {
+   "text": "método",
+   "start": 1.947,
+   "end": 2.343
+  },
+  {
+   "text": "Toca",
+   "start": 3.034,
+   "end": 3.237
+  },
+  {
+   "text": "un",
+   "start": 3.247,
+   "end": 3.338
+  },
+  {
+   "text": "cobro",
+   "start": 3.348,
+   "end": 3.602
+  },
+  {
+   "text": "para",
+   "start": 3.612,
+   "end": 3.754
+  },
+  {
+   "text": "ver",
+   "start": 3.764,
+   "end": 3.896
+  },
+  {
+   "text": "su",
+   "start": 3.906,
+   "end": 3.998
+  },
+  {
+   "text": "detalle",
+   "start": 4.008,
+   "end": 4.373
+  },
+  {
+   "text": "adicionales",
+   "start": 4.616,
+   "end": 5.266
+  },
+  {
+   "text": "descuento",
+   "start": 5.499,
+   "end": 5.976
+  },
+  {
+   "text": "y",
+   "start": 5.986,
+   "end": 6.067
+  },
+  {
+   "text": "total",
+   "start": 6.077,
+   "end": 6.372
+  },
+  {
+   "text": "pagado",
+   "start": 6.382,
+   "end": 6.757
+  }
+ ],
+ "j8": [
+  {
+   "text": "Al",
+   "start": 0.091,
+   "end": 0.222
+  },
+  {
+   "text": "terminar",
+   "start": 0.233,
+   "end": 0.547
+  },
+  {
+   "text": "el",
+   "start": 0.557,
+   "end": 0.669
+  },
+  {
+   "text": "día",
+   "start": 0.679,
+   "end": 0.882
+  },
+  {
+   "text": "haz",
+   "start": 1.136,
+   "end": 1.278
+  },
+  {
+   "text": "el",
+   "start": 1.288,
+   "end": 1.389
+  },
+  {
+   "text": "cierre",
+   "start": 1.399,
+   "end": 1.663
+  },
+  {
+   "text": "de",
+   "start": 1.673,
+   "end": 1.765
+  },
+  {
+   "text": "caja",
+   "start": 1.775,
+   "end": 2.079
+  },
+  {
+   "text": "cuenta",
+   "start": 2.333,
+   "end": 2.536
+  },
+  {
+   "text": "el",
+   "start": 2.546,
+   "end": 2.597
+  },
+  {
+   "text": "efectivo",
+   "start": 2.607,
+   "end": 3.053
+  },
+  {
+   "text": "y",
+   "start": 3.216,
+   "end": 3.276
+  },
+  {
+   "text": "el",
+   "start": 3.287,
+   "end": 3.368
+  },
+  {
+   "text": "sistema",
+   "start": 3.378,
+   "end": 3.743
+  },
+  {
+   "text": "te",
+   "start": 3.753,
+   "end": 3.845
+  },
+  {
+   "text": "muestra",
+   "start": 3.855,
+   "end": 4.179
+  },
+  {
+   "text": "la",
+   "start": 4.19,
+   "end": 4.261
+  },
+  {
+   "text": "diferencia",
+   "start": 4.271,
+   "end": 4.737
+  },
+  {
+   "text": "con",
+   "start": 4.748,
+   "end": 4.88
+  },
+  {
+   "text": "lo",
+   "start": 4.89,
+   "end": 4.93
+  },
+  {
+   "text": "esperado",
+   "start": 4.94,
+   "end": 5.377
+  }
+ ],
+ "j9": [
+  {
+   "text": "Revisa",
+   "start": 0.091,
+   "end": 0.425
+  },
+  {
+   "text": "los",
+   "start": 0.436,
+   "end": 0.557
+  },
+  {
+   "text": "cierres",
+   "start": 0.567,
+   "end": 0.852
+  },
+  {
+   "text": "de",
+   "start": 0.862,
+   "end": 0.923
+  },
+  {
+   "text": "los",
+   "start": 0.933,
+   "end": 1.085
+  },
+  {
+   "text": "últimos",
+   "start": 1.095,
+   "end": 1.43
+  },
+  {
+   "text": "treinta",
+   "start": 1.44,
+   "end": 1.683
+  },
+  {
+   "text": "días",
+   "start": 1.694,
+   "end": 2.018
+  },
+  {
+   "text": "y",
+   "start": 2.029,
+   "end": 2.069
+  },
+  {
+   "text": "si",
+   "start": 2.343,
+   "end": 2.465
+  },
+  {
+   "text": "hubo",
+   "start": 2.475,
+   "end": 2.647
+  },
+  {
+   "text": "un",
+   "start": 2.658,
+   "end": 2.759
+  },
+  {
+   "text": "error",
+   "start": 2.769,
+   "end": 3.013
+  },
+  {
+   "text": "reabre",
+   "start": 3.287,
+   "end": 3.581
+  },
+  {
+   "text": "la",
+   "start": 3.591,
+   "end": 3.682
+  },
+  {
+   "text": "caja",
+   "start": 3.692,
+   "end": 3.936
+  },
+  {
+   "text": "para",
+   "start": 3.946,
+   "end": 4.098
+  },
+  {
+   "text": "corregirlo",
+   "start": 4.108,
+   "end": 4.677
+  }
+ ],
+ "r1": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.192
+  },
+  {
+   "text": "Reportes",
+   "start": 0.202,
+   "end": 0.588
+  },
+  {
+   "text": "ves",
+   "start": 0.598,
+   "end": 0.781
+  },
+  {
+   "text": "cómo",
+   "start": 0.791,
+   "end": 0.983
+  },
+  {
+   "text": "le",
+   "start": 0.994,
+   "end": 1.095
+  },
+  {
+   "text": "va",
+   "start": 1.105,
+   "end": 1.237
+  },
+  {
+   "text": "a",
+   "start": 1.247,
+   "end": 1.288
+  },
+  {
+   "text": "tu",
+   "start": 1.298,
+   "end": 1.389
+  },
+  {
+   "text": "negocio",
+   "start": 1.399,
+   "end": 1.785
+  },
+  {
+   "text": "los",
+   "start": 2.049,
+   "end": 2.181
+  },
+  {
+   "text": "ingresos",
+   "start": 2.191,
+   "end": 2.546
+  },
+  {
+   "text": "del",
+   "start": 2.556,
+   "end": 2.668
+  },
+  {
+   "text": "mes",
+   "start": 2.678,
+   "end": 2.952
+  },
+  {
+   "text": "las",
+   "start": 3.165,
+   "end": 3.297
+  },
+  {
+   "text": "citas",
+   "start": 3.307,
+   "end": 3.662
+  },
+  {
+   "text": "el",
+   "start": 3.875,
+   "end": 3.977
+  },
+  {
+   "text": "promedio",
+   "start": 3.987,
+   "end": 4.332
+  },
+  {
+   "text": "diario",
+   "start": 4.342,
+   "end": 4.666
+  },
+  {
+   "text": "y",
+   "start": 4.677,
+   "end": 4.727
+  },
+  {
+   "text": "los",
+   "start": 4.737,
+   "end": 4.849
+  },
+  {
+   "text": "servicios",
+   "start": 4.859,
+   "end": 5.285
+  },
+  {
+   "text": "más",
+   "start": 5.296,
+   "end": 5.488
+  },
+  {
+   "text": "pedidos",
+   "start": 5.498,
+   "end": 5.996
+  }
+ ],
+ "v1": [
+  {
+   "text": "Esta",
+   "start": 0.091,
+   "end": 0.304
+  },
+  {
+   "text": "es",
+   "start": 0.314,
+   "end": 0.385
+  },
+  {
+   "text": "tu",
+   "start": 0.395,
+   "end": 0.466
+  },
+  {
+   "text": "vitrina",
+   "start": 0.476,
+   "end": 0.831
+  },
+  {
+   "text": "digital",
+   "start": 0.841,
+   "end": 1.278
+  },
+  {
+   "text": "la",
+   "start": 1.481,
+   "end": 1.572
+  },
+  {
+   "text": "página",
+   "start": 1.582,
+   "end": 1.957
+  },
+  {
+   "text": "que",
+   "start": 1.968,
+   "end": 2.059
+  },
+  {
+   "text": "ven",
+   "start": 2.069,
+   "end": 2.211
+  },
+  {
+   "text": "tus",
+   "start": 2.221,
+   "end": 2.353
+  },
+  {
+   "text": "clientas",
+   "start": 2.363,
+   "end": 2.769
+  },
+  {
+   "text": "sin",
+   "start": 3.033,
+   "end": 3.185
+  },
+  {
+   "text": "iniciar",
+   "start": 3.195,
+   "end": 3.571
+  },
+  {
+   "text": "sesión",
+   "start": 3.581,
+   "end": 3.946
+  }
+ ],
+ "v2": [
+  {
+   "text": "Ahí",
+   "start": 0.091,
+   "end": 0.293
+  },
+  {
+   "text": "buscan",
+   "start": 0.304,
+   "end": 0.578
+  },
+  {
+   "text": "un",
+   "start": 0.588,
+   "end": 0.669
+  },
+  {
+   "text": "servicio",
+   "start": 0.679,
+   "end": 1.156
+  },
+  {
+   "text": "o",
+   "start": 1.166,
+   "end": 1.237
+  },
+  {
+   "text": "filtran",
+   "start": 1.247,
+   "end": 1.613
+  },
+  {
+   "text": "por",
+   "start": 1.623,
+   "end": 1.734
+  },
+  {
+   "text": "categoría",
+   "start": 1.744,
+   "end": 2.272
+  },
+  {
+   "text": "y",
+   "start": 2.536,
+   "end": 2.597
+  },
+  {
+   "text": "ven",
+   "start": 2.607,
+   "end": 2.749
+  },
+  {
+   "text": "al",
+   "start": 2.759,
+   "end": 2.85
+  },
+  {
+   "text": "instante",
+   "start": 2.86,
+   "end": 3.307
+  },
+  {
+   "text": "su",
+   "start": 3.317,
+   "end": 3.429
+  },
+  {
+   "text": "precio",
+   "start": 3.439,
+   "end": 3.753
+  },
+  {
+   "text": "y",
+   "start": 3.763,
+   "end": 3.804
+  },
+  {
+   "text": "su",
+   "start": 3.814,
+   "end": 3.916
+  },
+  {
+   "text": "duración",
+   "start": 3.926,
+   "end": 4.362
+  }
+ ],
+ "v3": [
+  {
+   "text": "Al",
+   "start": 0.091,
+   "end": 0.212
+  },
+  {
+   "text": "abrir",
+   "start": 0.223,
+   "end": 0.425
+  },
+  {
+   "text": "un",
+   "start": 0.436,
+   "end": 0.507
+  },
+  {
+   "text": "servicio",
+   "start": 0.517,
+   "end": 0.912
+  },
+  {
+   "text": "ven",
+   "start": 0.923,
+   "end": 1.065
+  },
+  {
+   "text": "su",
+   "start": 1.075,
+   "end": 1.166
+  },
+  {
+   "text": "descripción",
+   "start": 1.176,
+   "end": 1.694
+  },
+  {
+   "text": "y",
+   "start": 1.927,
+   "end": 1.968
+  },
+  {
+   "text": "pueden",
+   "start": 1.978,
+   "end": 2.231
+  },
+  {
+   "text": "elegirlo",
+   "start": 2.242,
+   "end": 2.8
+  },
+  {
+   "text": "o",
+   "start": 2.81,
+   "end": 2.881
+  },
+  {
+   "text": "consultarlo",
+   "start": 2.891,
+   "end": 3.459
+  },
+  {
+   "text": "por",
+   "start": 3.469,
+   "end": 3.611
+  },
+  {
+   "text": "WhatsApp",
+   "start": 3.621,
+   "end": 4.027
+  }
+ ],
+ "v4": [
+  {
+   "text": "Solo",
+   "start": 0.091,
+   "end": 0.314
+  },
+  {
+   "text": "aparecen",
+   "start": 0.324,
+   "end": 0.689
+  },
+  {
+   "text": "las",
+   "start": 0.699,
+   "end": 0.821
+  },
+  {
+   "text": "promociones",
+   "start": 0.831,
+   "end": 1.318
+  },
+  {
+   "text": "vigentes",
+   "start": 1.328,
+   "end": 1.785
+  },
+  {
+   "text": "y",
+   "start": 2.008,
+   "end": 2.1
+  },
+  {
+   "text": "tu",
+   "start": 2.11,
+   "end": 2.211
+  },
+  {
+   "text": "clienta",
+   "start": 2.221,
+   "end": 2.566
+  },
+  {
+   "text": "puede",
+   "start": 2.576,
+   "end": 2.82
+  },
+  {
+   "text": "elegir",
+   "start": 2.83,
+   "end": 3.145
+  },
+  {
+   "text": "una",
+   "start": 3.155,
+   "end": 3.307
+  },
+  {
+   "text": "para",
+   "start": 3.317,
+   "end": 3.459
+  },
+  {
+   "text": "su",
+   "start": 3.469,
+   "end": 3.581
+  },
+  {
+   "text": "pedido",
+   "start": 3.591,
+   "end": 3.987
+  }
+ ],
+ "v5": [
+  {
+   "text": "Al",
+   "start": 0.091,
+   "end": 0.222
+  },
+  {
+   "text": "elegir",
+   "start": 0.233,
+   "end": 0.537
+  },
+  {
+   "text": "servicios",
+   "start": 0.547,
+   "end": 0.963
+  },
+  {
+   "text": "se",
+   "start": 0.973,
+   "end": 1.065
+  },
+  {
+   "text": "arma",
+   "start": 1.075,
+   "end": 1.268
+  },
+  {
+   "text": "su",
+   "start": 1.278,
+   "end": 1.389
+  },
+  {
+   "text": "pedido",
+   "start": 1.399,
+   "end": 1.734
+  },
+  {
+   "text": "con",
+   "start": 1.744,
+   "end": 1.866
+  },
+  {
+   "text": "el",
+   "start": 1.876,
+   "end": 1.978
+  },
+  {
+   "text": "total",
+   "start": 1.988,
+   "end": 2.272
+  },
+  {
+   "text": "estimado",
+   "start": 2.282,
+   "end": 2.779
+  },
+  {
+   "text": "Con",
+   "start": 3.47,
+   "end": 3.592
+  },
+  {
+   "text": "Coordinar",
+   "start": 3.602,
+   "end": 3.967
+  },
+  {
+   "text": "por",
+   "start": 3.977,
+   "end": 4.089
+  },
+  {
+   "text": "WhatsApp",
+   "start": 4.099,
+   "end": 4.454
+  },
+  {
+   "text": "el",
+   "start": 4.748,
+   "end": 4.84
+  },
+  {
+   "text": "mensaje",
+   "start": 4.85,
+   "end": 5.246
+  },
+  {
+   "text": "te",
+   "start": 5.256,
+   "end": 5.337
+  },
+  {
+   "text": "llega",
+   "start": 5.347,
+   "end": 5.611
+  },
+  {
+   "text": "ya",
+   "start": 5.621,
+   "end": 5.743
+  },
+  {
+   "text": "escrito",
+   "start": 5.753,
+   "end": 6.149
+  },
+  {
+   "text": "y",
+   "start": 6.341,
+   "end": 6.443
+  },
+  {
+   "text": "tu",
+   "start": 6.453,
+   "end": 6.524
+  },
+  {
+   "text": "equipo",
+   "start": 6.534,
+   "end": 6.859
+  },
+  {
+   "text": "agenda",
+   "start": 6.869,
+   "end": 7.214
+  },
+  {
+   "text": "la",
+   "start": 7.224,
+   "end": 7.295
+  },
+  {
+   "text": "cita",
+   "start": 7.305,
+   "end": 7.62
+  }
+ ],
+ "v6": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.172
+  },
+  {
+   "text": "la",
+   "start": 0.182,
+   "end": 0.222
+  },
+  {
+   "text": "galería",
+   "start": 0.233,
+   "end": 0.618
+  },
+  {
+   "text": "conocen",
+   "start": 0.628,
+   "end": 1.024
+  },
+  {
+   "text": "tu",
+   "start": 1.034,
+   "end": 1.095
+  },
+  {
+   "text": "local",
+   "start": 1.105,
+   "end": 1.369
+  },
+  {
+   "text": "y",
+   "start": 1.653,
+   "end": 1.704
+  },
+  {
+   "text": "con",
+   "start": 1.714,
+   "end": 1.856
+  },
+  {
+   "text": "Cómo",
+   "start": 1.866,
+   "end": 2.059
+  },
+  {
+   "text": "llegar",
+   "start": 2.069,
+   "end": 2.323
+  },
+  {
+   "text": "abren",
+   "start": 2.333,
+   "end": 2.556
+  },
+  {
+   "text": "tu",
+   "start": 2.566,
+   "end": 2.637
+  },
+  {
+   "text": "ubicación",
+   "start": 2.647,
+   "end": 3.114
+  },
+  {
+   "text": "en",
+   "start": 3.124,
+   "end": 3.226
+  },
+  {
+   "text": "el",
+   "start": 3.236,
+   "end": 3.348
+  },
+  {
+   "text": "mapa",
+   "start": 3.358,
+   "end": 3.652
+  },
+  {
+   "text": "También",
+   "start": 4.353,
+   "end": 4.637
+  },
+  {
+   "text": "te",
+   "start": 4.647,
+   "end": 4.677
+  },
+  {
+   "text": "encuentran",
+   "start": 4.688,
+   "end": 5.073
+  },
+  {
+   "text": "en",
+   "start": 5.083,
+   "end": 5.185
+  },
+  {
+   "text": "Facebook",
+   "start": 5.195,
+   "end": 5.58
+  },
+  {
+   "text": "Instagram",
+   "start": 5.834,
+   "end": 6.28
+  },
+  {
+   "text": "y",
+   "start": 6.291,
+   "end": 6.341
+  },
+  {
+   "text": "WhatsApp",
+   "start": 6.351,
+   "end": 6.767
+  }
+ ],
+ "v7": [
+  {
+   "text": "Y",
+   "start": 0.091,
+   "end": 0.162
+  },
+  {
+   "text": "como",
+   "start": 0.172,
+   "end": 0.334
+  },
+  {
+   "text": "la",
+   "start": 0.344,
+   "end": 0.425
+  },
+  {
+   "text": "mayoría",
+   "start": 0.436,
+   "end": 0.821
+  },
+  {
+   "text": "entrará",
+   "start": 0.831,
+   "end": 1.126
+  },
+  {
+   "text": "desde",
+   "start": 1.136,
+   "end": 1.339
+  },
+  {
+   "text": "el",
+   "start": 1.349,
+   "end": 1.41
+  },
+  {
+   "text": "celular",
+   "start": 1.42,
+   "end": 1.775
+  },
+  {
+   "text": "la",
+   "start": 2.039,
+   "end": 2.13
+  },
+  {
+   "text": "página",
+   "start": 2.14,
+   "end": 2.526
+  },
+  {
+   "text": "se",
+   "start": 2.536,
+   "end": 2.647
+  },
+  {
+   "text": "adapta",
+   "start": 2.658,
+   "end": 2.992
+  },
+  {
+   "text": "sola",
+   "start": 3.002,
+   "end": 3.327
+  }
+ ],
+ "m1": [
+  {
+   "text": "El",
+   "start": 0.091,
+   "end": 0.212
+  },
+  {
+   "text": "sistema",
+   "start": 0.223,
+   "end": 0.588
+  },
+  {
+   "text": "también",
+   "start": 0.598,
+   "end": 0.943
+  },
+  {
+   "text": "va",
+   "start": 0.953,
+   "end": 1.024
+  },
+  {
+   "text": "contigo",
+   "start": 1.034,
+   "end": 1.42
+  },
+  {
+   "text": "en",
+   "start": 1.43,
+   "end": 1.491
+  },
+  {
+   "text": "el",
+   "start": 1.501,
+   "end": 1.592
+  },
+  {
+   "text": "celular",
+   "start": 1.602,
+   "end": 2.018
+  },
+  {
+   "text": "Al",
+   "start": 2.709,
+   "end": 2.841
+  },
+  {
+   "text": "entrar",
+   "start": 2.851,
+   "end": 3.155
+  },
+  {
+   "text": "te",
+   "start": 3.44,
+   "end": 3.5
+  },
+  {
+   "text": "invita",
+   "start": 3.511,
+   "end": 3.876
+  },
+  {
+   "text": "a",
+   "start": 3.886,
+   "end": 3.927
+  },
+  {
+   "text": "instalarlo",
+   "start": 3.937,
+   "end": 4.444
+  },
+  {
+   "text": "con",
+   "start": 4.454,
+   "end": 4.576
+  },
+  {
+   "text": "el",
+   "start": 4.586,
+   "end": 4.677
+  },
+  {
+   "text": "botón",
+   "start": 4.688,
+   "end": 4.951
+  },
+  {
+   "text": "Instalar",
+   "start": 4.961,
+   "end": 5.377
+  },
+  {
+   "text": "sistema",
+   "start": 5.388,
+   "end": 5.814
+  }
+ ],
+ "m2": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.324
+  },
+  {
+   "text": "Android",
+   "start": 0.334,
+   "end": 0.77
+  },
+  {
+   "text": "pulsa",
+   "start": 0.994,
+   "end": 1.227
+  },
+  {
+   "text": "Instalar",
+   "start": 1.237,
+   "end": 1.612
+  },
+  {
+   "text": "sistema",
+   "start": 1.623,
+   "end": 2.049
+  },
+  {
+   "text": "y",
+   "start": 2.059,
+   "end": 2.11
+  },
+  {
+   "text": "confirma",
+   "start": 2.12,
+   "end": 2.597
+  },
+  {
+   "text": "Si",
+   "start": 3.287,
+   "end": 3.44
+  },
+  {
+   "text": "tu",
+   "start": 3.45,
+   "end": 3.531
+  },
+  {
+   "text": "navegador",
+   "start": 3.541,
+   "end": 3.967
+  },
+  {
+   "text": "no",
+   "start": 3.977,
+   "end": 4.099
+  },
+  {
+   "text": "lo",
+   "start": 4.109,
+   "end": 4.19
+  },
+  {
+   "text": "ofrece",
+   "start": 4.2,
+   "end": 4.505
+  },
+  {
+   "text": "sigue",
+   "start": 4.779,
+   "end": 5.032
+  },
+  {
+   "text": "estos",
+   "start": 5.043,
+   "end": 5.296
+  },
+  {
+   "text": "tres",
+   "start": 5.306,
+   "end": 5.519
+  },
+  {
+   "text": "pasos",
+   "start": 5.53,
+   "end": 5.986
+  }
+ ],
+ "m3": [
+  {
+   "text": "En",
+   "start": 0.091,
+   "end": 0.233
+  },
+  {
+   "text": "iPhone",
+   "start": 0.243,
+   "end": 0.527
+  },
+  {
+   "text": "se",
+   "start": 0.537,
+   "end": 0.669
+  },
+  {
+   "text": "hace",
+   "start": 0.679,
+   "end": 0.882
+  },
+  {
+   "text": "desde",
+   "start": 0.892,
+   "end": 1.095
+  },
+  {
+   "text": "Safari",
+   "start": 1.105,
+   "end": 1.491
+  },
+  {
+   "text": "toca",
+   "start": 1.714,
+   "end": 1.907
+  },
+  {
+   "text": "Compartir",
+   "start": 1.917,
+   "end": 2.313
+  },
+  {
+   "text": "luego",
+   "start": 2.607,
+   "end": 2.81
+  },
+  {
+   "text": "Añadir",
+   "start": 2.82,
+   "end": 3.134
+  },
+  {
+   "text": "a",
+   "start": 3.145,
+   "end": 3.185
+  },
+  {
+   "text": "pantalla",
+   "start": 3.195,
+   "end": 3.581
+  },
+  {
+   "text": "de",
+   "start": 3.591,
+   "end": 3.672
+  },
+  {
+   "text": "inicio",
+   "start": 3.682,
+   "end": 4.088
+  },
+  {
+   "text": "y",
+   "start": 4.261,
+   "end": 4.332
+  },
+  {
+   "text": "listo",
+   "start": 4.342,
+   "end": 4.656
+  }
+ ],
+ "m4": [
+  {
+   "text": "Queda",
+   "start": 0.091,
+   "end": 0.273
+  },
+  {
+   "text": "anclado",
+   "start": 0.283,
+   "end": 0.608
+  },
+  {
+   "text": "a",
+   "start": 0.618,
+   "end": 0.649
+  },
+  {
+   "text": "tu",
+   "start": 0.659,
+   "end": 0.76
+  },
+  {
+   "text": "pantalla",
+   "start": 0.77,
+   "end": 1.146
+  },
+  {
+   "text": "de",
+   "start": 1.156,
+   "end": 1.237
+  },
+  {
+   "text": "inicio",
+   "start": 1.247,
+   "end": 1.613
+  },
+  {
+   "text": "como",
+   "start": 1.623,
+   "end": 1.805
+  },
+  {
+   "text": "tuSpa",
+   "start": 1.815,
+   "end": 2.079
+  },
+  {
+   "text": "Gestión",
+   "start": 2.089,
+   "end": 2.465
+  },
+  {
+   "text": "y",
+   "start": 2.729,
+   "end": 2.749
+  },
+  {
+   "text": "se",
+   "start": 2.759,
+   "end": 2.891
+  },
+  {
+   "text": "abre",
+   "start": 2.901,
+   "end": 3.053
+  },
+  {
+   "text": "a",
+   "start": 3.063,
+   "end": 3.104
+  },
+  {
+   "text": "pantalla",
+   "start": 3.114,
+   "end": 3.49
+  },
+  {
+   "text": "completa",
+   "start": 3.5,
+   "end": 3.895
+  },
+  {
+   "text": "como",
+   "start": 4.149,
+   "end": 4.322
+  },
+  {
+   "text": "una",
+   "start": 4.332,
+   "end": 4.626
+  },
+  {
+   "text": "app",
+   "start": 4.636,
+   "end": 4.778
+  }
+ ],
+ "m5": [
+  {
+   "text": "Abajo",
+   "start": 0.091,
+   "end": 0.405
+  },
+  {
+   "text": "tienes",
+   "start": 0.415,
+   "end": 0.669
+  },
+  {
+   "text": "tus",
+   "start": 0.679,
+   "end": 0.821
+  },
+  {
+   "text": "accesos",
+   "start": 0.831,
+   "end": 1.207
+  },
+  {
+   "text": "rápidos",
+   "start": 1.217,
+   "end": 1.653
+  },
+  {
+   "text": "y",
+   "start": 1.826,
+   "end": 1.886
+  },
+  {
+   "text": "en",
+   "start": 1.897,
+   "end": 1.968
+  },
+  {
+   "text": "el",
+   "start": 1.978,
+   "end": 2.079
+  },
+  {
+   "text": "menú",
+   "start": 2.089,
+   "end": 2.333
+  },
+  {
+   "text": "todo",
+   "start": 2.546,
+   "end": 2.749
+  },
+  {
+   "text": "lo",
+   "start": 2.759,
+   "end": 2.85
+  },
+  {
+   "text": "demás",
+   "start": 2.86,
+   "end": 3.297
+  },
+  {
+   "text": "Cada",
+   "start": 3.998,
+   "end": 4.18
+  },
+  {
+   "text": "persona",
+   "start": 4.19,
+   "end": 4.535
+  },
+  {
+   "text": "ve",
+   "start": 4.545,
+   "end": 4.657
+  },
+  {
+   "text": "solo",
+   "start": 4.667,
+   "end": 4.911
+  },
+  {
+   "text": "lo",
+   "start": 4.921,
+   "end": 5.002
+  },
+  {
+   "text": "que",
+   "start": 5.012,
+   "end": 5.093
+  },
+  {
+   "text": "le",
+   "start": 5.104,
+   "end": 5.185
+  },
+  {
+   "text": "corresponde",
+   "start": 5.195,
+   "end": 5.692
+  },
+  {
+   "text": "la",
+   "start": 5.946,
+   "end": 5.996
+  },
+  {
+   "text": "especialista",
+   "start": 6.006,
+   "end": 6.595
+  },
+  {
+   "text": "por",
+   "start": 6.717,
+   "end": 6.838
+  },
+  {
+   "text": "ejemplo",
+   "start": 6.849,
+   "end": 7.224
+  },
+  {
+   "text": "no",
+   "start": 7.457,
+   "end": 7.61
+  },
+  {
+   "text": "ve",
+   "start": 7.62,
+   "end": 7.701
+  },
+  {
+   "text": "la",
+   "start": 7.711,
+   "end": 7.802
+  },
+  {
+   "text": "caja",
+   "start": 7.812,
+   "end": 8.157
+  }
+ ],
+ "m6": [
+  {
+   "text": "Revisa",
+   "start": 0.091,
+   "end": 0.446
+  },
+  {
+   "text": "tu",
+   "start": 0.456,
+   "end": 0.537
+  },
+  {
+   "text": "agenda",
+   "start": 0.547,
+   "end": 0.852
+  },
+  {
+   "text": "las",
+   "start": 1.115,
+   "end": 1.227
+  },
+  {
+   "text": "citas",
+   "start": 1.237,
+   "end": 1.481
+  },
+  {
+   "text": "del",
+   "start": 1.491,
+   "end": 1.613
+  },
+  {
+   "text": "día",
+   "start": 1.623,
+   "end": 1.846
+  },
+  {
+   "text": "y",
+   "start": 1.856,
+   "end": 1.907
+  },
+  {
+   "text": "su",
+   "start": 1.917,
+   "end": 2.049
+  },
+  {
+   "text": "detalle",
+   "start": 2.059,
+   "end": 2.424
+  },
+  {
+   "text": "desde",
+   "start": 2.434,
+   "end": 2.627
+  },
+  {
+   "text": "el",
+   "start": 2.637,
+   "end": 2.698
+  },
+  {
+   "text": "teléfono",
+   "start": 2.708,
+   "end": 3.145
+  }
+ ],
+ "m7": [
+  {
+   "text": "Agenda",
+   "start": 0.091,
+   "end": 0.395
+  },
+  {
+   "text": "nuevas",
+   "start": 0.405,
+   "end": 0.649
+  },
+  {
+   "text": "citas",
+   "start": 0.659,
+   "end": 0.973
+  },
+  {
+   "text": "y",
+   "start": 0.983,
+   "end": 1.014
+  },
+  {
+   "text": "elige",
+   "start": 1.024,
+   "end": 1.298
+  },
+  {
+   "text": "la",
+   "start": 1.308,
+   "end": 1.43
+  },
+  {
+   "text": "hora",
+   "start": 1.44,
+   "end": 1.623
+  },
+  {
+   "text": "con",
+   "start": 1.633,
+   "end": 1.785
+  },
+  {
+   "text": "este",
+   "start": 1.795,
+   "end": 1.988
+  },
+  {
+   "text": "reloj",
+   "start": 1.998,
+   "end": 2.323
+  },
+  {
+   "text": "táctil",
+   "start": 2.333,
+   "end": 2.708
+  }
+ ],
+ "m8": [
+  {
+   "text": "Y",
+   "start": 0.091,
+   "end": 0.182
+  },
+  {
+   "text": "registra",
+   "start": 0.192,
+   "end": 0.598
+  },
+  {
+   "text": "clientas",
+   "start": 0.608,
+   "end": 1.004
+  },
+  {
+   "text": "y",
+   "start": 1.014,
+   "end": 1.085
+  },
+  {
+   "text": "cobra",
+   "start": 1.095,
+   "end": 1.328
+  },
+  {
+   "text": "desde",
+   "start": 1.339,
+   "end": 1.552
+  },
+  {
+   "text": "el",
+   "start": 1.562,
+   "end": 1.623
+  },
+  {
+   "text": "celular",
+   "start": 1.633,
+   "end": 1.998
+  },
+  {
+   "text": "sin",
+   "start": 2.282,
+   "end": 2.475
+  },
+  {
+   "text": "ir",
+   "start": 2.485,
+   "end": 2.587
+  },
+  {
+   "text": "a",
+   "start": 2.597,
+   "end": 2.617
+  },
+  {
+   "text": "la",
+   "start": 2.627,
+   "end": 2.708
+  },
+  {
+   "text": "computadora",
+   "start": 2.718,
+   "end": 3.347
+  }
+ ],
+ "ro1": [
+  {
+   "text": "Qué",
+   "start": 0.091,
+   "end": 0.212
+  },
+  {
+   "text": "puede",
+   "start": 0.223,
+   "end": 0.436
+  },
+  {
+   "text": "hacer",
+   "start": 0.446,
+   "end": 0.699
+  },
+  {
+   "text": "cada",
+   "start": 0.71,
+   "end": 0.912
+  },
+  {
+   "text": "usuario",
+   "start": 0.923,
+   "end": 1.44
+  },
+  {
+   "text": "El",
+   "start": 2.131,
+   "end": 2.242
+  },
+  {
+   "text": "Administrador",
+   "start": 2.252,
+   "end": 2.851
+  },
+  {
+   "text": "maneja",
+   "start": 2.861,
+   "end": 3.206
+  },
+  {
+   "text": "todo",
+   "start": 3.216,
+   "end": 3.48
+  },
+  {
+   "text": "el",
+   "start": 3.713,
+   "end": 3.825
+  },
+  {
+   "text": "catálogo",
+   "start": 3.835,
+   "end": 4.342
+  },
+  {
+   "text": "el",
+   "start": 4.566,
+   "end": 4.677
+  },
+  {
+   "text": "equipo",
+   "start": 4.688,
+   "end": 5.032
+  },
+  {
+   "text": "la",
+   "start": 5.225,
+   "end": 5.327
+  },
+  {
+   "text": "caja",
+   "start": 5.337,
+   "end": 5.682
+  },
+  {
+   "text": "y",
+   "start": 5.692,
+   "end": 5.722
+  },
+  {
+   "text": "los",
+   "start": 5.733,
+   "end": 5.875
+  },
+  {
+   "text": "reportes",
+   "start": 5.885,
+   "end": 6.433
+  },
+  {
+   "text": "Recepción",
+   "start": 7.143,
+   "end": 7.569
+  },
+  {
+   "text": "atiende",
+   "start": 7.579,
+   "end": 7.884
+  },
+  {
+   "text": "la",
+   "start": 7.894,
+   "end": 7.975
+  },
+  {
+   "text": "agenda",
+   "start": 7.985,
+   "end": 8.35
+  },
+  {
+   "text": "las",
+   "start": 8.573,
+   "end": 8.715
+  },
+  {
+   "text": "clientas",
+   "start": 8.726,
+   "end": 9.142
+  },
+  {
+   "text": "y",
+   "start": 9.152,
+   "end": 9.203
+  },
+  {
+   "text": "la",
+   "start": 9.213,
+   "end": 9.314
+  },
+  {
+   "text": "caja",
+   "start": 9.324,
+   "end": 9.669
+  },
+  {
+   "text": "Y",
+   "start": 10.379,
+   "end": 10.45
+  },
+  {
+   "text": "la",
+   "start": 10.461,
+   "end": 10.511
+  },
+  {
+   "text": "Especialista",
+   "start": 10.521,
+   "end": 11.08
+  },
+  {
+   "text": "se",
+   "start": 11.09,
+   "end": 11.171
+  },
+  {
+   "text": "enfoca",
+   "start": 11.181,
+   "end": 11.496
+  },
+  {
+   "text": "en",
+   "start": 11.506,
+   "end": 11.587
+  },
+  {
+   "text": "sus",
+   "start": 11.597,
+   "end": 11.729
+  },
+  {
+   "text": "citas",
+   "start": 11.739,
+   "end": 12.064
+  },
+  {
+   "text": "y",
+   "start": 12.074,
+   "end": 12.114
+  },
+  {
+   "text": "sus",
+   "start": 12.125,
+   "end": 12.277
+  },
+  {
+   "text": "clientas",
+   "start": 12.287,
+   "end": 12.804
+  }
+ ],
+ "ro2": [
+  {
+   "text": "Este",
+   "start": 0.091,
+   "end": 0.385
+  },
+  {
+   "text": "es",
+   "start": 0.395,
+   "end": 0.537
+  },
+  {
+   "text": "el",
+   "start": 0.547,
+   "end": 0.649
+  },
+  {
+   "text": "resumen",
+   "start": 0.659,
+   "end": 0.994
+  },
+  {
+   "text": "de",
+   "start": 1.004,
+   "end": 1.075
+  },
+  {
+   "text": "permisos",
+   "start": 1.085,
+   "end": 1.501
+  },
+  {
+   "text": "de",
+   "start": 1.511,
+   "end": 1.592
+  },
+  {
+   "text": "cada",
+   "start": 1.602,
+   "end": 1.836
+  },
+  {
+   "text": "rol",
+   "start": 1.846,
+   "end": 2.089
+  }
+ ],
+ "o1": [
+  {
+   "text": "Olvidaste",
+   "start": 0.091,
+   "end": 0.608
+  },
+  {
+   "text": "tu",
+   "start": 0.618,
+   "end": 0.699
+  },
+  {
+   "text": "contraseña",
+   "start": 0.71,
+   "end": 1.308
+  },
+  {
+   "text": "Pídele",
+   "start": 1.999,
+   "end": 2.252
+  },
+  {
+   "text": "al",
+   "start": 2.263,
+   "end": 2.354
+  },
+  {
+   "text": "Administrador",
+   "start": 2.364,
+   "end": 3.013
+  },
+  {
+   "text": "que",
+   "start": 3.024,
+   "end": 3.135
+  },
+  {
+   "text": "te",
+   "start": 3.145,
+   "end": 3.196
+  },
+  {
+   "text": "asigne",
+   "start": 3.206,
+   "end": 3.551
+  },
+  {
+   "text": "una",
+   "start": 3.561,
+   "end": 3.734
+  },
+  {
+   "text": "nueva",
+   "start": 3.744,
+   "end": 4.048
+  },
+  {
+   "text": "desde",
+   "start": 4.058,
+   "end": 4.282
+  },
+  {
+   "text": "Equipo",
+   "start": 4.292,
+   "end": 4.647
+  }
+ ],
+ "o2": [
+  {
+   "text": "Gracias",
+   "start": 0.091,
+   "end": 0.496
+  },
+  {
+   "text": "por",
+   "start": 0.507,
+   "end": 0.638
+  },
+  {
+   "text": "ver",
+   "start": 0.649,
+   "end": 0.923
+  },
+  {
+   "text": "tuSpa",
+   "start": 1.613,
+   "end": 1.958
+  },
+  {
+   "text": "tu",
+   "start": 2.141,
+   "end": 2.252
+  },
+  {
+   "text": "negocio",
+   "start": 2.263,
+   "end": 2.739
+  },
+  {
+   "text": "en",
+   "start": 2.942,
+   "end": 3.064
+  },
+  {
+   "text": "equilibrio",
+   "start": 3.074,
+   "end": 3.602
+  }
+ ]
+}

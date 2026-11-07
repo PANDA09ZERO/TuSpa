@@ -2,33 +2,27 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowDown, ArrowUpRight, Check, Clock3, Facebook, Instagram, MapPin, Menu, MessageCircle, Plus, Search, ShoppingBag, Sparkles, Tag, X } from "lucide-react";
+import { Armchair, ArrowDown, ArrowUpRight, Check, Clock3, Droplets, Facebook, Flower2, Footprints, Instagram, MapPin, Menu, MessageCircle, Plus, Search, ShoppingBag, Sparkles, Tag, X } from "lucide-react";
 import type { PublicPromotion, PublicService } from "./page";
-import coverImage from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.45 PM.jpeg";
-import detailImageOne from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.46 PM (1).jpeg";
-import detailImageTwo from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.46 PM.jpeg";
-import detailImageThree from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.47 PM.jpeg";
-import detailImageFour from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.48 PM.jpeg";
-import detailImageFive from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.49 PM.jpeg";
-import detailImageSix from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.53 PM.jpeg";
-import detailImageSeven from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.55 PM (1).jpeg";
-import detailImageEight from "../imagenes/WhatsApp Image 2026-09-26 at 10.11.55 PM.jpeg";
+import type { BrandAssets } from "@/lib/brand-assets";
+import { brand, whatsappLink } from "@/lib/brand";
 
-const galleryImages = [
-  detailImageOne,
-  detailImageTwo,
-  detailImageThree,
-  detailImageFour,
-  detailImageFive,
-  detailImageSix,
-  detailImageSeven,
-  detailImageEight,
+// Ilustraciones neutras para presentar el sistema sin las fotos de un local real.
+const demoGallery = [
+  { label: "Sala de manicure", icon: Sparkles, tone: "bg-[#EEE9E0] text-[#1A1A1A]" },
+  { label: "Zona de masajes", icon: Flower2, tone: "bg-[#1A1A1A] text-[#F7F6F1]" },
+  { label: "Faciales", icon: Droplets, tone: "bg-[#9D9488] text-white" },
+  { label: "Pedicure", icon: Footprints, tone: "bg-[#F7F6F1] text-[#1A1A1A]" },
+  { label: "Recepción", icon: Armchair, tone: "bg-[#E5E6E8] text-[#1A1A1A]" },
+  { label: "Productos", icon: ShoppingBag, tone: "bg-[#3a3733] text-[#F7F6F1]" },
 ];
 
 interface Props {
   services: PublicService[];
   promotions: PublicPromotion[];
   dataUnavailable: boolean;
+  /** Logo, portada y galería subidos por el negocio en «Mi marca» (vacío = imágenes por defecto). */
+  assets: BrandAssets;
 }
 
 function formatPrice(price: number) {
@@ -68,7 +62,7 @@ function ServiceDetailModal({ service, isSelected, onToggle, onClose }: {
     };
   }, []);
 
-  const consultUrl = `https://wa.me/51917650720?text=${encodeURIComponent(`Hola, Essence Spa. Quisiera consultar por el servicio ${service.nombre}.`)}`;
+  const consultUrl = whatsappLink(`Hola, ${brand.name}. Quisiera consultar por el servicio ${service.nombre}.`);
 
   return (
     <div
@@ -156,7 +150,7 @@ function ServiceDetailModal({ service, isSelected, onToggle, onClose }: {
   );
 }
 
-export default function PublicCatalog({ services, promotions, dataUnavailable }: Props) {
+export default function PublicCatalog({ services, promotions, dataUnavailable, assets }: Props) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showFullGallery, setShowFullGallery] = useState(false);
   const [search, setSearch] = useState("");
@@ -177,13 +171,13 @@ export default function PublicCatalog({ services, promotions, dataUnavailable }:
   const discount = selectedPromotion ? Math.min(100, Math.max(0, Number(selectedPromotion.descuento))) : 0;
   const total = subtotal * (1 - discount / 100);
   const whatsappMessage = [
-    "Hola, Essence Spa. Quisiera hacer un pedido:",
+    `Hola, ${brand.name}. Quisiera hacer un pedido:`,
     ...selectedServices.map((service) => `- ${service.nombre}: ${formatPrice(Number(service.precio))}`),
     selectedPromotion ? `Promoción elegida: ${selectedPromotion.nombre} (${discount}% de descuento).` : "",
     selectedServices.length ? `Subtotal: ${formatPrice(subtotal)}${selectedPromotion ? `\nTotal estimado con promoción: ${formatPrice(total)}` : ""}` : "",
     "¿Me ayudan a coordinar?",
   ].filter(Boolean).join("\n");
-  const whatsappUrl = `https://wa.me/51917650720?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = whatsappLink(whatsappMessage);
 
   function toggleService(serviceId: string) {
     setSelectedServiceIds((current) => current.includes(serviceId)
@@ -194,28 +188,31 @@ export default function PublicCatalog({ services, promotions, dataUnavailable }:
   return (
     <main className="public-catalog min-h-screen bg-brand-cream text-brand-text">
       <section className="relative isolate flex min-h-[560px] items-end overflow-hidden bg-brand-green-dark text-white sm:min-h-[620px]">
-        <Image src={coverImage} alt="Ambiente de Essence Spa" fill priority sizes="100vw" className="-z-20 object-cover object-center" />
+        {assets.portada
+          // eslint-disable-next-line @next/next/no-img-element
+          ? <img src={assets.portada.url} alt={`Ambiente de ${brand.name}`} className="absolute inset-0 -z-20 h-full w-full object-cover object-center" />
+          : <div aria-hidden="true" className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_75%_30%,#9D9488_0%,#3a3733_45%,#1A1A1A_100%)]" />}
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-r from-black/80 via-black/55 to-black/20" />
         <header className="absolute inset-x-0 top-0 z-10 border-b border-white/20">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
-            <a href="#inicio" className="flex items-center gap-3" aria-label="Essence Spa, inicio">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/70"><Sparkles size={18} /></span>
-              <span className="font-display text-lg font-semibold">Essence Spa</span>
+            <a href="#inicio" className="flex items-center gap-3" aria-label={`${brand.name}, inicio`}>
+              <span className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-white/70">{/* eslint-disable-next-line @next/next/no-img-element */}{assets.logo ? <img src={assets.logo.url} alt="" className="h-full w-full bg-white object-contain" /> : <Sparkles size={18} />}</span>
+              <span className="font-display text-lg font-semibold">{brand.name}</span>
             </a>
             <nav aria-label="Navegación principal" className="hidden items-center gap-8 text-sm text-white/90 md:flex">
               <a className="transition-colors hover:text-white" href="#servicios">Servicios</a>
               <a className="transition-colors hover:text-white" href="#promociones">Promociones</a>
-              <a className="transition-colors hover:text-white" href="https://maps.app.goo.gl/2uKCedfdADDGvCMc7" target="_blank" rel="noreferrer">Cómo llegar</a>
-              <a className="transition-colors hover:text-white" href="https://www.facebook.com/profile.php?id=61583364283486" target="_blank" rel="noreferrer" aria-label="Facebook de Essence Spa"><Facebook size={18} /></a>
-              <a className="transition-colors hover:text-white" href="https://www.instagram.com/essence.spa_pcl" target="_blank" rel="noreferrer" aria-label="Instagram de Essence Spa"><Instagram size={18} /></a>
-              <a className="transition-colors hover:text-white" href="https://wa.me/51917650720" target="_blank" rel="noreferrer" aria-label="WhatsApp de Essence Spa" style={{display:"inline-flex",gap:8,alignItems:"center",border:"1px solid #ffffff80",borderRadius:999,padding:"12px 18px"}}><MessageCircle size={18} /> Consultar</a>
+              <a className="transition-colors hover:text-white" href={brand.mapsUrl} target="_blank" rel="noreferrer">Cómo llegar</a>
+              <a className="transition-colors hover:text-white" href={brand.facebookUrl} target="_blank" rel="noreferrer" aria-label={`Facebook de ${brand.name}`}><Facebook size={18} /></a>
+              <a className="transition-colors hover:text-white" href={brand.instagramUrl} target="_blank" rel="noreferrer" aria-label={`Instagram de ${brand.name}`}><Instagram size={18} /></a>
+              <a className="transition-colors hover:text-white" href={whatsappLink()} target="_blank" rel="noreferrer" aria-label={`WhatsApp de ${brand.name}`} style={{display:"inline-flex",gap:8,alignItems:"center",border:"1px solid #ffffff80",borderRadius:999,padding:"12px 18px"}}><MessageCircle size={18} /> Consultar</a>
             </nav>
             <button type="button" aria-label={mobileMenuOpen ? "Cerrar menú" : "Abrir menú"} aria-expanded={mobileMenuOpen} aria-controls="catalog-mobile-nav" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="flex h-11 w-11 items-center justify-center rounded-full border border-white/40 md:hidden">{mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}</button>
           </div>
           {mobileMenuOpen && <nav id="catalog-mobile-nav" aria-label="Navegación móvil" className="flex flex-col border-t border-white/20 bg-brand-green p-4 md:hidden">
             <a href="#servicios" onClick={() => setMobileMenuOpen(false)} className="px-4 py-3">Servicios</a>
             <a href="#promociones" onClick={() => setMobileMenuOpen(false)} className="px-4 py-3">Promociones</a>
-            <a href="https://wa.me/51917650720" target="_blank" rel="noreferrer" className="px-4 py-3">Consultar por WhatsApp ↗</a>
+            <a href={whatsappLink()} target="_blank" rel="noreferrer" className="px-4 py-3">Consultar por WhatsApp ↗</a>
           </nav>}
         </header>
 
@@ -232,8 +229,8 @@ export default function PublicCatalog({ services, promotions, dataUnavailable }:
             <a href="#promociones" className="text-sm font-medium text-white underline decoration-white/60 underline-offset-4 transition-colors hover:text-brand-gold-light">
               Ver promociones
             </a>
-            <a href="https://wa.me/51917650720" target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-white"><MessageCircle size={18} /> Consultar por WhatsApp <ArrowUpRight size={16} /></a>
-            <a href="https://maps.app.goo.gl/2uKCedfdADDGvCMc7" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-white underline decoration-white/60 underline-offset-4 transition-colors hover:text-brand-gold-light">
+            <a href={whatsappLink()} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-white"><MessageCircle size={18} /> Consultar por WhatsApp <ArrowUpRight size={16} /></a>
+            <a href={brand.mapsUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-white underline decoration-white/60 underline-offset-4 transition-colors hover:text-brand-gold-light">
               Cómo llegar <MapPin size={17} />
             </a>
           </div>
@@ -297,7 +294,7 @@ export default function PublicCatalog({ services, promotions, dataUnavailable }:
           <div role="status" className="mt-8 rounded-2xl border border-brand-cream-dark bg-white p-8 text-center">
             <Search size={24} className="mx-auto mb-3" />
             <p className="text-sm text-brand-text-light">{services.length ? "No encontramos servicios con esos criterios." : dataUnavailable ? "El catálogo está temporalmente sin conexión. Te ayudamos a elegir por WhatsApp." : "Los servicios se publicarán aquí próximamente."}</p>
-            {dataUnavailable && <a href="https://wa.me/51917650720" target="_blank" rel="noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full bg-brand-green px-5 py-3 text-sm text-white"><MessageCircle size={18} /> Consultar servicios</a>}
+            {dataUnavailable && <a href={whatsappLink()} target="_blank" rel="noreferrer" className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-full bg-brand-green px-5 py-3 text-sm text-white"><MessageCircle size={18} /> Consultar servicios</a>}
             {services.length > 0 && <button type="button" onClick={() => { setSearch(""); setCategory("Todos"); }} className="mt-4 min-h-11 rounded-full bg-brand-green px-5 py-2 text-sm text-white">Limpiar filtros</button>}
           </div>
         )}
@@ -323,7 +320,7 @@ export default function PublicCatalog({ services, promotions, dataUnavailable }:
                   </div>
                   <div className="flex min-w-0 flex-1 flex-col justify-center p-5">
                     <h3 className="font-display text-xl font-semibold">{promotion.nombre}</h3>
-                    <p className="mt-1 text-sm leading-5 text-brand-text-light">{promotion.descripcion || "Aprovecha esta promoción en Essence Spa."}</p>
+                    <p className="mt-1 text-sm leading-5 text-brand-text-light">{promotion.descripcion || `Aprovecha esta promoción en ${brand.name}.`}</p>
                     {(promotion.fecha_inicio || promotion.fecha_fin) && <p className="mt-3 text-xs text-brand-text-light">{formatDate(promotion.fecha_inicio) || "Desde hoy"} · {formatDate(promotion.fecha_fin) || "Sin fecha límite"}</p>}
                     <button type="button" aria-pressed={selectedPromotionId === promotion.id} onClick={() => setSelectedPromotionId((current) => current === promotion.id ? null : promotion.id)} className={`mt-4 inline-flex w-fit items-center gap-2 border px-3 py-2 text-sm font-medium transition-colors ${selectedPromotionId === promotion.id ? "border-brand-green bg-brand-green text-white" : "border-brand-cream-dark text-brand-green hover:border-brand-green"}`}>
                       {selectedPromotionId === promotion.id ? <Check size={16} /> : <Tag size={16} />}
@@ -342,18 +339,24 @@ export default function PublicCatalog({ services, promotions, dataUnavailable }:
       <section aria-labelledby="gallery-title" className="border-b border-brand-cream-dark bg-white">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
           <div className="mb-8 max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-terracotta">Un vistazo a Essence</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-terracotta">Un vistazo a {brand.shortName}</p>
             <h2 id="gallery-title" className="mt-2 font-display text-3xl font-medium sm:text-4xl">Un espacio para sentirte bien</h2>
             <p className="mt-3 text-sm leading-6 text-brand-text-light">Detalles, cuidado y momentos para dedicarte tiempo.</p>
           </div>
           <div className="grid auto-rows-[220px] grid-cols-1 gap-3 sm:grid-cols-3">
-            {(showFullGallery ? galleryImages : galleryImages.slice(0, 3)).map((image, index) => (
-              <div key={image.src} className={`group relative overflow-hidden bg-brand-green/10 rounded-2xl`}>
-                <Image src={image} alt={`Essence Spa, detalle ${index + 1}`} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+            {assets.galeria.length ? (showFullGallery ? assets.galeria : assets.galeria.slice(0, 3)).map((foto, index) => (
+              <div key={foto.path} className="group relative overflow-hidden rounded-2xl bg-brand-green/10">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={foto.url} alt={`${brand.name}, detalle ${index + 1}`} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+              </div>
+            )) : (showFullGallery ? demoGallery : demoGallery.slice(0, 3)).map(({ label, icon: Icon, tone }) => (
+              <div key={label} className={`relative flex flex-col items-center justify-center gap-3 overflow-hidden rounded-2xl ${tone}`}>
+                <Icon size={36} strokeWidth={1.2} aria-hidden="true" />
+                <span className="font-display text-lg">{label}</span>
               </div>
             ))}
           </div>
-          <button type="button" aria-expanded={showFullGallery} onClick={() => setShowFullGallery(!showFullGallery)} className="mt-6 min-h-11 rounded-full border border-brand-green/25 px-6 py-3 text-sm font-medium">{showFullGallery ? "Ver menos fotos" : "Conoce nuestro espacio"}</button>
+          {(assets.galeria.length === 0 || assets.galeria.length > 3) && <button type="button" aria-expanded={showFullGallery} onClick={() => setShowFullGallery(!showFullGallery)} className="mt-6 min-h-11 rounded-full border border-brand-green/25 px-6 py-3 text-sm font-medium">{showFullGallery ? "Ver menos fotos" : "Conoce nuestro espacio"}</button>}
         </div>
       </section>
 
@@ -421,18 +424,18 @@ export default function PublicCatalog({ services, promotions, dataUnavailable }:
       <footer className="border-t border-brand-cream-dark bg-brand-green-dark text-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 px-5 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-8">
           <div>
-            <p className="font-display text-xl">Essence Spa</p>
+            <p className="font-display text-xl">{brand.name}</p>
             <p className="mt-1 text-xs text-brand-text-light">Belleza y cuidado, a tu manera.</p>
           </div>
           <div className="flex items-center gap-6 text-sm text-white/80">
             <a href="#servicios" className="hover:text-white">Servicios</a>
             <a href="#promociones" className="hover:text-white">Promociones</a>
-            <a href="https://maps.app.goo.gl/2uKCedfdADDGvCMc7" target="_blank" rel="noreferrer" className="hover:text-white">Cómo llegar</a>
+            <a href={brand.mapsUrl} target="_blank" rel="noreferrer" className="hover:text-white">Cómo llegar</a>
           </div>
           <div className="flex items-center gap-4 text-white/80">
-            <a href="https://www.facebook.com/profile.php?id=61583364283486" target="_blank" rel="noreferrer" aria-label="Facebook de Essence Spa" className="transition-colors hover:text-white"><Facebook size={19} /></a>
-            <a href="https://www.instagram.com/essence.spa_pcl" target="_blank" rel="noreferrer" aria-label="Instagram de Essence Spa" className="transition-colors hover:text-white"><Instagram size={19} /></a>
-            <a href="https://wa.me/51917650720" target="_blank" rel="noreferrer" aria-label="WhatsApp de Essence Spa" className="transition-colors hover:text-white"><MessageCircle size={19} /></a>
+            <a href={brand.facebookUrl} target="_blank" rel="noreferrer" aria-label={`Facebook de ${brand.name}`} className="transition-colors hover:text-white"><Facebook size={19} /></a>
+            <a href={brand.instagramUrl} target="_blank" rel="noreferrer" aria-label={`Instagram de ${brand.name}`} className="transition-colors hover:text-white"><Instagram size={19} /></a>
+            <a href={whatsappLink()} target="_blank" rel="noreferrer" aria-label={`WhatsApp de ${brand.name}`} className="transition-colors hover:text-white"><MessageCircle size={19} /></a>
           </div>
         </div>
       </footer>

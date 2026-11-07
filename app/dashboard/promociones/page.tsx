@@ -99,7 +99,7 @@ export default function PromocionesPage() {
           <h1 className="font-display text-3xl font-bold text-brand-green">Promociones</h1>
           <p className="text-brand-text-light mt-1">Gestiona tus promociones</p>
         </div>
-        <CreateResourceModal title="Promoción" endpoint="/api/promociones" fields={[{ name: "nombre", label: "Nombre", required: true }, { name: "descripcion", label: "Descripción" }, { name: "descuento", label: "Descuento (%)", type: "number", required: true }, { name: "fecha_inicio", label: "Desde", type: "date" }, { name: "fecha_fin", label: "Hasta", type: "date" }]} onCreated={() => window.location.reload()} />
+        <CreateResourceModal title="Promoción" feminine endpoint="/api/promociones" fields={[{ name: "nombre", label: "Nombre", required: true }, { name: "descripcion", label: "Descripción" }, { name: "descuento", label: "Descuento (%)", type: "number", required: true }, { name: "fecha_inicio", label: "Desde", type: "date" }, { name: "fecha_fin", label: "Hasta", type: "date" }]} onCreated={() => window.location.reload()} />
       </div>
 
       <div className="bento-card">

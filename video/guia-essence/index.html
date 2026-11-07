@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>tuSpa · Guía de uso</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #F5F3EE; }
+      #main { position: relative; width: 1920px; height: 1080px; overflow: hidden; }
+      #main-bg { position: absolute; inset: 0; background: #F5F3EE; }
+    </style>
+  </head>
+  <body>
+    <div id="main" data-composition-id="main" data-start="0" data-duration="406.4" data-width="1920" data-height="1080">
+      <div id="main-bg"></div>
+      <div id="apertura" data-composition-id="apertura" data-composition-src="compositions/01-apertura.html" data-start="0" data-duration="12.07" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="ingreso" data-composition-id="ingreso" data-composition-src="compositions/02-ingreso.html" data-start="12.07" data-duration="22.97" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="panel" data-composition-id="panel" data-composition-src="compositions/03-panel.html" data-start="35.04" data-duration="26.47" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="agenda" data-composition-id="agenda" data-composition-src="compositions/04-agenda.html" data-start="61.51" data-duration="76.49" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="clientes" data-composition-id="clientes" data-composition-src="compositions/05-clientes.html" data-start="138" data-duration="23.9" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="catalogo" data-composition-id="catalogo" data-composition-src="compositions/06-catalogo.html" data-start="161.9" data-duration="32.64" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="caja" data-composition-id="caja" data-composition-src="compositions/07-caja.html" data-start="194.54" data-duration="66.48" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="reportes" data-composition-id="reportes" data-composition-src="compositions/08-reportes.html" data-start="261.02" data-duration="8.72" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="publica" data-composition-id="publica" data-composition-src="compositions/09-publica.html" data-start="269.74" data-duration="47.65" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="celular" data-composition-id="celular" data-composition-src="compositions/10-celular.html" data-start="317.39" data-duration="54.06" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="roles" data-composition-id="roles" data-composition-src="compositions/11-roles.html" data-start="371.45" data-duration="20.65" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="cierre" data-composition-id="cierre" data-composition-src="compositions/12-cierre.html" data-start="392.1" data-duration="14.3" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="subtitulos" data-composition-id="subtitulos" data-composition-src="compositions/subtitulos.html" data-start="0" data-duration="406.4" data-track-index="2" data-track-kind="captions" data-width="1920" data-height="1080"></div>
+      <audio id="voz" class="clip" src="assets/voz/narracion.wav" data-start="0" data-duration="406.4" data-track-index="3" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

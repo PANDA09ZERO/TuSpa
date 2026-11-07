@@ -1,0 +1,7 @@
+# Salidas pesadas y temporales del video (se regeneran con tools/build.mjs y hyperframes render)
+out/
+renders/
+.hyperframes/
+assets/voz/*.wav
+supabase-local/supabase/.temp/
+supabase-local/*.log

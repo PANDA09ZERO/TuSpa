@@ -5,6 +5,7 @@ import { AlertTriangle, UserPlus, X } from "lucide-react";
 import type { Appointment } from "./types";
 import { citaClientName } from "./cita-utils";
 import { apiFetch } from "@/lib/api-fetch";
+import { brand } from "@/lib/brand";
 
 interface Props {
   cita: Appointment;
@@ -68,7 +69,7 @@ export default function ConvertGuestModal({ cita, onClose, onConverted }: Props)
       <div className="w-full max-w-md rounded-3xl bg-white shadow-bento" onClick={(event) => event.stopPropagation()}>
         <div className="flex items-start justify-between gap-4 rounded-t-3xl bg-gradient-to-r from-brand-green to-brand-green-dark p-6 text-white">
           <div className="min-w-0">
-            <p className="text-sm text-white/70">Agenda Essence</p>
+            <p className="text-sm text-white/70">Agenda {brand.shortName}</p>
             <h2 className="mt-1 font-display text-2xl font-bold">Registrar como cliente</h2>
             <p className="mt-2 truncate text-sm text-white/80">Invitado: {citaClientName(cita)}</p>
           </div>

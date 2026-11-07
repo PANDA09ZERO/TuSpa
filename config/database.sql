@@ -1,4 +1,4 @@
--- Supabase migration for Essence Spa
+-- Esquema base de tuSpa (Supabase)
 -- Remove loyalty card features
 
 -- Enable UUID extension
@@ -227,10 +227,10 @@ INSERT INTO promociones (nombre, descripcion, descuento, fecha_inicio, fecha_fin
 ('Bienvenida', '10% de descuento en tu primera visita', 10.00, '2026-01-01', '2026-12-31', true);
 
 INSERT INTO configuracion (clave, valor) VALUES
-('nombre_salon', 'Essence Spa'),
+('nombre_salon', 'tuSpa'),
 ('direccion', 'Calle Principal 123'),
 ('telefono', '999888777'),
-('email', 'info@essencespa.pe'),
+('email', 'info@tuspa.pe'),
 ('horario', 'Lunes-Sábado 9:00-19:00');
 
 -- ============================================
@@ -356,4 +356,4 @@ GRANT EXECUTE ON FUNCTION cobrar_cita(UUID, TEXT, DECIMAL, TEXT, UUID, TEXT, JSO
 -- No se guardan contraseñas aquí. Crea primero la cuenta en Supabase Auth
 -- (Authentication → Users → Add user) y luego enlázala:
 -- INSERT INTO empleados (nombre, apellido, email, cargo, rol, auth_user_id)
--- VALUES ('Admin', 'System', 'admin@essencespa.pe', 'Gerente', 'admin', '<uuid de auth.users>');
+-- VALUES ('Admin', 'System', 'admin@tuspa.pe', 'Gerente', 'admin', '<uuid de auth.users>');

@@ -7,6 +7,7 @@ import type { Appointment } from "./types";
 import { citaClientName, estadoLabels } from "./cita-utils";
 import ClientPicker, { type ClientSelection } from "./ClientPicker";
 import { apiFetch } from "@/lib/api-fetch";
+import { brand } from "@/lib/brand";
 
 interface Option { id: string; nombre: string; apellido?: string | null; precio?: number; duracion?: number; telefono?: string | null; }
 interface OptionsState { clientes: Option[]; servicios: Option[]; empleados: Option[]; }
@@ -95,7 +96,7 @@ export default function AppointmentEditModal({ cita, onClose, onSaved }: Props) 
         <div className="p-6 bg-gradient-to-r from-brand-green to-brand-green-dark text-white">
           <div className="flex items-start justify-between">
             <div className="min-w-0">
-              <p className="text-white/70 text-sm">Agenda Essence</p>
+              <p className="text-white/70 text-sm">Agenda {brand.shortName}</p>
               <h2 className="font-display text-2xl font-bold mt-1">Editar cita</h2>
             </div>
             <button type="button" onClick={onClose} className="p-2 rounded-xl hover:bg-white/20 shrink-0" aria-label="Cerrar"><X size={20} /></button>

@@ -1,0 +1,66 @@
+[
+  {"id": "a1", "scene": "apertura", "text": "Bienvenida a tuSpa, el sistema de gestión para tu spa. En este video aprenderás a ingresar, a usar cada módulo, a llevarlo en tu celular y qué puede hacer cada tipo de usuario."},
+
+  {"id": "i1", "scene": "ingreso", "text": "Abre la dirección del sistema en tu navegador. Escribe el email y la contraseña que te dio el Administrador, y pulsa Iniciar sesión."},
+  {"id": "i2", "scene": "ingreso", "text": "Si algún dato está mal, verás el aviso: Email o contraseña incorrectos. Revísalo e inténtalo otra vez."},
+  {"id": "i3", "scene": "ingreso", "text": "Para salir del sistema, usa el ícono de cerrar sesión, arriba a la derecha."},
+
+  {"id": "p1", "scene": "panel", "text": "En la computadora, el menú está a la izquierda: arriba tu espacio de trabajo, y abajo la administración. Ver página pública te muestra lo que ven tus clientas."},
+  {"id": "p2", "scene": "panel", "text": "Arriba ves tu nombre y tu rol. El Resumen te dice cómo va tu día: las citas de hoy, tus clientes, los servicios activos y los ingresos del mes."},
+  {"id": "p3", "scene": "panel", "text": "Más abajo están tus próximas citas con su estado, y los accesos directos a lo que más usas."},
+
+  {"id": "g1", "scene": "agenda", "text": "En la Agenda de citas ves los contadores del período y el calendario del mes. El día de hoy aparece remarcado."},
+  {"id": "g2", "scene": "agenda", "text": "Cada punto es una cita, y su color indica el estado: verde, confirmada; amarillo, pendiente; azul, en curso. Pasa el cursor para ver la hora, la clienta y el servicio."},
+  {"id": "g3", "scene": "agenda", "text": "Toca un día para ver a todas las clientas agendadas, con su horario, sus servicios y quién las atiende."},
+  {"id": "g4", "scene": "agenda", "text": "Al elegir una cita ves todo su detalle: la clienta, los servicios, la especialista, el horario y las observaciones."},
+  {"id": "g5", "scene": "agenda", "text": "Para agendar, pulsa Nueva cita. Busca a la clienta por su nombre o su teléfono, o regístrala ahí mismo. Agrega uno o varios servicios, y el sistema calcula la duración y el total."},
+  {"id": "g6", "scene": "agenda", "text": "Elige a la especialista, la fecha y la hora, siempre en horario de Perú, y guarda la cita."},
+  {"id": "g7", "scene": "agenda", "text": "Con Editar cita puedes cambiar la clienta, los servicios, la especialista, la fecha o la hora. También su estado: confírmala, márcala en curso, o cancélala."},
+  {"id": "g8", "scene": "agenda", "text": "Si atendiste a una invitada, regístrala como clienta desde su misma cita."},
+  {"id": "g9", "scene": "agenda", "text": "Filtra tus citas por día y por estado. Y desde Citas del período, el botón Pagar cita te lleva directo a la caja."},
+
+  {"id": "c1", "scene": "clientes", "text": "En Clientes buscas a cualquier persona por su nombre, su teléfono o su email."},
+  {"id": "c2", "scene": "clientes", "text": "Con Nuevo cliente registras sus datos de contacto."},
+  {"id": "c3", "scene": "clientes", "text": "Con el lápiz corriges sus datos, por ejemplo, un teléfono nuevo."},
+  {"id": "c4", "scene": "clientes", "text": "El Administrador también puede eliminar a una clienta. Si ya tiene citas o pagos, el sistema la protege para no perder su historial."},
+
+  {"id": "k1", "scene": "catalogo", "text": "El catálogo empieza por las categorías, que agrupan tus servicios."},
+  {"id": "k2", "scene": "catalogo", "text": "Luego vienen los servicios, con su precio, su duración y una imagen de referencia. Si desactivas uno, deja de ofrecerse."},
+  {"id": "k3", "scene": "catalogo", "text": "Las promociones tienen un porcentaje de descuento y fechas de vigencia, y se aplican al cobrar. Solo el Administrador puede modificar el catálogo."},
+  {"id": "k4", "scene": "catalogo", "text": "En Equipo, todos ven quién trabaja en el spa. El Administrador crea las cuentas, asigna el rol de cada persona y puede cambiar su contraseña."},
+
+  {"id": "j1", "scene": "caja", "text": "La Caja muestra el día que elijas, con sus ingresos, sus egresos y el balance. La usan el Administrador y Recepción."},
+  {"id": "j2", "scene": "caja", "text": "Para cobrar, elige la cita. Verás su subtotal y el servicio."},
+  {"id": "j3", "scene": "caja", "text": "Si llevó algo extra, agrégalo en Adicionales, con su concepto y su monto."},
+  {"id": "j4", "scene": "caja", "text": "Aplica una promoción vigente o un descuento manual, en soles o en porcentaje. El descuento solo afecta el precio de la cita. Luego elige el método de pago: efectivo, Yape, Plin, tarjeta o transferencia."},
+  {"id": "j5", "scene": "caja", "text": "Al registrar el pago, el ingreso entra solo a la caja, y la cita queda como completada."},
+  {"id": "j6", "scene": "caja", "text": "Los gastos del día se anotan en Registrar egreso."},
+  {"id": "j7", "scene": "caja", "text": "En Movimientos del día ves los totales por método. Toca un cobro para ver su detalle: adicionales, descuento y total pagado."},
+  {"id": "j8", "scene": "caja", "text": "Al terminar el día, haz el cierre de caja: cuenta el efectivo, y el sistema te muestra la diferencia con lo esperado."},
+  {"id": "j9", "scene": "caja", "text": "Revisa los cierres de los últimos treinta días y, si hubo un error, reabre la caja para corregirlo."},
+
+  {"id": "r1", "scene": "reportes", "text": "En Reportes ves cómo le va a tu negocio: los ingresos del mes, las citas, el promedio diario y los servicios más pedidos."},
+
+  {"id": "v1", "scene": "publica", "text": "Esta es tu vitrina digital: la página que ven tus clientas, sin iniciar sesión."},
+  {"id": "v2", "scene": "publica", "text": "Ahí buscan un servicio o filtran por categoría, y ven al instante su precio y su duración."},
+  {"id": "v3", "scene": "publica", "text": "Al abrir un servicio ven su descripción, y pueden elegirlo o consultarlo por WhatsApp."},
+  {"id": "v4", "scene": "publica", "text": "Solo aparecen las promociones vigentes, y tu clienta puede elegir una para su pedido."},
+  {"id": "v5", "scene": "publica", "text": "Al elegir servicios se arma su pedido con el total estimado. Con Coordinar por WhatsApp, el mensaje te llega ya escrito, y tu equipo agenda la cita."},
+  {"id": "v6", "scene": "publica", "text": "En la galería conocen tu local, y con Cómo llegar abren tu ubicación en el mapa. También te encuentran en Facebook, Instagram y WhatsApp."},
+  {"id": "v7", "scene": "publica", "text": "Y como la mayoría entrará desde el celular, la página se adapta sola."},
+
+  {"id": "m1", "scene": "celular", "text": "El sistema también va contigo en el celular. Al entrar, te invita a instalarlo con el botón Instalar sistema."},
+  {"id": "m2", "scene": "celular", "text": "En Android, pulsa Instalar sistema y confirma. Si tu navegador no lo ofrece, sigue estos tres pasos."},
+  {"id": "m3", "scene": "celular", "text": "En iPhone se hace desde Safari: toca Compartir, luego Añadir a pantalla de inicio, y listo."},
+  {"id": "m4", "scene": "celular", "text": "Queda anclado a tu pantalla de inicio como tuSpa Gestión, y se abre a pantalla completa, como una app."},
+  {"id": "m5", "scene": "celular", "text": "Abajo tienes tus accesos rápidos, y en el menú, todo lo demás. Cada persona ve solo lo que le corresponde: la especialista, por ejemplo, no ve la caja."},
+  {"id": "m6", "scene": "celular", "text": "Revisa tu agenda, las citas del día y su detalle desde el teléfono."},
+  {"id": "m7", "scene": "celular", "text": "Agenda nuevas citas y elige la hora con este reloj táctil."},
+  {"id": "m8", "scene": "celular", "text": "Y registra clientas y cobra desde el celular, sin ir a la computadora."},
+
+  {"id": "ro1", "scene": "roles", "text": "¿Qué puede hacer cada usuario? El Administrador maneja todo: el catálogo, el equipo, la caja y los reportes. Recepción atiende la agenda, las clientas y la caja. Y la Especialista se enfoca en sus citas y sus clientas."},
+  {"id": "ro2", "scene": "roles", "text": "Este es el resumen de permisos de cada rol."},
+
+  {"id": "o1", "scene": "cierre", "text": "¿Olvidaste tu contraseña? Pídele al Administrador que te asigne una nueva desde Equipo."},
+  {"id": "o2", "scene": "cierre", "text": "Gracias por ver. tuSpa: tu negocio, en equilibrio."}
+]

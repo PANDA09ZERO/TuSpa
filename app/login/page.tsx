@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
+import BrandLogo from "@/components/layout/BrandLogo";
+import { Sparkles } from "lucide-react";
+import { brand } from "@/lib/brand";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -57,10 +60,8 @@ export default function LoginPage() {
     <div className="min-h-screen bg-brand-screen flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-brand-green mb-4">
-            <i className="fas fa-spa text-white text-2xl" />
-          </div>
-          <h1 className="font-display text-3xl font-bold text-brand-green">Essence Spa</h1>
+          <BrandLogo className="inline-flex items-center justify-center w-16 h-16 overflow-hidden rounded-2xl bg-brand-green mb-4" imgClassName="h-full w-full bg-white object-contain" fallback={<Sparkles aria-hidden="true" size={28} strokeWidth={1.4} className="text-white" />} />
+          <h1 className="font-display text-3xl font-bold text-brand-green">{brand.name}</h1>
           <p className="text-brand-text mt-2">Sistema de Gestión</p>
         </div>
 
@@ -79,7 +80,7 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="input-field"
-                placeholder="admin@essencespa.pe"
+                placeholder={brand.loginEmailPlaceholder}
                 autoComplete="email"
                 required
               />

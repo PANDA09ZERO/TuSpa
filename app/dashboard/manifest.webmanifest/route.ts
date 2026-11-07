@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
+import { brand } from "@/lib/brand";
 
 export function GET() {
   const manifest: MetadataRoute.Manifest = {
     id: "/dashboard",
-    name: "Essence Spa · Gestión",
-    short_name: "Essence Gestión",
-    description: "Panel de gestión de Essence Spa. Requiere iniciar sesión.",
+    name: `${brand.name} · Gestión`,
+    short_name: `${brand.shortName} Gestión`,
+    description: `Panel de gestión de ${brand.name}. Requiere iniciar sesión.`,
     lang: "es-PE",
     start_url: "/dashboard",
     scope: "/",

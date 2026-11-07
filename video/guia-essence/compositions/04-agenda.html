@@ -1,0 +1,294 @@
+<template>
+<style>
+@font-face{font-family:'Inter';src:url('assets/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;font-style:normal;}
+@font-face{font-family:'Playfair Display';src:url('assets/fonts/playfair-latin.woff2') format('woff2');font-weight:400 900;font-style:normal;}
+#root{position:absolute;inset:0;font-family:'Inter',sans-serif;color:#1A1A1A;}
+#root .bg{position:absolute;inset:0;background:#F5F3EE;}
+#root .stage{position:absolute;inset:0;}
+#root .panel{position:absolute;left:1320px;top:124px;width:420px;}
+#root .chap{font-family:'Playfair Display',serif;font-size:34px;font-weight:600;color:#1A1A1A;line-height:1.2;}
+#root .chap-rule{width:56px;height:3px;background:#9D9488;border-radius:2px;margin-top:18px;}
+#root .step{position:absolute;left:1320px;top:262px;width:420px;}
+#root .step .n{font-size:28px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#9D9488;}
+#root .step .t{margin-top:12px;font-family:'Playfair Display',serif;font-size:46px;font-weight:600;line-height:1.15;color:#1A1A1A;}
+#root .step .badge{display:inline-block;margin-top:24px;padding:10px 20px;border-radius:999px;background:#1A1A1A;color:#fff;font-size:28px;font-weight:600;}
+#root .shot{position:absolute;inset:0;}
+#root .frame{position:absolute;left:111px;top:83px;width:1154px;height:762px;background:#fff;border:1px solid #E5E1D8;border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(26,26,26,.10);}
+#root .bar{position:absolute;left:0;top:0;right:0;height:40px;background:#fff;border-bottom:1px solid #E5E1D8;display:flex;align-items:center;gap:8px;padding:0 16px;}
+#root .dot{width:11px;height:11px;border-radius:50%;background:#E5E1D8;}
+#root .url{margin-left:14px;height:26px;padding:0 14px;border-radius:13px;background:#F5F3EE;font-size:28px;line-height:26px;color:#6B6560;transform-origin:left center;}
+#root .url span{display:inline-block;font-size:16px;}
+#root .screen{position:absolute;left:0;top:40px;width:1440px;height:900px;transform:scale(0.8);transform-origin:0 0;overflow:hidden;}
+#root .phone{position:absolute;left:506.4px;top:66px;width:363.2px;height:762.72px;background:#1A1A1A;border-radius:40px;box-shadow:0 24px 60px rgba(26,26,26,.18);}
+#root .phone .screen{left:10px;top:10px;width:390px;height:844px;transform:scale(0.88);border-radius:38px;}
+#root .cam{position:absolute;left:0;top:0;width:100%;height:100%;transform-origin:0 0;}
+#root .cam img.shotimg{position:absolute;left:0;top:0;width:100%;height:100%;}
+#root .hl{position:absolute;border-style:solid;border-color:#1A1A1A;box-shadow:0 0 0 4px rgba(255,255,255,.85);opacity:0;}
+#root .cursor{position:absolute;left:0;top:0;width:34px;height:34px;opacity:0;}
+#root .touch{position:absolute;left:0;top:0;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;border:4px solid #1A1A1A;background:rgba(26,26,26,.12);opacity:0;}
+#root .card{position:absolute;left:0;top:0;width:1920px;height:1080px;}
+</style>
+<div id="root" data-composition-id="agenda" data-width="1920" data-height="1080" data-duration="76.49">
+<div class="bg"></div>
+<div id="agenda-stage" class="stage">
+<div id="agenda-panel" class="panel clip" data-start="0.4" data-duration="76.09"><div class="chap">3 · Agenda de citas</div><div class="chap-rule"></div></div>
+<div id="agenda-step1" class="step clip" data-start="0.55" data-duration="7.83"><div class="n">Paso 1</div><div class="t">Tu agenda del mes</div></div>
+<div id="agenda-shot1" class="shot clip" data-start="0.4" data-duration="8.38">
+  <div id="agenda-shot1-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot1-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot1-cam" class="cam"><img class="shotimg" src="assets/04-agenda.png" alt="">
+        <div id="agenda-shot1-hl0" class="hl" style="left:264px;top:197px;width:1137px;height:178px;border-width:3.75px;border-radius:15px"></div>
+        <div id="agenda-shot1-hl1" class="hl" style="left:264px;top:500px;width:755px;height:408px;border-width:3.23px;border-radius:12.93px"></div>
+        <div id="agenda-shot1-hl2" class="hl" style="left:792px;top:696px;width:120px;height:96px;border-width:1.88px;border-radius:7.5px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot1-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step2" class="step clip" data-start="8.03" data-duration="11.92"><div class="n">Paso 2</div><div class="t">Un punto por cita</div></div>
+<div id="agenda-shot2" class="shot clip" data-start="8.03" data-duration="12.32">
+  <div id="agenda-shot2-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot2-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot2-cam" class="cam"><img class="shotimg" src="assets/05b-calendario-puntos.png" alt="">
+        <div id="agenda-shot2-hl0" class="hl" style="left:792px;top:696px;width:120px;height:96px;border-width:1.88px;border-radius:7.5px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot2-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step3" class="step clip" data-start="19.6" data-duration="6.85"><div class="n">Paso 3</div><div class="t">Las clientas del día</div></div>
+<div id="agenda-shot3" class="shot clip" data-start="19.6" data-duration="7.25">
+  <div id="agenda-shot3-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot3-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot3-cam" class="cam"><img class="shotimg" src="assets/04b-agenda-citas-del-dia.png" alt="">
+        <div id="agenda-shot3-hl0" class="hl" style="left:369px;top:147px;width:687px;height:606px;border-width:3.75px;border-radius:15px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot3-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step4" class="step clip" data-start="26.1" data-duration="8.36"><div class="n">Paso 4</div><div class="t">Detalle de la cita</div></div>
+<div id="agenda-shot4" class="shot clip" data-start="26.1" data-duration="8.76">
+  <div id="agenda-shot4-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot4-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot4-cam" class="cam"><img class="shotimg" src="assets/05d-detalle-cita.png" alt="">
+        <div id="agenda-shot4-hl0" class="hl" style="left:369px;top:32px;width:687px;height:836px;border-width:3.75px;border-radius:15px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot4-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step5" class="step clip" data-start="34.11" data-duration="12.35"><div class="n">Paso 5</div><div class="t">Nueva cita</div></div>
+<div id="agenda-shot5" class="shot clip" data-start="34.11" data-duration="2.93">
+  <div id="agenda-shot5-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot5-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot5-cam" class="cam"><img class="shotimg" src="assets/05e-nueva-cita-vacia.png" alt="">
+        <div id="agenda-shot5-hl0" class="hl" style="left:448px;top:52px;width:526px;height:846px;border-width:3.75px;border-radius:15px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot5-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-shot6" class="shot clip" data-start="36.64" data-duration="4.42">
+  <div id="agenda-shot6-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot6-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot6-cam" class="cam"><img class="shotimg" src="assets/05e2-buscar-cliente.png" alt="">
+      </div>
+    </div></div>
+    <div id="agenda-shot6-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-shot7" class="shot clip" data-start="40.66" data-duration="6.2">
+  <div id="agenda-shot7-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot7-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot7-cam" class="cam"><img class="shotimg" src="assets/05e3-nueva-cita-servicios.png" alt="">
+      </div>
+    </div></div>
+    <div id="agenda-shot7-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step6" class="step clip" data-start="46.11" data-duration="6.7"><div class="n">Paso 6</div><div class="t">Especialista, fecha y hora</div></div>
+<div id="agenda-shot8" class="shot clip" data-start="46.11" data-duration="7.1">
+  <div id="agenda-shot8-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot8-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot8-cam" class="cam"><img class="shotimg" src="assets/05e3-nueva-cita-servicios.png" alt="">
+        <div id="agenda-shot8-hl0" class="hl" style="left:448px;top:52px;width:526px;height:846px;border-width:3.75px;border-radius:15px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot8-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step7" class="step clip" data-start="52.46" data-duration="10.86"><div class="n">Paso 7</div><div class="t">Editar y cambiar estado</div></div>
+<div id="agenda-shot9" class="shot clip" data-start="52.46" data-duration="11.26">
+  <div id="agenda-shot9-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot9-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot9-cam" class="cam"><img class="shotimg" src="assets/05g-editar-cita.png" alt="">
+        <div id="agenda-shot9-hl0" class="hl" style="left:448px;top:52px;width:526px;height:846px;border-width:3.75px;border-radius:15px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot9-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step8" class="step clip" data-start="62.97" data-duration="5.77"><div class="n">Paso 8</div><div class="t">Invitada → clienta</div></div>
+<div id="agenda-shot10" class="shot clip" data-start="62.97" data-duration="2">
+  <div id="agenda-shot10-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot10-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot10-cam" class="cam"><img class="shotimg" src="assets/05h-cita-invitado.png" alt="">
+        <div id="agenda-shot10-hl0" class="hl" style="left:369px;top:32px;width:687px;height:836px;border-width:3.75px;border-radius:15px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot10-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-shot11" class="shot clip" data-start="64.57" data-duration="4.57">
+  <div id="agenda-shot11-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot11-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot11-cam" class="cam"><img class="shotimg" src="assets/05h2-registrar-invitado.png" alt="">
+      </div>
+    </div></div>
+    <div id="agenda-shot11-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-step9" class="step clip" data-start="68.39" data-duration="8.1"><div class="n">Paso 9</div><div class="t">Filtros y Pagar cita</div></div>
+<div id="agenda-shot12" class="shot clip" data-start="68.39" data-duration="3.26">
+  <div id="agenda-shot12-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot12-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot12-cam" class="cam"><img class="shotimg" src="assets/05i-filtros.png" alt="">
+        <div id="agenda-shot12-hl0" class="hl" style="left:264px;top:382px;width:1137px;height:110px;border-width:3.75px;border-radius:15px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot12-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+<div id="agenda-shot13" class="shot clip" data-start="71.25" data-duration="5.24">
+  <div id="agenda-shot13-in" style="position:absolute;inset:0">
+    <div class="frame"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div id="agenda-shot13-url" class="url" data-layout-ignore><span>tuspa.pe/dashboard/citas</span></div></div><div class="screen">
+      <div id="agenda-shot13-cam" class="cam"><img class="shotimg" src="assets/04-agenda.png" alt="">
+        <div id="agenda-shot13-hl0" class="hl" style="left:1064px;top:713px;width:300px;height:60px;border-width:1.88px;border-radius:7.5px"></div>
+      </div>
+    </div></div>
+    <div id="agenda-shot13-cur" class="cursor"><svg viewBox="0 0 24 24" width="34" height="34"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L18.5 14.2 Z" fill="#1A1A1A" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+  </div>
+</div>
+</div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#agenda-panel", {"opacity":0,"x":-12}, {"opacity":1,"x":0,"duration":0.5,"ease":"power2.out"}, 0.45);
+tl.fromTo("#agenda-step1 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 0.6);
+tl.fromTo("#agenda-step1 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 0.65);
+tl.fromTo("#agenda-step1", {"opacity":1}, {"opacity":0,"duration":0.3}, 8.02);
+tl.fromTo("#agenda-shot1-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 0.4);
+tl.fromTo("#agenda-shot1-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 1.83);
+tl.fromTo("#agenda-shot1-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 2.53);
+tl.fromTo("#agenda-shot1-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 1.83);
+tl.fromTo("#agenda-shot1-cur", {"x":1010.5600000000001,"y":700}, {"x":774,"y":350.8,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 1.83);
+tl.fromTo("#agenda-shot1-hl0", {"opacity":1}, {"opacity":0,"duration":0.25,"immediateRender":false}, 2.94);
+tl.fromTo("#agenda-shot1-cam", {"scale":1,"x":0,"y":0}, {"scale":1.16,"x":-22.84,"y":-142.18,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 2.94);
+tl.fromTo("#agenda-shot1-hl1", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 3.64);
+tl.fromTo("#agenda-shot1-cur", {"x":774,"y":350.8}, {"x":684,"y":660.43,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 2.94);
+tl.fromTo("#agenda-shot1-hl1", {"opacity":1}, {"opacity":0,"duration":0.25,"immediateRender":false}, 5.67);
+tl.fromTo("#agenda-shot1-cam", {"scale":1.16,"x":-22.84,"y":-142.18}, {"scale":2,"x":-984,"y":-900,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 5.67);
+tl.fromTo("#agenda-shot1-hl2", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 6.37);
+tl.fromTo("#agenda-shot1-cur", {"x":684,"y":660.43}, {"x":684,"y":592.4,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 5.67);
+tl.fromTo("#agenda-shot1-cam", {"scale":2,"x":-984,"y":-900}, {"scale":2.07,"x":-1034.4,"y":-931.5,"duration":1.86,"ease":"none","immediateRender":false}, 6.52);
+tl.fromTo("#agenda-shot1-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 8.38);
+tl.fromTo("#agenda-step2 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 8.08);
+tl.fromTo("#agenda-step2 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 8.13);
+tl.fromTo("#agenda-step2", {"opacity":1}, {"opacity":0,"duration":0.3}, 19.59);
+tl.fromTo("#agenda-shot2-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 8.03);
+tl.fromTo("#agenda-shot2-cam", {"scale":1,"x":0,"y":0}, {"scale":2,"x":-984,"y":-900,"duration":0.8,"ease":"power2.inOut"}, 8.53);
+tl.fromTo("#agenda-shot2-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 9.23);
+tl.fromTo("#agenda-shot2-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 8.53);
+tl.fromTo("#agenda-shot2-cur", {"x":1010.5600000000001,"y":700}, {"x":684,"y":592.4,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 8.53);
+tl.fromTo("#agenda-shot2-cam", {"scale":2,"x":-984,"y":-900}, {"scale":2.07,"x":-1034.4,"y":-931.5,"duration":10.57,"ease":"none","immediateRender":false}, 9.38);
+tl.fromTo("#agenda-shot2-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 19.95);
+tl.fromTo("#agenda-step3 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 19.65);
+tl.fromTo("#agenda-step3 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 19.7);
+tl.fromTo("#agenda-step3", {"opacity":1}, {"opacity":0,"duration":0.3}, 26.09);
+tl.fromTo("#agenda-shot3-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 19.6);
+tl.fromTo("#agenda-shot3-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 20.95);
+tl.fromTo("#agenda-shot3-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 21.65);
+tl.fromTo("#agenda-shot3-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 20.95);
+tl.fromTo("#agenda-shot3-cur", {"x":1010.5600000000001,"y":700}, {"x":678,"y":482,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 20.95);
+tl.fromTo("#agenda-shot3-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":4.65,"ease":"none","immediateRender":false}, 21.8);
+tl.fromTo("#agenda-shot3-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 26.45);
+tl.fromTo("#agenda-step4 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 26.15);
+tl.fromTo("#agenda-step4 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 26.2);
+tl.fromTo("#agenda-step4", {"opacity":1}, {"opacity":0,"duration":0.3}, 34.1);
+tl.fromTo("#agenda-shot4-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 26.1);
+tl.fromTo("#agenda-shot4-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 27.64);
+tl.fromTo("#agenda-shot4-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 28.34);
+tl.fromTo("#agenda-shot4-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 27.64);
+tl.fromTo("#agenda-shot4-cur", {"x":1010.5600000000001,"y":700}, {"x":678,"y":482,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 27.64);
+tl.fromTo("#agenda-shot4-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":5.97,"ease":"none","immediateRender":false}, 28.49);
+tl.fromTo("#agenda-shot4-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 34.46);
+tl.fromTo("#agenda-step5 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 34.16);
+tl.fromTo("#agenda-step5 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 34.21);
+tl.fromTo("#agenda-step5", {"opacity":1}, {"opacity":0,"duration":0.3}, 46.1);
+tl.fromTo("#agenda-shot5-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 34.11);
+tl.fromTo("#agenda-shot5-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 35.28);
+tl.fromTo("#agenda-shot5-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 35.98);
+tl.fromTo("#agenda-shot5-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 35.28);
+tl.fromTo("#agenda-shot5-cur", {"x":1010.5600000000001,"y":700}, {"x":676.8,"y":502,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 35.28);
+tl.fromTo("#agenda-shot5-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 36.64);
+tl.fromTo("#agenda-shot6-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 36.64);
+tl.fromTo("#agenda-shot6-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":3.72,"ease":"none"}, 36.94);
+tl.fromTo("#agenda-shot6-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 40.66);
+tl.fromTo("#agenda-shot7-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 40.66);
+tl.fromTo("#agenda-shot7-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":5.5,"ease":"none"}, 40.96);
+tl.fromTo("#agenda-shot7-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 46.46);
+tl.fromTo("#agenda-step6 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 46.16);
+tl.fromTo("#agenda-step6 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 46.21);
+tl.fromTo("#agenda-step6", {"opacity":1}, {"opacity":0,"duration":0.3}, 52.45);
+tl.fromTo("#agenda-shot8-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 46.11);
+tl.fromTo("#agenda-shot8-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 47.52);
+tl.fromTo("#agenda-shot8-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 48.22);
+tl.fromTo("#agenda-shot8-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 47.52);
+tl.fromTo("#agenda-shot8-cur", {"x":1010.5600000000001,"y":700}, {"x":676.8,"y":502,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 47.52);
+tl.fromTo("#agenda-shot8-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":4.44,"ease":"none","immediateRender":false}, 48.37);
+tl.fromTo("#agenda-shot8-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 52.81);
+tl.fromTo("#agenda-step7 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 52.51);
+tl.fromTo("#agenda-step7 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 52.56);
+tl.fromTo("#agenda-step7", {"opacity":1}, {"opacity":0,"duration":0.3}, 62.96);
+tl.fromTo("#agenda-shot9-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 52.46);
+tl.fromTo("#agenda-shot9-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 52.96);
+tl.fromTo("#agenda-shot9-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 53.66);
+tl.fromTo("#agenda-shot9-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 52.96);
+tl.fromTo("#agenda-shot9-cur", {"x":1010.5600000000001,"y":700}, {"x":676.8,"y":502,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 52.96);
+tl.fromTo("#agenda-shot9-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":9.51,"ease":"none","immediateRender":false}, 53.81);
+tl.fromTo("#agenda-shot9-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 63.32);
+tl.fromTo("#agenda-step8 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 63.02);
+tl.fromTo("#agenda-step8 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 63.07);
+tl.fromTo("#agenda-step8", {"opacity":1}, {"opacity":0,"duration":0.3}, 68.38);
+tl.fromTo("#agenda-shot10-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 62.97);
+tl.fromTo("#agenda-shot10-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 63.67);
+tl.fromTo("#agenda-shot10-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 64.37);
+tl.fromTo("#agenda-shot10-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 63.67);
+tl.fromTo("#agenda-shot10-cur", {"x":1010.5600000000001,"y":700}, {"x":678,"y":482,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 63.67);
+tl.fromTo("#agenda-shot10-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 64.57);
+tl.fromTo("#agenda-shot11-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 64.57);
+tl.fromTo("#agenda-shot11-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":3.87,"ease":"none"}, 64.87);
+tl.fromTo("#agenda-shot11-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 68.74);
+tl.fromTo("#agenda-step9 .n", {"opacity":0}, {"opacity":1,"duration":0.4}, 68.44);
+tl.fromTo("#agenda-step9 .t", {"opacity":0,"y":14}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 68.49);
+tl.fromTo("#agenda-shot12-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 68.39);
+tl.fromTo("#agenda-shot12-cam", {"scale":1,"x":0,"y":0}, {"scale":1,"x":0,"y":0,"duration":0.8,"ease":"power2.inOut"}, 68.89);
+tl.fromTo("#agenda-shot12-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 69.59);
+tl.fromTo("#agenda-shot12-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 68.89);
+tl.fromTo("#agenda-shot12-cur", {"x":1010.5600000000001,"y":700}, {"x":774,"y":471.6,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 68.89);
+tl.fromTo("#agenda-shot12-cam", {"scale":1,"x":0,"y":0}, {"scale":1.03,"x":-21.6,"y":-13.5,"duration":1.51,"ease":"none","immediateRender":false}, 69.74);
+tl.fromTo("#agenda-shot12-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 71.25);
+tl.fromTo("#agenda-shot13-in", {"opacity":0}, {"opacity":1,"duration":0.4,"ease":"power1.out"}, 71.25);
+tl.fromTo("#agenda-shot13-cam", {"scale":1,"x":0,"y":0}, {"scale":2,"x":-1440,"y":-900,"duration":0.8,"ease":"power2.inOut"}, 72.59);
+tl.fromTo("#agenda-shot13-hl0", {"opacity":0,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.3,"ease":"power2.out"}, 73.29);
+tl.fromTo("#agenda-shot13-cur", {"opacity":0,"x":1010.5600000000001,"y":700}, {"opacity":1,"duration":0.25}, 72.59);
+tl.fromTo("#agenda-shot13-cur", {"x":1010.5600000000001,"y":700}, {"x":898.4,"y":590.8,"duration":0.8,"ease":"power2.inOut","immediateRender":false}, 72.59);
+tl.fromTo("#agenda-shot13-cam", {"scale":2,"x":-1440,"y":-900}, {"scale":2.07,"x":-1490.4,"y":-931.5,"duration":2.65,"ease":"none","immediateRender":false}, 73.44);
+tl.fromTo("#agenda-shot13-in", {"opacity":1}, {"opacity":0,"duration":0.4,"ease":"power1.in","immediateRender":false}, 76.09);
+tl.fromTo("#agenda-stage", {"opacity":0}, {"opacity":1,"duration":0.45,"ease":"power1.out"}, 0);
+tl.fromTo("#agenda-stage", {"opacity":1}, {"opacity":0,"duration":0.45,"ease":"power1.in","immediateRender":false}, 76.04);
+window.__timelines = window.__timelines || {};
+window.__timelines["agenda"] = tl;
+</script>
+</template>

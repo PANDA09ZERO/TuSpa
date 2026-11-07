@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { createClient } from "@supabase/supabase-js";
 import PublicCatalog from "./public-catalog";
+import { getBrandAssets } from "@/lib/brand-assets";
+import { brand } from "@/lib/brand";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Essence Spa | Servicios y promociones",
-  description: "Descubre los servicios y promociones vigentes de Essence Spa.",
+  title: `${brand.name} | Servicios y promociones`,
+  description: `Descubre los servicios y promociones vigentes de ${brand.name}.`,
 };
 
 export interface PublicService {
@@ -36,9 +38,10 @@ export default async function Home() {
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     { auth: { autoRefreshToken: false, persistSession: false } },
   );
-  const [servicesResult, promotionsResult] = await Promise.all([
+  const [servicesResult, promotionsResult, assets] = await Promise.all([
     supabase.from("servicios").select("id, nombre, descripcion, categoria, precio, duracion, imagen, estado").order("nombre"),
     supabase.from("promociones").select("id, nombre, descripcion, descuento, fecha_inicio, fecha_fin, activa").order("created_at", { ascending: false }),
+    getBrandAssets(supabase),
   ]);
 
   const today = new Date().toISOString().slice(0, 10);
@@ -53,5 +56,6 @@ export default async function Home() {
     services={services}
     promotions={promotions}
     dataUnavailable={Boolean(servicesResult.error || promotionsResult.error)}
+    assets={assets}
   />;
 }

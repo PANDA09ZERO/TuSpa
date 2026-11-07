@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SupabaseProvider } from "@/components/layout/SupabaseProvider";
+import { brand } from "@/lib/brand";
 
 export const metadata: Metadata = {
-  title: "Essence Spa - Sistema de Gestión",
-  description: "Sistema de gestión para salón de uñas Essence Spa",
+  title: `${brand.name} - Sistema de Gestión`,
+  description: `Sistema de gestión para ${brand.name}`,
 };
 
 export const viewport: Viewport = {

@@ -118,7 +118,7 @@ export default function CategoriasPage() {
           <h1 className="font-display text-3xl font-bold text-brand-green">Categorías</h1>
           <p className="text-brand-text-light mt-1">Organiza tus servicios por categoría</p>
         </div>
-        <CreateResourceModal title="Categoría" endpoint="/api/categorias" fields={[{ name: "nombre", label: "Nombre", required: true }, { name: "descripcion", label: "Descripción" }]} onCreated={cargarDatos} />
+        <CreateResourceModal title="Categoría" feminine endpoint="/api/categorias" fields={[{ name: "nombre", label: "Nombre", required: true }, { name: "descripcion", label: "Descripción" }]} onCreated={cargarDatos} />
       </div>
 
       {actionError && <div role="alert" className="bento-card text-sm text-red-500">{actionError}</div>}
@@ -137,7 +137,7 @@ export default function CategoriasPage() {
                   {cat.icono && <div className="text-3xl mb-2">{cat.icono}</div>}
                   <h3 className="font-display font-bold">{cat.nombre.toUpperCase()}</h3>
                   {cat.descripcion && <p className="text-xs text-brand-text-light mt-1">{cat.descripcion}</p>}
-                  <p className="text-sm text-brand-text-light mt-1">{serviciosDeCategoria.length} servicios</p>
+                  <p className="text-sm text-brand-text-light mt-1">{serviciosDeCategoria.length} {serviciosDeCategoria.length === 1 ? "servicio" : "servicios"}</p>
                   <span className={`inline-block mt-2 px-3 py-1 rounded-full text-xs ${activo ? "bg-green-100 text-green-700" : "bg-gray-100 text-gray-600"}`}>
                     {activo ? "Activo" : "Inactivo"}
                   </span>
