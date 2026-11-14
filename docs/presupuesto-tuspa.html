@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Presupuesto tuSpa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: columna de lectura con índice fijo a la izquierda en escritorio; bloques de texto copiables como "fichas"; el presupuesto es un documento con formulario al lado */
+:root{
+  --bg:#F5F3EE; --surface:#FFFFFF; --ink:#1A1A1A; --muted:#6B6560; --stone:#9D9488; --line:#E3DED4; --soft:#EEE9E0; --ok:#2F6B4F; --warn:#8A5A12; --warnbg:#FBF1DE;
+  --paper:#FFFFFF; --paper-ink:#1A1A1A; --paper-muted:#6B6560; --paper-line:#E3DED4; --paper-soft:#F5F3EE;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif;
+  --body:'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#161514; --surface:#201E1C; --ink:#F2EFE9; --muted:#B3ACA3; --stone:#A89F92; --line:#34312D; --soft:#2A2724; --ok:#7CC3A0; --warn:#E8B867; --warnbg:#2E2617; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161514; --surface:#201E1C; --ink:#F2EFE9; --muted:#B3ACA3; --stone:#A89F92; --line:#34312D; --soft:#2A2724; --ok:#7CC3A0; --warn:#E8B867; --warnbg:#2E2617; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0}
+.wrap{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px;padding-block:48px 96px}
+nav.toc{position:sticky;top:calc(env(safe-area-inset-top, 0px) + 24px);align-self:start;display:flex;flex-direction:column;gap:4px}
+nav.toc .brand{font-family:var(--display);font-size:24px;font-weight:600;margin-bottom:12px}
+nav.toc a{color:var(--muted);text-decoration:none;font-size:14px;padding:6px 10px;border-radius:8px}
+nav.toc a:hover,nav.toc a:focus-visible{background:var(--soft);color:var(--ink);outline:none}
+nav.toc a.new::after{content:"nuevo";margin-left:6px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ok)}
+main{min-width:0}
+header.top{padding-bottom:32px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--stone)}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(34px,5vw,48px);line-height:1.1;margin:8px 0 12px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:30px;line-height:1.2;margin:0 0 8px;text-wrap:balance}
+h3{font-size:17px;font-weight:600;margin:28px 0 8px}
+p{margin:0 0 12px;max-width:68ch}
+.lead{color:var(--muted);font-size:17px}
+section{padding-top:56px;scroll-margin-top:24px}
+ul,ol{margin:0 0 12px;padding-left:22px;max-width:68ch}
+li{margin-bottom:6px}
+.note{background:var(--soft);border-radius:12px;padding:14px 16px;color:var(--muted);font-size:14px;max-width:68ch}
+.note b{color:var(--ink)}
+.warn{background:var(--warnbg);color:var(--warn);border-radius:12px;padding:14px 16px;font-size:14px;max-width:68ch;margin:12px 0}
+.warn b{color:inherit}
+.tbl{overflow-x:auto;margin:12px 0 16px}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--stone);font-weight:600}
+td.num,th.num{text-align:right;white-space:nowrap}
+tr.total td{font-weight:600}
+.pos{color:var(--ok)}
+.offer{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:16px 0}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.plan .price{font-family:var(--display);font-size:34px;font-weight:600;margin:4px 0}
+.plan .per{color:var(--muted);font-size:14px}
+.plan ul{margin-top:12px;font-size:15px}
+.copy{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin:12px 0 20px;overflow:hidden}
+.copy .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);background:var(--soft)}
+.copy .bar span{font-size:13px;font-weight:600;color:var(--muted)}
+.copy button,.btn{font:inherit;font-size:13px;font-weight:600;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+.copy button:hover,.btn:hover{border-color:var(--stone)}
+.copy button:focus-visible,.btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.copy pre{margin:0;padding:16px;white-space:pre-wrap;word-wrap:break-word;font-family:var(--body);font-size:15px;line-height:1.6;color:var(--ink)}
+.steps{list-style:none;padding:0;margin:16px 0;display:grid;gap:12px;max-width:none}
+.steps li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--surface);margin:0}
+.steps .when{font-size:13px;font-weight:600;color:var(--stone);text-transform:uppercase;letter-spacing:.06em}
+.steps b{display:block;margin-bottom:4px}
+.steps p{margin:0;color:var(--muted);font-size:15px}
+.terms h3{font-family:var(--display);font-size:20px;font-weight:600}
+.ph{background:var(--soft);border-radius:4px;padding:0 4px;font-weight:600}
+.status{list-style:none;padding:0;display:grid;gap:8px;max-width:none}
+.status li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0}
+.pill{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;padding:3px 10px;white-space:nowrap;margin-top:2px}
+.pill.done{background:var(--soft);color:var(--ok)}
+.pill.todo{background:var(--warnbg);color:var(--warn)}
+.status span.t{font-size:15px}
+.status span.t b{display:block}
+
+/* Presupuesto: formulario + documento */
+.quote-tool{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:24px;align-items:start;margin:20px 0}
+.form{display:grid;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form label{display:grid;gap:4px;font-size:13px;font-weight:600;color:var(--muted);min-width:0}
+.form input,.form select{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:100%;min-width:0}
+.form input:focus-visible,.form select:focus-visible{outline:2px solid var(--ink);outline-offset:1px}
+.form fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
+.form legend{font-size:13px;font-weight:600;color:var(--muted);margin-bottom:6px}
+.form .opt{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;align-items:start;font-weight:500;color:var(--ink);font-size:14px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px}
+.form .opt input{width:16px;height:16px;margin-top:3px;accent-color:var(--ink);padding:0}
+.form .opt small{display:block;color:var(--muted);font-weight:400}
+.form .extra{display:grid;grid-template-columns:minmax(0,1fr) 90px;gap:8px}
+.form .actions{display:flex;flex-wrap:wrap;gap:8px}
+.form .hint{font-size:12px;color:var(--stone);font-weight:400;margin:0}
+
+.paper{background:var(--paper);color:var(--paper-ink);border:1px solid var(--paper-line);border-radius:6px;padding:32px;box-shadow:0 1px 0 var(--line),0 12px 32px -18px rgba(26,26,26,.35);min-width:0;font-size:14px;line-height:1.55}
+.paper .head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start;padding-bottom:18px;border-bottom:2px solid var(--paper-ink)}
+.paper .logo{font-family:var(--display);font-size:30px;font-weight:600;line-height:1}
+.paper .logo small{display:block;font-family:var(--body);font-size:12px;font-weight:500;color:var(--paper-muted);margin-top:6px;letter-spacing:.02em}
+.paper .doc{text-align:right;font-size:13px;color:var(--paper-muted);font-variant-numeric:tabular-nums}
+.paper .doc b{display:block;font-family:var(--display);font-size:20px;color:var(--paper-ink);font-weight:600;letter-spacing:.02em}
+.paper .parties{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--paper-line)}
+.paper .lbl{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:4px}
+.paper h4{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-muted);margin:20px 0 8px}
+.paper table{min-width:0;font-size:14px}
+.paper th,.paper td{border-bottom:1px solid var(--paper-line);padding:8px 6px}
+.paper th{color:var(--paper-muted);font-size:10.5px}
+.paper td small{display:block;color:var(--paper-muted);font-size:12.5px}
+.paper tr.total td{border-bottom:2px solid var(--paper-ink);font-size:15px}
+.paper ul{padding-left:18px;margin:0;max-width:none}
+.paper li{margin-bottom:3px}
+.paper .cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.paper .pay{background:var(--paper-soft);border-radius:6px;padding:12px 14px;font-variant-numeric:tabular-nums}
+.paper .pay p{margin:0 0 4px;max-width:none}
+.paper .foot{margin-top:22px;padding-top:14px;border-top:1px solid var(--paper-line);font-size:12.5px;color:var(--paper-muted)}
+.paper .sign{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:34px;font-size:12.5px;color:var(--paper-muted)}
+.paper .sign div{border-top:1px solid var(--paper-ink);padding-top:6px}
+
+@media (max-width:980px){.quote-tool{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:820px){
+  .wrap{grid-template-columns:minmax(0,1fr);gap:8px;padding-block:24px 64px}
+  nav.toc{position:static;flex-direction:row;flex-wrap:wrap;gap:6px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  nav.toc .brand{width:100%;margin-bottom:4px}
+  nav.toc a{background:var(--surface);border:1px solid var(--line)}
+  .steps li{grid-template-columns:minmax(0,1fr);gap:6px}
+}
+@media (max-width:560px){
+  .paper{padding:20px 16px}
+  .paper .parties,.paper .cols,.paper .sign{grid-template-columns:minmax(0,1fr)}
+  .paper .doc{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style>
+<style>
+.page{max-width:1080px;margin:0 auto;padding-block:8px 64px}
+@page{size:A4;margin:14mm}
+@media print{
+  :root{color-scheme:light}
+  body{background:#fff!important;padding:0!important}
+  .page > section > *:not(.quote-tool),.form{display:none!important}
+  .quote-tool{display:block;margin:0}
+  .paper{border:0;box-shadow:none;padding:0;border-radius:0;--paper:#fff}
+  section{padding-top:0}
+}
+</style>
+</head><body>
+<div class="page">
+<!--PRESUPUESTO-START-->
+    <section id="presupuesto">
+      <div class="eyebrow">tuSpa · Presupuesto para clientes</div>
+      <h2>Presupuesto</h2>
+      <p>Llena los datos del spa y elige la forma de pago: el presupuesto se arma solo. Envíalo por WhatsApp de dos maneras: con <b>una captura</b> del documento, que se ve más formal, o copiando <b>la versión en texto</b> de abajo.</p>
+
+      <div class="quote-tool">
+        <form class="form" id="qform" autocomplete="off">
+          <label for="q-negocio">Nombre del negocio<input id="q-negocio" value="Spa Rosa"></label>
+          <div class="row">
+            <label for="q-contacto">Contacto<input id="q-contacto" value="Rosa Pérez"></label>
+            <label for="q-ciudad">Ciudad<input id="q-ciudad" value="Lima"></label>
+          </div>
+          <div class="row">
+            <label for="q-num">N.º de presupuesto<input id="q-num" value="TS-2026-001"></label>
+            <label for="q-fecha">Fecha<input id="q-fecha" type="date"></label>
+          </div>
+          <fieldset>
+            <legend>Forma de pago</legend>
+            <label class="opt"><input type="radio" name="q-opt" id="q-opt-a" value="A" checked><span>A · Contado 50/50<small>S/ 3,000 en dos partes</small></span></label>
+            <label class="opt"><input type="radio" name="q-opt" id="q-opt-b" value="B"><span>B · En cuotas<small>S/ 1,500 + 12 cuotas de S/ 249</small></span></label>
+            <label class="opt"><input type="radio" name="q-opt" id="q-opt-c" value="C"><span>C · Lanzamiento<small>S/ 2,000, solo 3 primeros spas</small></span></label>
+          </fieldset>
+          <label for="q-desc">Descuento sobre la instalación (S/)<input id="q-desc" type="number" min="0" step="50" value="0" inputmode="numeric"></label>
+          <fieldset>
+            <legend>Adicionales (opcional)</legend>
+            <div class="extra"><input id="q-x1" placeholder="Ej.: 3.ª capacitación" aria-label="Adicional 1"><input id="q-x1m" type="number" min="0" placeholder="S/" aria-label="Monto adicional 1" inputmode="numeric"></div>
+            <div class="extra"><input id="q-x2" placeholder="Ej.: carga de fotos" aria-label="Adicional 2"><input id="q-x2m" type="number" min="0" placeholder="S/" aria-label="Monto adicional 2" inputmode="numeric"></div>
+            <p class="hint">Se suman a la instalación y se pagan junto con el pago inicial.</p>
+          </fieldset>
+          <label for="q-prov">Tu nombre (proveedor)<input id="q-prov" placeholder="[Tu nombre completo]"></label>
+          <label for="q-doc">Tu DNI o RUC<input id="q-doc" placeholder="[número]"></label>
+          <div class="actions">
+            <button type="button" class="btn" id="q-next">Siguiente número</button>
+            <button type="button" class="btn" id="q-print">Guardar como PDF</button>
+            <button type="button" class="btn" id="q-reset">Volver al ejemplo</button>
+          </div>
+          <p class="hint">Tu nombre, tu documento y el número se recuerdan en este navegador.</p>
+        </form>
+
+        <article class="paper" id="qpaper" aria-label="Vista del presupuesto">
+          <div class="head">
+            <div class="logo">tuSpa<small>Sistema de gestión para spas y salones</small></div>
+            <div class="doc"><b>PRESUPUESTO</b>N.º <span data-q="num"></span><br>Fecha: <span data-q="fecha"></span><br>Válido hasta: <span data-q="vence"></span></div>
+          </div>
+          <div class="parties">
+            <div><div class="lbl">Para</div><b data-q="negocio"></b><br><span data-q="contacto"></span> · <span data-q="ciudad"></span></div>
+            <div><div class="lbl">De</div><b data-q="prov"></b><br>DNI/RUC <span data-q="doc"></span><br>WhatsApp 903 155 163</div>
+          </div>
+
+          <h4>Detalle</h4>
+          <table>
+            <thead><tr><th>Concepto</th><th class="num">Monto</th></tr></thead>
+            <tbody id="q-rows"></tbody>
+          </table>
+
+          <div class="cols">
+            <div>
+              <h4>La instalación incluye</h4>
+              <ul>
+                <li>Sistema con el nombre, logo y colores del negocio</li>
+                <li>Carga de servicios, precios y promociones</li>
+                <li>Cuentas para todo el equipo con su rol</li>
+                <li>Página web con pedidos por WhatsApp</li>
+                <li>Dominio propio el primer año</li>
+                <li>2 rondas de ajustes y 2 capacitaciones</li>
+                <li>Video guía del sistema</li>
+              </ul>
+            </div>
+            <div>
+              <h4>El mantenimiento incluye</h4>
+              <ul>
+                <li>Servidor y base de datos</li>
+                <li>Copias de seguridad diarias</li>
+                <li>Soporte por WhatsApp, lun–sáb 9:00–19:00</li>
+                <li>Actualizaciones y mejoras del sistema</li>
+              </ul>
+              <h4>No incluye</h4>
+              <ul>
+                <li>Cambios a medida o funciones nuevas</li>
+                <li>Renovación del dominio desde el 2.º año</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Forma de pago</h4>
+          <div class="pay" id="q-pay"></div>
+
+          <div class="foot">
+            <b>Plazo de entrega:</b> 7 días hábiles desde el pago inicial y la recepción del logo, los servicios y los datos del equipo.<br>
+            <b>Medios de pago:</b> Yape o Plin al 903 155 163, o transferencia a [banco y número de cuenta].<br>
+            Montos en soles. Al aceptar este presupuesto se aplican los términos y condiciones del servicio tuSpa.
+          </div>
+          <div class="sign"><div>Proveedor</div><div>Cliente · acepto el presupuesto</div></div>
+        </article>
+      </div>
+
+      <div class="copy"><div class="bar"><span>Presupuesto en texto (para WhatsApp)</span><button type="button" data-copy="q-text">Copiar</button></div><pre id="q-text"></pre></div>
+
+      <p class="note"><b>Para el PDF:</b> llena los datos y pulsa «Guardar como PDF». En la ventana de impresión elige «Guardar como PDF» como destino. Solo se imprime el documento.</p>
+    </section>
+    </div>
+<script>
+document.querySelectorAll('button[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.getAttribute('data-copy'));
+    var text = el.innerText;
+    var done = function () { btn.textContent = 'Copiado'; setTimeout(function () { btn.textContent = 'Copiar'; }, 1600); };
+    var fallback = function () {
+      var r = document.createRange(); r.selectNodeContents(el);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = 'Texto seleccionado';
+      setTimeout(function () { btn.textContent = 'Copiar'; }, 1800);
+    };
+    try {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } catch (e) { fallback(); }
+  });
+});
+</script>
+<!--QUOTE-SCRIPT-START-->
+<script>
+(function () {
+  var MANT = 120, CUOTA = 249, CUOTAS = 12;
+  var $ = function (id) { return document.getElementById(id); };
+  var money = function (n) { return 'S/ ' + Math.round(n).toLocaleString('en-US'); };
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  var fmt = function (d) { return pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + d.getFullYear(); };
+  var store = {
+    get: function (k) { try { return localStorage.getItem('tuspa-q-' + k); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem('tuspa-q-' + k, v); } catch (e) {} }
+  };
+  var today = new Date();
+  $('q-fecha').value = today.getFullYear() + '-' + pad(today.getMonth() + 1) + '-' + pad(today.getDate());
+  ['prov', 'doc', 'num'].forEach(function (k) { var v = store.get(k); if (v) $('q-' + k).value = v; });
+
+  function opt() { var r = document.querySelector('input[name="q-opt"]:checked'); return r ? r.value : 'A'; }
+  function txt(id, ph) { var v = $(id).value.trim(); return v || ph; }
+  function num(id) { var v = parseFloat($(id).value); return isFinite(v) && v > 0 ? v : 0; }
+  function esc(s) { return s.replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  function render() {
+    var o = opt();
+    var f = $('q-fecha').value ? new Date($('q-fecha').value + 'T12:00:00') : today;
+    var vence = new Date(f.getTime()); vence.setDate(vence.getDate() + 15);
+    var d = {
+      negocio: txt('q-negocio', '[Nombre del negocio]'), contacto: txt('q-contacto', '[Contacto]'),
+      ciudad: txt('q-ciudad', '[Ciudad]'), num: txt('q-num', 'TS-2026-001'),
+      prov: txt('q-prov', '[Tu nombre completo]'), doc: txt('q-doc', '[número]'),
+      fecha: fmt(f), vence: fmt(vence)
+    };
+    var base = o === 'C' ? 2000 : 3000;
+    var desc = Math.min(num('q-desc'), o === 'B' ? 1500 : base);
+    var extras = [['q-x1', 'q-x1m'], ['q-x2', 'q-x2m']].map(function (p) {
+      return { n: $(p[0]).value.trim(), m: num(p[1]) };
+    }).filter(function (x) { return x.n && x.m; });
+    var extraSum = extras.reduce(function (a, x) { return a + x.m; }, 0);
+
+    var rows = [], pay = [], lines = [], year1;
+    var instLabel = o === 'C' ? 'Instalación tuSpa · precio de lanzamiento' : 'Instalación y puesta en marcha tuSpa';
+    if (o === 'B') {
+      var entrada = 1500 - desc + extraSum;
+      rows.push(['Pago inicial de la instalación', 'Se paga al aceptar', 1500]);
+      rows.push(['12 cuotas mensuales de ' + money(CUOTA), 'Resto de la instalación + mantenimiento del mes 1 al 12', CUOTA * CUOTAS]);
+      extras.forEach(function (x) { rows.push([x.n, 'Adicional', x.m]); });
+      if (desc) rows.push(['Descuento', 'Sobre el pago inicial', -desc]);
+      year1 = entrada + CUOTA * CUOTAS;
+      pay.push('<p><b>Al aceptar:</b> ' + money(entrada) + '</p>');
+      pay.push('<p><b>Desde la entrega:</b> ' + money(CUOTA) + ' al mes durante 12 meses (mantenimiento incluido)</p>');
+      pay.push('<p><b>Desde el mes 13:</b> mantenimiento de ' + money(MANT) + ' al mes</p>');
+      lines.push('💳 Forma de pago: en cuotas', '• Al aceptar: ' + money(entrada), '• Desde la entrega: ' + money(CUOTA) + ' al mes por 12 meses (mantenimiento incluido)', '• Desde el mes 13: ' + money(MANT) + ' al mes');
+    } else {
+      var inst = base - desc + extraSum;
+      var mitad = Math.ceil(inst / 2);
+      rows.push([instLabel, o === 'C' ? 'A cambio de un testimonio en video' : 'Pago único', base]);
+      extras.forEach(function (x) { rows.push([x.n, 'Adicional', x.m]); });
+      if (desc) rows.push(['Descuento', 'Sobre la instalación', -desc]);
+      rows.push(['Mantenimiento mensual', 'El primer mes es gratis', MANT, true]);
+      year1 = inst + MANT * 11;
+      pay.push('<p><b>Al aceptar (50 %):</b> ' + money(mitad) + '</p>');
+      pay.push('<p><b>A la entrega (50 %):</b> ' + money(inst - mitad) + '</p>');
+      pay.push('<p><b>Mantenimiento:</b> ' + money(MANT) + ' al mes por adelantado, desde el mes 2</p>');
+      lines.push('💳 Forma de pago: ' + (o === 'C' ? 'lanzamiento' : 'contado') + ' 50/50', '• Al aceptar: ' + money(mitad), '• A la entrega: ' + money(inst - mitad), '• Mantenimiento: ' + money(MANT) + ' al mes desde el mes 2 (el primero es gratis)');
+    }
+
+    var tb = rows.map(function (r) {
+      return '<tr><td>' + esc(r[0]) + '<small>' + esc(r[1]) + '</small></td><td class="num">' + (r[2] < 0 ? '−' + money(-r[2]) : money(r[2])) + (r[3] ? ' /mes' : '') + '</td></tr>';
+    }).join('');
+    tb += '<tr class="total"><td>Total del primer año</td><td class="num">' + money(year1) + '</td></tr>';
+    $('q-rows').innerHTML = tb;
+    $('q-pay').innerHTML = pay.join('');
+    document.querySelectorAll('[data-q]').forEach(function (el) { el.textContent = d[el.getAttribute('data-q')]; });
+
+    var t = [
+      '📄 PRESUPUESTO tuSpa N.º ' + d.num,
+      'Para: ' + d.negocio + ' (' + d.contacto + ', ' + d.ciudad + ')',
+      'Fecha: ' + d.fecha + ' · Válido hasta: ' + d.vence,
+      '',
+      '📋 Detalle'
+    ];
+    rows.forEach(function (r) { t.push('• ' + r[0] + ': ' + (r[2] < 0 ? '−' + money(-r[2]) : money(r[2])) + (r[3] ? ' al mes' : '')); });
+    t.push('Total del primer año: ' + money(year1), '');
+    t.push('✅ Incluye: sistema con tu nombre y logo, carga de servicios y promociones, cuentas para tu equipo, página web con pedidos por WhatsApp, dominio el primer año, 2 rondas de ajustes, 2 capacitaciones y video guía.');
+    t.push('🔧 Mantenimiento: servidor, copias de seguridad, soporte por WhatsApp y actualizaciones.', '');
+    t = t.concat(lines);
+    t.push('', '⏱️ Entrega en 7 días hábiles desde el pago inicial y tus datos.', '💰 Yape o Plin al 903 155 163, o transferencia a [banco y número de cuenta].', '', d.prov + ' · tuSpa');
+    $('q-text').textContent = t.join('\n');
+
+    ['prov', 'doc', 'num'].forEach(function (k) { if ($('q-' + k).value.trim()) store.set(k, $('q-' + k).value.trim()); });
+  }
+
+  $('qform').addEventListener('input', render);
+  $('qform').addEventListener('change', render);
+  $('qform').addEventListener('submit', function (e) { e.preventDefault(); });
+  $('q-next').addEventListener('click', function () {
+    var m = $('q-num').value.match(/^(.*?)(\d+)$/);
+    if (m) { var n = String(parseInt(m[2], 10) + 1); while (n.length < m[2].length) n = '0' + n; $('q-num').value = m[1] + n; }
+    render();
+  });
+  $('q-reset').addEventListener('click', function () {
+    $('q-negocio').value = 'Spa Rosa'; $('q-contacto').value = 'Rosa Pérez'; $('q-ciudad').value = 'Lima';
+    $('q-desc').value = '0'; ['q-x1', 'q-x1m', 'q-x2', 'q-x2m'].forEach(function (id) { $(id).value = ''; });
+    $('q-opt-a').checked = true; render();
+  });
+  render();
+})();
+</script>
+<script>document.getElementById('q-print').addEventListener('click',function(){window.print();});</script>
+</body></html>

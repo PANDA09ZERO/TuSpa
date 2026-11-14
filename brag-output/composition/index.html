@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>tuSpa · promo</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      @font-face{font-family:'Inter';src:url('assets/fonts/inter-latin.woff2') format('woff2');font-weight:100 900;}
+      @font-face{font-family:'Playfair Display';src:url('assets/fonts/playfair-latin.woff2') format('woff2');font-weight:400 900;}
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #1A1A1A; }
+      #main { position: relative; width: 1920px; height: 1080px; overflow: hidden; font-family: 'Inter', sans-serif; color: #1A1A1A; }
+      .scene { position: absolute; inset: 0; overflow: hidden; }
+      .bg { position: absolute; inset: 0; }
+      .content { position: absolute; inset: 0; }
+      .hook { position: absolute; display: flex; flex-direction: column; gap: 28px; }
+      .hl { position: relative; align-self: flex-start; font-family: 'Playfair Display', Georgia, serif; font-weight: 600; font-size: 104px; line-height: 1.1; color: #fff; }
+      .strike { position: absolute; left: -10px; right: -10px; top: 54%; height: 11px; background: #9D9488; border-radius: 6px; transform-origin: left center; }
+      .head { position: absolute; font-family: 'Playfair Display', Georgia, serif; font-weight: 600; line-height: 1.05; }
+      .center { position: absolute; left: 0; right: 0; text-align: center; }
+      .logo { position: absolute; width: 180px; height: 180px; border-radius: 50%; background: #1A1A1A; display: flex; align-items: center; justify-content: center; }
+      .phone { position: absolute; background: #1A1A1A; border-radius: 48px; padding: 12px; box-shadow: 0 40px 90px rgba(26,26,26,.25); }
+      .phone-screen { position: relative; overflow: hidden; border-radius: 40px; background: #fff; }
+      .phone-screen img { position: absolute; inset: 0; width: 100%; height: 100%; }
+      .desk { position: absolute; background: #fff; border: 1px solid #E5E1D8; border-radius: 16px; overflow: hidden; box-shadow: 0 40px 90px rgba(26,26,26,.18); }
+      .desk-bar { height: 34px; display: flex; align-items: center; gap: 7px; padding: 0 14px; border-bottom: 1px solid #E5E1D8; }
+      .desk-bar i { width: 10px; height: 10px; border-radius: 50%; background: #E5E1D8; }
+      .desk-bar span { margin-left: 12px; font-size: 15px; color: #6B6560; background: #F5F3EE; border-radius: 10px; padding: 3px 12px; }
+      .desk-screen { position: relative; overflow: hidden; }
+      .cam { position: absolute; inset: 0; transform-origin: 0 0; }
+      .cam img { width: 100%; height: 100%; display: block; }
+      .tap { position: absolute; width: 74px; height: 74px; margin: -37px 0 0 -37px; border-radius: 50%; border: 5px solid #1A1A1A; background: rgba(26,26,26,.15); }
+      .chips { position: absolute; display: flex; flex-wrap: wrap; gap: 14px; width: 720px; }
+      .chip { display: inline-block; padding: 12px 26px; border-radius: 999px; background: #1A1A1A; color: #fff; font-size: 32px; font-weight: 600; }
+      .wa { position: absolute; display: flex; align-items: center; gap: 14px; padding: 14px 26px; border-radius: 999px; background: #fff; border: 2px solid #25D366; font-size: 32px; font-weight: 600; }
+      .brandname { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; color: #1A1A1A; }
+      .ctaphone { display: flex; align-items: center; justify-content: center; gap: 26px; color: #fff; font-weight: 700; letter-spacing: .02em; font-variant-numeric: tabular-nums; }
+      .demo { display: inline-block; padding: 16px 40px; border-radius: 999px; background: #F5F3EE; color: #1A1A1A; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <div id="main" data-composition-id="main" data-start="0" data-duration="24" data-width="1920" data-height="1080">
+<div id="s1" class="clip scene" data-start="0" data-duration="3.05" style="">
+  <div class="bg" style="background:#1A1A1A"></div>
+<div id="s1-c" class="content">
+
+  <div class="hook" style="left:160px;top:330px;width:1600px">
+    <div class="hl" id="s1-a"><span>¿Citas por WhatsApp?</span><b id="s1-sa" class="strike"></b></div>
+    <div class="hl" id="s1-b"><span>¿Caja en un cuaderno?</span><b id="s1-sb" class="strike"></b></div>
+  </div>
+</div>
+</div>
+<div id="s2" class="clip scene" data-start="3" data-duration="3.05" style="">
+  <div class="bg" style="background:#1A1A1A"></div>
+  <div id="s2-wipe" class="bg" style="background:#F5F3EE"></div>
+<div id="s2-c" class="content">
+
+  <div id="s2-logo" class="logo" style="left:870px;top:250px"><svg viewBox="0 0 24 24" width="90" height="90" fill="none" stroke="#fff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.94 14.06 4.5 12.5l5.44-1.56L11.5 5.5l1.56 5.44L18.5 12.5l-5.44 1.56L11.5 19.5z"/><path d="M19 3v4M21 5h-4M5 17v3M6.5 18.5h-3"/></svg></div>
+  <div id="s2-name" class="center" style="top:470px;font-family:'Playfair Display', Georgia, serif;font-size:150px;font-weight:600;color:#1A1A1A">tuSpa</div>
+  <div id="s2-tag" class="center" style="top:660px;font-size:48px;color:#6B6560">Tu spa, en orden.</div>
+</div>
+</div>
+<div id="s3" class="clip scene" data-start="6" data-duration="4.05" style="">
+  <div class="bg" style="background:#F5F3EE"></div>
+<div id="s3-c" class="content">
+
+  <div id="s3-h" class="head" style="left:140px;top:330px;width:720px;font-size:84px;color:#1A1A1A">Tus citas,<br>en orden</div>
+  <div id="s3-p" class="phone" style="left:1110px;top:92.67999999999995px;width:437.40000000000003px;height:918.6400000000001px">
+  <div class="phone-screen" style="width:413.40000000000003px;height:894.6400000000001px">
+    <img id="s3-p-img0" src="assets/shots/M6b-calendario-movil.png" alt="" style="opacity:1">
+    <img id="s3-p-img1" src="assets/shots/M6d-detalle-movil.png" alt="" style="opacity:0">
+  </div>
+</div>
+  <div id="s3-tap" class="tap" style="left:1425.16px;top:740.68px"></div>
+</div>
+</div>
+<div id="s4" class="clip scene" data-start="10" data-duration="4.05" style="">
+  <div class="bg" style="background:#F5F3EE"></div>
+<div id="s4-c" class="content">
+
+  <div id="s4-h" class="head" style="left:140px;top:330px;width:720px;font-size:84px;color:#1A1A1A">Cobra con Yape<br>y cierra tu caja</div>
+  <div class="chips" style="left:140px;top:560px"><span id="s4-c0" class="chip">Yape</span><span id="s4-c1" class="chip">Plin</span><span id="s4-c2" class="chip">Tarjeta</span><span id="s4-c3" class="chip">Efectivo</span></div>
+  <div id="s4-d" class="desk" style="left:900px;top:278.75px;width:900px;height:596.5px">
+  <div class="desk-bar"><i></i><i></i><i></i><span data-layout-ignore>tuspa.pe</span></div>
+  <div class="desk-screen" style="width:900px;height:562.5px"><div id="s4-d-cam" class="cam"><img src="assets/shots/08d-descuento-promo.png" alt=""></div></div>
+</div>
+</div>
+</div>
+<div id="s5" class="clip scene" data-start="14" data-duration="4.05" style="">
+  <div class="bg" style="background:#F5F3EE"></div>
+<div id="s5-c" class="content">
+
+  <div id="s5-h" class="head" style="left:140px;top:330px;width:720px;font-size:84px;color:#1A1A1A">Tu catálogo,<br>en tu propia web</div>
+  <div id="s5-p" class="phone" style="left:1110px;top:92.67999999999995px;width:437.40000000000003px;height:918.6400000000001px">
+  <div class="phone-screen" style="width:413.40000000000003px;height:894.6400000000001px">
+    <img id="s5-p-img0" src="assets/shots/P8-publica-movil.png" alt="" style="opacity:1">
+    <img id="s5-p-img1" src="assets/shots/P8d-publica-pedido.png" alt="" style="opacity:0">
+  </div>
+</div>
+  <div id="s5-wa" class="wa" style="left:140px;top:560px"><svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#25D366" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span>Pedido listo por WhatsApp</span></div>
+</div>
+</div>
+<div id="s6" class="clip scene" data-start="18" data-duration="2.05" style="">
+  <div class="bg" style="background:#F5F3EE"></div>
+<div id="s6-c" class="content">
+
+  <div id="s6-h" class="center" style="top:300px;font-size:56px;color:#6B6560">Con tu nombre y tu logo</div>
+  <div id="s6-n0" class="center brandname" data-layout-allow-overlap style="top:420px;font-size:140px">Spa Rosa</div>
+  <div id="s6-n1" class="center brandname" data-layout-allow-overlap style="top:420px;font-size:140px">Bella Nails</div>
+  <div id="s6-n2" class="center brandname" data-layout-allow-overlap style="top:420px;font-size:140px">Aura Spa</div>
+  <div id="s6-n3" class="center brandname" data-layout-allow-overlap style="top:420px;font-size:140px">tu spa</div>
+</div>
+</div>
+<div id="s7" class="clip scene" data-start="20" data-duration="4" style="">
+  <div class="bg" style="background:#1A1A1A"></div>
+<div id="s7-c" class="content">
+
+  <div id="s7-q" class="center" style="top:150px;font-family:'Playfair Display', Georgia, serif;font-size:70px;color:#FFFFFF;padding:0 60px">¿Citas, pagos y catálogo?</div>
+  <div id="s7-n" class="center" style="top:250px;font-family:'Playfair Display', Georgia, serif;font-size:70px;color:#9D9488;font-style:italic">No busques más.</div>
+  <div id="s7-phone" class="center ctaphone" style="top:450px"><svg viewBox="0 0 24 24" width="88" height="88" fill="none" stroke="#25D366" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.6-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg><span style="font-size:120px">903 155 163</span></div>
+  <div id="s7-demo" class="center" style="top:640px"><span class="demo" style="font-size:44px">Pide tu demo gratis</span></div>
+  <div id="s7-brand" class="center" style="top:900px;font-size:32px;color:#9D9488;letter-spacing:.24em;text-transform:uppercase"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#9D9488" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M9.94 14.06 4.5 12.5l5.44-1.56L11.5 5.5l1.56 5.44L18.5 12.5l-5.44 1.56L11.5 19.5z"/><path d="M19 3v4M21 5h-4M5 17v3M6.5 18.5h-3"/></svg>&nbsp; tuSpa · sistema para spas</div>
+</div>
+</div>
+      <audio id="music" class="clip" src="assets/music.wav" data-start="0" data-duration="24" data-track-index="2" data-volume="1"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#s1-a", {"opacity":1,"scale":1.06}, {"opacity":1,"scale":1,"duration":0.6,"ease":"power3.out"}, 0);
+      tl.fromTo("#s1-b", {"opacity":0,"y":40}, {"opacity":1,"y":0,"duration":0.45,"ease":"power3.out"}, 1);
+      tl.fromTo("#s1-sa", {"scaleX":0}, {"scaleX":1,"duration":0.3,"ease":"power2.inOut"}, 2);
+      tl.fromTo("#s1-sb", {"scaleX":0}, {"scaleX":1,"duration":0.3,"ease":"power2.inOut"}, 2.12);
+      tl.fromTo("#s1-a span, #s1-b span", {"opacity":1}, {"opacity":0.45,"duration":0.3}, 2.15);
+      tl.fromTo("#s2-wipe", {"yPercent":100}, {"yPercent":0,"duration":0.55,"ease":"power3.inOut"}, 3);
+      tl.fromTo("#s2-logo", {"opacity":0,"scale":0.6}, {"opacity":1,"scale":1,"duration":0.6,"ease":"back.out(1.8)"}, 3.4);
+      tl.fromTo("#s2-name", {"opacity":0,"y":30}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 3.6);
+      tl.fromTo("#s2-tag", {"opacity":0,"y":20}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 4);
+      tl.fromTo("#s2-logo", {"rotate":0}, {"rotate":12,"duration":2.2,"ease":"none","immediateRender":false}, 4);
+      tl.fromTo("#s3-h", {"opacity":0,"y":30}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 6);
+      tl.fromTo("#s3-p", {"opacity":0,"y":80}, {"opacity":1,"y":0,"duration":0.6,"ease":"power3.out"}, 6.1);
+      tl.fromTo("#s3-tap", {"opacity":0,"scale":1.6}, {"opacity":1,"scale":1,"duration":0.25,"ease":"power2.out"}, 7.25);
+      tl.fromTo("#s3-tap", {"opacity":1}, {"opacity":0,"duration":0.2,"immediateRender":false}, 7.6);
+      tl.fromTo("#s3-p-img1", {"opacity":0,"y":40}, {"opacity":1,"y":0,"duration":0.4,"ease":"power3.out"}, 7.5);
+      tl.fromTo("#s3-p", {"y":0}, {"y":-20,"duration":2.2,"ease":"none","immediateRender":false}, 7.6);
+      tl.fromTo("#s4-h", {"opacity":0,"y":30}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 10);
+      tl.fromTo("#s4-d", {"opacity":0,"y":80}, {"opacity":1,"y":0,"duration":0.6,"ease":"power3.out"}, 10.1);
+      tl.fromTo("#s4-c0", {"opacity":0,"scale":0.6}, {"opacity":1,"scale":1,"duration":0.35,"ease":"back.out(2)"}, 11);
+      tl.fromTo("#s4-c1", {"opacity":0,"scale":0.6}, {"opacity":1,"scale":1,"duration":0.35,"ease":"back.out(2)"}, 11.5);
+      tl.fromTo("#s4-c2", {"opacity":0,"scale":0.6}, {"opacity":1,"scale":1,"duration":0.35,"ease":"back.out(2)"}, 12);
+      tl.fromTo("#s4-c3", {"opacity":0,"scale":0.6}, {"opacity":1,"scale":1,"duration":0.35,"ease":"back.out(2)"}, 12.5);
+      tl.fromTo("#s4-d-cam", {"scale":1,"x":0,"y":0}, {"scale":1.45,"x":-50.25,"y":-144.69,"duration":1.2,"ease":"power2.inOut"}, 11);
+      tl.fromTo("#s4-d-cam", {"scale":1.45}, {"scale":1.51,"duration":1.6,"ease":"none","immediateRender":false}, 12.3);
+      tl.fromTo("#s5-h", {"opacity":0,"y":30}, {"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"}, 14);
+      tl.fromTo("#s5-p", {"opacity":0,"y":80}, {"opacity":1,"y":0,"duration":0.6,"ease":"power3.out"}, 14.1);
+      tl.fromTo("#s5-p-img1", {"opacity":0,"y":40}, {"opacity":1,"y":0,"duration":0.4,"ease":"power3.out"}, 15.5);
+      tl.fromTo("#s5-wa", {"opacity":0,"x":-30}, {"opacity":1,"x":0,"duration":0.45,"ease":"back.out(1.6)"}, 16.5);
+      tl.fromTo("#s5-p", {"y":0}, {"y":-20,"duration":2,"ease":"none","immediateRender":false}, 15.6);
+      tl.fromTo("#s6-h", {"opacity":0,"y":20}, {"opacity":1,"y":0,"duration":0.4,"ease":"power3.out"}, 18);
+      tl.fromTo("#s6-n0", {"opacity":0,"y":40}, {"opacity":1,"y":0,"duration":0.2,"ease":"power3.out"}, 18.02);
+      tl.fromTo("#s6-n0", {"opacity":1}, {"opacity":0,"y":-30,"duration":0.12,"immediateRender":false}, 18.37);
+      tl.fromTo("#s6-n1", {"opacity":0,"y":40}, {"opacity":1,"y":0,"duration":0.2,"ease":"power3.out"}, 18.52);
+      tl.fromTo("#s6-n1", {"opacity":1}, {"opacity":0,"y":-30,"duration":0.12,"immediateRender":false}, 18.87);
+      tl.fromTo("#s6-n2", {"opacity":0,"y":40}, {"opacity":1,"y":0,"duration":0.2,"ease":"power3.out"}, 19.02);
+      tl.fromTo("#s6-n2", {"opacity":1}, {"opacity":0,"y":-30,"duration":0.12,"immediateRender":false}, 19.37);
+      tl.fromTo("#s6-n3", {"opacity":0,"y":40}, {"opacity":1,"y":0,"duration":0.2,"ease":"power3.out"}, 19.52);
+      tl.fromTo("#s7-q", {"opacity":0,"y":30}, {"opacity":1,"y":0,"duration":0.45,"ease":"power3.out"}, 20);
+      tl.fromTo("#s7-n", {"opacity":0,"y":30}, {"opacity":1,"y":0,"duration":0.45,"ease":"power3.out"}, 20.5);
+      tl.fromTo("#s7-phone", {"opacity":0,"scale":0.8}, {"opacity":1,"scale":1,"duration":0.5,"ease":"back.out(1.7)"}, 21);
+      tl.fromTo("#s7-demo", {"opacity":0,"y":20}, {"opacity":1,"y":0,"duration":0.45,"ease":"power3.out"}, 21.5);
+      tl.fromTo("#s7-brand", {"opacity":0}, {"opacity":1,"duration":0.4}, 21.4);
+      tl.fromTo("#s7-phone", {"scale":1}, {"scale":1.04,"duration":2.4,"ease":"none","immediateRender":false}, 21.5);
+      tl.fromTo("#s1-c", {"opacity":1}, {"opacity":0,"duration":0.22,"ease":"power1.in","immediateRender":false}, 2.76);
+      tl.fromTo("#s3-c", {"opacity":1}, {"opacity":0,"duration":0.22,"ease":"power1.in","immediateRender":false}, 9.76);
+      tl.fromTo("#s4-c", {"opacity":1}, {"opacity":0,"duration":0.22,"ease":"power1.in","immediateRender":false}, 13.76);
+      tl.fromTo("#s5-c", {"opacity":1}, {"opacity":0,"duration":0.22,"ease":"power1.in","immediateRender":false}, 17.76);
+      tl.fromTo("#s6-c", {"opacity":1}, {"opacity":0,"duration":0.22,"ease":"power1.in","immediateRender":false}, 19.76);
+      tl.fromTo("#s2-c", {"opacity":1}, {"opacity":0,"duration":0.25,"immediateRender":false}, 5.75);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

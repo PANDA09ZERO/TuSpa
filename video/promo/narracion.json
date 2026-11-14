@@ -1,0 +1,12 @@
+[
+  {"id": "p1", "text": "¿Tienes un spa, un salón de uñas o un centro de belleza?"},
+  {"id": "p2", "text": "¿Todavía agendas por WhatsApp y llevas la caja en un cuaderno?"},
+  {"id": "p3", "text": "Te presentamos tuSpa: el sistema que pone en orden tu negocio."},
+  {"id": "p4", "text": "Agenda tus citas y mira tu día de un vistazo."},
+  {"id": "p5", "text": "Cobra con Yape, Plin, tarjeta o efectivo, aplica descuentos y cierra tu caja en segundos."},
+  {"id": "p6", "text": "Publica tu catálogo en tu propia página web y recibe pedidos por WhatsApp."},
+  {"id": "p7", "text": "Mira cuánto ganas cada mes y llévalo todo en tu celular, como una app."},
+  {"id": "p8", "text": "Con tu nombre, tu logo y tus colores."},
+  {"id": "p9", "text": "¿Necesitas un sistema para gestionar tus citas, tus pagos y publicar tu catálogo? No busques más."},
+  {"id": "p10", "text": "Escríbenos al 903 155 163, pide tu demo gratis y coordinamos el precio.", "say": "Escríbenos al nueve cero tres, uno cinco cinco, uno seis tres. Pide tu demo gratis y coordinamos el precio."}
+]

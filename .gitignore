@@ -25,3 +25,12 @@ imagenes/*.docx
 
 .vercel
 .env*
+
+# Temporales del promo (brag)
+brag-output/work/*.mp4
+brag-output/work/check.json
+brag-output/composition/.hyperframes/
+# Salidas pesadas del promo (se regeneran con hyperframes render)
+brag-output/*.mp4
+brag-output/composition/assets/music.wav
+brag-output/work/render.log

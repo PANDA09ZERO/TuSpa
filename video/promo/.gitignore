@@ -1,0 +1,4 @@
+out/
+renders/
+.hyperframes/
+assets/voz/*.wav

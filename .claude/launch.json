@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tuspa-demo",
+      "runtimeExecutable": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "runtimeArgs": ["video/guia-essence/supabase-local/run-demo.sh"],
+      "port": 3100
+    }
+  ]
+}

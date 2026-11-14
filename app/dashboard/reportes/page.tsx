@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 import StatsCard from "@/components/bento/StatCard";
 import Card from "@/components/bento/Card";
-import { BarChart3, Calendar, PieChart, TrendingUp } from "lucide-react";
+import { BarChart3, Calendar, Download, PieChart, TrendingUp } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 import { apiFetch } from "@/lib/api-fetch";
+import { useSupabase } from "@/components/layout/SupabaseProvider";
 
 interface ReportData {
   stats: {
@@ -25,6 +26,32 @@ function formatPrice(value: number) {
 export default function ReportesPage() {
   const [report, setReport] = useState<ReportData | null>(null);
   const [error, setError] = useState("");
+  const { user } = useSupabase();
+  const isAdmin = user?.role === "admin";
+  const [exporting, setExporting] = useState(false);
+  const [exportMessage, setExportMessage] = useState("");
+  const [exportError, setExportError] = useState("");
+
+  async function exportData() {
+    setExporting(true); setExportMessage(""); setExportError("");
+    try {
+      const response = await apiFetch("/api/exportar", { cache: "no-store" });
+      if (!response.ok) {
+        const result = await response.json().catch(() => ({}));
+        throw new Error(result.error || "No se pudo generar el archivo");
+      }
+      const blob = await response.blob();
+      const filename = response.headers.get("Content-Disposition")?.match(/filename="([^"]+)"/)?.[1] || "datos.xlsx";
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url; link.download = filename;
+      document.body.appendChild(link); link.click(); link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 10000);
+      setExportMessage(`Descargado: ${filename}`);
+    } catch (e) {
+      setExportError(e instanceof Error ? e.message : "No se pudo generar el archivo");
+    } finally { setExporting(false); }
+  }
 
   async function loadReport() {
     setError("");
@@ -108,6 +135,18 @@ export default function ReportesPage() {
           </div>
         </Card>
       </div>
+
+      {isAdmin && <Card title="Exportar datos">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <p className="max-w-xl text-sm text-brand-text-light">Descarga un Excel con todos los datos de tu negocio: clientes, citas, pagos, movimientos y cierres de caja, servicios, categorías, promociones y equipo. Sirve como respaldo y para revisarlos en tu computadora.</p>
+          <button type="button" onClick={() => void exportData()} disabled={exporting} className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-brand-green px-5 py-3 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90 disabled:opacity-60">
+            <Download size={17} />{exporting ? "Generando…" : "Descargar Excel"}
+          </button>
+        </div>
+        {exportMessage && <p role="status" className="mt-3 text-sm text-green-700">{exportMessage}</p>}
+        {exportError && <p role="alert" className="mt-3 text-sm text-red-700">{exportError}</p>}
+        <p className="mt-3 text-xs text-brand-text-light">Contiene datos personales de tus clientas y tu equipo: guárdalo en un lugar seguro y no lo compartas.</p>
+      </Card>}
     </div>
   );
 }
