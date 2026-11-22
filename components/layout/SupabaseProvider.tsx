@@ -52,14 +52,16 @@ export function SupabaseProvider({ children }: { children: React.ReactNode }) {
       const sessionUser = session?.user;
       if (sessionUser) {
         signingOutRef.current = false;
-        setUser({
+        setUser(current => ({
           id: sessionUser.id,
           email: sessionUser.email || "",
           // user_metadata lo puede editar el propio usuario: nunca se usa como rol.
-          // El rol real llega desde la tabla empleados (efecto de abajo).
-          role: "cliente",
+          // El rol real llega desde la tabla empleados (efecto de abajo). Si es el
+          // mismo usuario (renovación del token al volver a la pestaña) se conserva
+          // el rol ya leído; si no, se volvería a «cliente» y quedaría así.
+          role: current?.id === sessionUser.id ? current.role : "cliente",
           name: sessionUser.user_metadata?.name || sessionUser.email?.split("@")[0] || "",
-        });
+        }));
       } else { setUser(null); }
       setLoading(false);
     });
