@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import CalendarView, { Appointment } from "@/components/calendar/CalendarView";
 import AppointmentModal from "@/components/calendar/AppointmentModal";
 import StatsCard from "@/components/bento/StatCard";
@@ -8,11 +8,13 @@ import Card from "@/components/bento/Card";
 import { Calendar, Clock, UserPlus } from "lucide-react";
 import Link from "next/link";
 import { formatTime } from "@/lib/utils";
-import { citaClientName, compareCitaSchedule, citaServiceNames, estadoLabels } from "@/components/calendar/cita-utils";
+import { citaClientName, compareCitaSchedule, citaServiceNames, estadoLabels, fullName } from "@/components/calendar/cita-utils";
+import { buildWorkerColors, type WorkerRef } from "@/components/calendar/worker-colors";
 import { peruDateKey, shiftDateKey, agendaDateLabel } from "@/lib/appointment-dates";
 import { apiFetch } from "@/lib/api-fetch";
 
 type DateFilter = "ayer" | "hoy" | "manana" | "todas" | "fecha";
+const estadoBadge: Record<string, string> = { confirmada: "bg-emerald-50 text-emerald-800", pendiente: "bg-amber-50 text-amber-800", en_progreso: "bg-sky-50 text-sky-800", completada: "bg-stone-100 text-stone-600", cancelada: "bg-red-50 text-red-700" };
 const dateFilters: { value: DateFilter; label: string }[] = [
   { value: "ayer", label: "Ayer" }, { value: "hoy", label: "Hoy" },
   { value: "manana", label: "Mañana" }, { value: "todas", label: "Todas las fechas" },
@@ -27,6 +29,7 @@ export default function CitasPage() {
   const [today, setToday] = useState(() => peruDateKey());
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const [team, setTeam] = useState<WorkerRef[]>([]);
   const loadCitas = () => {
     setError(""); setLoading(true);
     return apiFetch("/api/citas").then(async response => {
@@ -36,6 +39,14 @@ export default function CitasPage() {
     }).catch(e => setError(e instanceof Error ? e.message : "No se pudieron cargar las citas")).finally(() => setLoading(false));
   };
   useEffect(() => { void loadCitas(); }, []);
+  // El orden de creación del equipo fija el color de cada trabajador.
+  useEffect(() => {
+    apiFetch("/api/empleados").then(async response => {
+      if (!response.ok) return;
+      const result = await response.json();
+      setTeam((result.data || []).map((item: WorkerRef) => ({ id: item.id, created_at: item.created_at })));
+    }).catch(() => { /* sin equipo: se usan los colores de respaldo */ });
+  }, []);
   useEffect(() => {
     const timer = window.setInterval(() => setToday(peruDateKey()), 60000);
     const update = () => setToday(peruDateKey());
@@ -47,9 +58,18 @@ export default function CitasPage() {
   const filtered = dayAppointments.filter(cita => estado === "Todos" || cita.estado === estado).sort(compareCitaSchedule);
   const periodLabel = selectedDate === null ? "Todas las fechas" : selectedDate ? agendaDateLabel(selectedDate, today) : "Elige una fecha para consultar";
   const getName = (cita: Appointment) => citaClientName(cita);
+  // El calendario muestra todo el mes (solo filtra por estado); la fecha elegida se resalta.
+  // Colores calculados con todas las citas para que cada trabajador conserve el suyo.
+  const workerColor = useMemo(() => buildWorkerColors(citas, team), [citas, team]);
+  const monthAppointments = citas.filter(cita => estado === "Todos" || cita.estado === estado);
+  const selectCalendarDate = (date: string) => {
+    const relative: Record<string, DateFilter> = { [shiftDateKey(today, -1)]: "ayer", [today]: "hoy", [shiftDateKey(today, 1)]: "manana" };
+    if (relative[date]) { setDateFilter(relative[date]); return; }
+    setCustomDate(date); setDateFilter("fecha");
+  };
 
   return <div className="space-y-6">
-    <div className="flex flex-wrap items-center justify-between gap-4"><div><h1 className="font-display text-3xl font-bold text-brand-green">Citas</h1><p className="mt-1 text-brand-text-light">Gestiona tus citas y agenda</p></div><AppointmentModal onCreated={loadCitas} /></div>
+    <div className="flex flex-wrap items-center justify-between gap-4"><div><h1 className="font-display text-3xl font-medium sm:text-4xl">Agenda de citas</h1><p className="mt-2 text-sm text-brand-text-light">Revisa el día, filtra por estado y cobra cada atención.</p></div><AppointmentModal onCreated={loadCitas} /></div>
     {error && <div role="alert" className="bento-card text-sm text-red-600">{error}<button type="button" onClick={() => void loadCitas()} disabled={loading} className="ml-3 min-h-11 underline disabled:opacity-50">Reintentar</button></div>}
     <div className="grid grid-cols-2 gap-4 lg:grid-cols-4"><StatsCard icon={Calendar} label="Citas de hoy" value={citas.filter(cita => cita.fecha === today).length} /><StatsCard icon={Clock} label="Confirmadas del período" value={dayAppointments.filter(cita => cita.estado === "confirmada").length} /><StatsCard icon={UserPlus} label="Pendientes del período" value={dayAppointments.filter(cita => cita.estado === "pendiente").length} /></div>
     <section aria-label="Filtros de citas" className="bento-card p-3 sm:p-4">
@@ -67,9 +87,13 @@ export default function CitasPage() {
     </section>
     <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
       <div className="bento-card overflow-hidden p-0 lg:col-span-2 lg:col-start-1 lg:row-start-1">
-        <CalendarView appointments={filtered} focusDate={selectedDate} onUpdated={loadCitas} />
+        <CalendarView appointments={monthAppointments} focusDate={selectedDate} onSelectDate={selectCalendarDate} colorFor={workerColor} onUpdated={loadCitas} />
       </div>
-      <div className="lg:col-start-3 lg:row-span-2 lg:row-start-1"><Card title="Citas del período"><p className="mb-4 text-sm font-semibold">{periodLabel}</p><div className="space-y-3">{filtered.length ? filtered.map(cita => <div key={cita.id} className="rounded-xl bg-brand-cream p-3"><p className="mb-2 text-xs font-medium text-brand-text-light">{agendaDateLabel(cita.fecha, today)}</p><div className="flex items-center gap-3"><div className="flex min-h-12 w-20 shrink-0 items-center justify-center rounded-xl bg-brand-green/10 text-xs font-bold text-brand-green">{formatTime(cita.hora_inicio)}</div><div className="min-w-0 flex-1"><p className="truncate text-sm font-semibold">{getName(cita)}</p><p className="mt-1 text-xs text-brand-text-light">{citaServiceNames(cita).join(", ") || "Servicio"}</p><span className="mt-1 block text-xs text-brand-text-light">{estadoLabels[cita.estado] || cita.estado}</span></div></div>{cita.estado !== "completada" && cita.estado !== "cancelada" && <Link href={`/dashboard/caja?cita=${cita.id}`} className="btn-primary mt-3 block w-full text-center text-sm">Pagar cita</Link>}</div>) : <p className="text-sm leading-6 text-brand-text-light">{loading ? "Cargando citas…" : error ? "No se pudieron cargar las citas. Reintenta la consulta." : selectedDate === "" ? "Selecciona una fecha." : "No hay citas que coincidan con la fecha y el estado elegidos."}</p>}</div></Card></div>
+      <div className="lg:col-start-3 lg:row-span-2 lg:row-start-1"><Card title="Citas del período"><p className="mb-4 text-sm font-semibold">{periodLabel}</p><div className="divide-y divide-stone-100">{filtered.length ? filtered.map(cita => { const payable = cita.estado !== "completada" && cita.estado !== "cancelada"; return <div key={cita.id} className="flex items-start gap-3 py-3 first:pt-0">
+          <div className="w-[4.75rem] shrink-0 pt-0.5"><p className="whitespace-nowrap text-sm font-semibold tabular-nums">{formatTime(cita.hora_inicio)}</p>{selectedDate === null && <p className="mt-0.5 text-[11px] leading-4 text-brand-text-light">{agendaDateLabel(cita.fecha, today)}</p>}</div>
+          <div className="min-w-0 flex-1"><p className="truncate text-sm font-semibold">{getName(cita)}</p><p className="mt-0.5 text-xs leading-5 text-brand-text-light">{citaServiceNames(cita).join(", ") || "Servicio"}</p><p className="mt-1 flex items-center gap-1.5 text-xs text-stone-600"><span aria-hidden="true" className="h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: workerColor(cita.id_empleado).solid }} /><span className="truncate">{fullName(cita.empleados) || "Sin asignar"}</span></p><span className={`mt-1.5 inline-block rounded-full px-2 py-0.5 text-[11px] ${estadoBadge[cita.estado] || "bg-stone-100 text-stone-600"}`}>{estadoLabels[cita.estado] || cita.estado}</span></div>
+          {payable && <Link href={`/dashboard/caja?cita=${cita.id}`} className="inline-flex min-h-10 shrink-0 items-center rounded-full border border-brand-green/25 px-3.5 text-xs font-semibold text-brand-green transition-colors hover:border-brand-green hover:bg-brand-green hover:text-white">Cobrar</Link>}
+        </div>; }) : <p className="text-sm leading-6 text-brand-text-light">{loading ? "Cargando citas…" : error ? "No se pudieron cargar las citas. Reintenta la consulta." : selectedDate === "" ? "Selecciona una fecha." : "No hay citas que coincidan con la fecha y el estado elegidos."}</p>}</div></Card></div>
     </div>
   </div>;
 }
