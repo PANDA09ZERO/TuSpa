@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
-import { CalendarDays, Edit2, Search, Tag, X } from "lucide-react";
+import { CalendarDays, Edit2, Search, Tag, Trash2, X } from "lucide-react";
 import CreateResourceModal from "@/components/forms/CreateResourceModal";
 import { apiFetch } from "@/lib/api-fetch";
 
@@ -34,6 +34,7 @@ export default function PromocionesPage() {
   const [promocionEditando, setPromocionEditando] = useState<Promocion | null>(null);
   const [form, setForm] = useState<PromocionForm>(emptyForm);
   const [guardando, setGuardando] = useState(false);
+  const [eliminandoId, setEliminandoId] = useState<string | null>(null);
 
   useEffect(() => {
     apiFetch("/api/promociones")
@@ -92,6 +93,25 @@ export default function PromocionesPage() {
     }
   };
 
+  const eliminar = async (promocion: Promocion) => {
+    const ok = window.confirm(`¿Eliminar la promoción «${promocion.nombre}»?
+
+Ya no se podrá elegir en la caja ni en tu página. Los cobros donde se usó conservan su descuento. Esta acción no se puede deshacer.`);
+    if (!ok) return;
+    setEliminandoId(promocion.id);
+    setError("");
+    try {
+      const response = await apiFetch(`/api/promociones/${promocion.id}`, { method: "DELETE" });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error || "No se pudo eliminar la promoción");
+      setPromociones((current) => current.filter((item) => item.id !== promocion.id));
+    } catch (deleteError) {
+      setError(deleteError instanceof Error ? deleteError.message : "No se pudo eliminar la promoción");
+    } finally {
+      setEliminandoId(null);
+    }
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between flex-wrap gap-4">
@@ -124,6 +144,7 @@ export default function PromocionesPage() {
                 <span className="font-display text-lg font-bold text-brand-green">{Number(promocion.descuento)}%</span>
                 <span className={`rounded-full px-3 py-1 text-xs font-medium ${promocion.activa ? "bg-green-100 text-green-700" : "bg-gray-100 text-gray-600"}`}>{promocion.activa ? "Activa" : "Inactiva"}</span>
                 <button type="button" onClick={() => abrirEdicion(promocion)} className="flex items-center gap-2 rounded-lg border border-brand-green/15 px-3 py-2 text-sm font-medium text-brand-green transition-colors hover:bg-brand-green hover:text-white"><Edit2 size={15} />Editar</button>
+                <button type="button" onClick={() => eliminar(promocion)} disabled={eliminandoId === promocion.id} aria-label={`Eliminar ${promocion.nombre}`} className="flex h-10 w-10 items-center justify-center rounded-lg bg-red-50 text-red-500 transition-colors hover:bg-red-100 disabled:opacity-50"><Trash2 size={16} /></button>
               </div>
             </article>
           ))}

@@ -42,3 +42,15 @@ export async function PATCH(request: NextRequest, { params }: { params: Promise<
   if (error) return NextResponse.json({ error: error.message }, { status: 400 });
   return NextResponse.json({ data });
 }
+// Los pagos que usaron la promoción conservan su descuento: la llave foránea es ON DELETE SET NULL.
+export async function DELETE(request: NextRequest, { params }: { params: Promise<{ id: string }> }) {
+  const session = await requireEmployeeRequest(request, CATALOG_ADMIN);
+  if ("error" in session) return session.error;
+
+  const { id } = await params;
+  const supabase = createSupabaseAdminClient();
+  const { data, error } = await supabase.from("promociones").delete().eq("id", id).select("id");
+  if (error) return NextResponse.json({ error: error.message }, { status: 400 });
+  if (!data?.length) return NextResponse.json({ error: "La promoción ya no existe" }, { status: 404 });
+  return NextResponse.json({ success: true });
+}
